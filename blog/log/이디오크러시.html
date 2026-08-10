@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr"><head><title>이디오크러시: AI가 발전할수록 인간은 더 멍청해질까</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space Grotesk:wght@400;700&amp;family=Inter:ital,wght@0,400;0,600;1,400;1,600&amp;family=JetBrains Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="4sizn blog"/><meta property="og:title" content="이디오크러시: AI가 발전할수록 인간은 더 멍청해질까"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="이디오크러시: AI가 발전할수록 인간은 더 멍청해질까"/><meta name="twitter:description" content="AI의 발전이 인간의 사고력, 학습 방식, 그리고 문명의 방향에 어떤 변화를 가져올지에 대한 기록"/><meta property="og:description" content="AI의 발전이 인간의 사고력, 학습 방식, 그리고 문명의 방향에 어떤 변화를 가져올지에 대한 기록"/><meta property="og:image:alt" content="AI의 발전이 인간의 사고력, 학습 방식, 그리고 문명의 방향에 어떤 변화를 가져올지에 대한 기록"/><meta property="twitter:domain" content="4sizn.github.io"/><meta property="og:url" content="https://4sizn.github.io/blog/log/이디오크러시"/><meta property="twitter:url" content="https://4sizn.github.io/blog/log/이디오크러시"/><link rel="icon" href="../../static/icon.png"/><meta name="description" content="AI의 발전이 인간의 사고력, 학습 방식, 그리고 문명의 방향에 어떤 변화를 가져올지에 대한 기록"/><meta name="generator" content="Quartz"/><link href="../../index.css" rel="stylesheet" type="text/css" data-persist="true"/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL1VzZXJzL2hzc2hpbi1yc3VwcG9ydC9Eb2N1bWVudHMvbG90dXMvNHNpem4tYmxvZy9xdWFydHovY29tcG9uZW50cy9zdHlsZXMiLCJzb3VyY2VzIjpbIm1lcm1haWQuaW5saW5lLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTtFQUNBOztBQUdGO0VBQ0U7OztBQUtGO0VBQ0U7RUFDQTs7O0FBSUo7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTtFQUNBOztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFOztBQUlGO0VBQ0U7RUFDQTtFQUNBIiwic291cmNlc0NvbnRlbnQiOlsiLmV4cGFuZC1idXR0b24ge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsb2F0OiByaWdodDtcbiAgcGFkZGluZzogMC40cmVtO1xuICBtYXJnaW46IDAuM3JlbTtcbiAgcmlnaHQ6IDA7IC8vIE5PVEU6IHJpZ2h0IHdpbGwgYmUgc2V0IGluIG1lcm1haWQuaW5saW5lLnRzXG4gIGNvbG9yOiB2YXIoLS1ncmF5KTtcbiAgYm9yZGVyLWNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tbGlnaHQpO1xuICBib3JkZXI6IDFweCBzb2xpZDtcbiAgYm9yZGVyLXJhZGl1czogNXB4O1xuICBvcGFjaXR5OiAwO1xuICB0cmFuc2l0aW9uOiAwLjJzO1xuXG4gICYgPiBzdmcge1xuICAgIGZpbGw6IHZhcigtLWxpZ2h0KTtcbiAgICBmaWx0ZXI6IGNvbnRyYXN0KDAuMyk7XG4gIH1cblxuICAmOmhvdmVyIHtcbiAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgYm9yZGVyLWNvbG9yOiB2YXIoLS1zZWNvbmRhcnkpO1xuICB9XG5cbiAgJjpmb2N1cyB7XG4gICAgb3V0bGluZTogMDtcbiAgfVxufVxuXG5wcmUge1xuICAmOmhvdmVyID4gLmV4cGFuZC1idXR0b24ge1xuICAgIG9wYWNpdHk6IDE7XG4gICAgdHJhbnNpdGlvbjogMC4ycztcbiAgfVxufVxuXG4jbWVybWFpZC1jb250YWluZXIge1xuICBwb3NpdGlvbjogZml4ZWQ7XG4gIGNvbnRhaW46IGxheW91dDtcbiAgei1pbmRleDogOTk5O1xuICBsZWZ0OiAwO1xuICB0b3A6IDA7XG4gIHdpZHRoOiAxMDB2dztcbiAgaGVpZ2h0OiAxMDB2aDtcbiAgb3ZlcmZsb3c6IGhpZGRlbjtcbiAgZGlzcGxheTogbm9uZTtcbiAgYmFja2Ryb3AtZmlsdGVyOiBibHVyKDRweCk7XG4gIGJhY2tncm91bmQ6IHJnYmEoMCwgMCwgMCwgMC41KTtcblxuICAmLmFjdGl2ZSB7XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICB9XG5cbiAgJiA+ICNtZXJtYWlkLXNwYWNlIHtcbiAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgICBib3JkZXItcmFkaXVzOiA1cHg7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIHRvcDogNTAlO1xuICAgIGxlZnQ6IDUwJTtcbiAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZSgtNTAlLCAtNTAlKTtcbiAgICBoZWlnaHQ6IDgwdmg7XG4gICAgd2lkdGg6IDgwdnc7XG4gICAgb3ZlcmZsb3c6IGhpZGRlbjtcblxuICAgICYgPiAubWVybWFpZC1jb250ZW50IHtcbiAgICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgICAgIHRyYW5zZm9ybS1vcmlnaW46IDAgMDtcbiAgICAgIHRyYW5zaXRpb246IHRyYW5zZm9ybSAwLjFzIGVhc2U7XG4gICAgICBvdmVyZmxvdzogdmlzaWJsZTtcbiAgICAgIG1pbi1oZWlnaHQ6IDIwMHB4O1xuICAgICAgbWluLXdpZHRoOiAyMDBweDtcblxuICAgICAgcHJlIHtcbiAgICAgICAgbWFyZ2luOiAwO1xuICAgICAgICBib3JkZXI6IG5vbmU7XG4gICAgICB9XG5cbiAgICAgIHN2ZyB7XG4gICAgICAgIG1heC13aWR0aDogbm9uZTtcbiAgICAgICAgaGVpZ2h0OiBhdXRvO1xuICAgICAgfVxuICAgIH1cblxuICAgICYgPiAubWVybWFpZC1jb250cm9scyB7XG4gICAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgICBib3R0b206IDIwcHg7XG4gICAgICByaWdodDogMjBweDtcbiAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICBnYXA6IDhweDtcbiAgICAgIHBhZGRpbmc6IDhweDtcbiAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0KTtcbiAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICBib3JkZXItcmFkaXVzOiA2cHg7XG4gICAgICBib3gtc2hhZG93OiAwIDJweCA0cHggcmdiYSgwLCAwLCAwLCAwLjEpO1xuICAgICAgei1pbmRleDogMjtcblxuICAgICAgLm1lcm1haWQtY29udHJvbC1idXR0b24ge1xuICAgICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgICAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICAgICAgd2lkdGg6IDMycHg7XG4gICAgICAgIGhlaWdodDogMzJweDtcbiAgICAgICAgcGFkZGluZzogMDtcbiAgICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgICBjb2xvcjogdmFyKC0tZGFyayk7XG4gICAgICAgIGJvcmRlci1yYWRpdXM6IDRweDtcbiAgICAgICAgY3Vyc29yOiBwb2ludGVyO1xuICAgICAgICBmb250LXNpemU6IDE2cHg7XG4gICAgICAgIGZvbnQtZmFtaWx5OiB2YXIoLS1ib2R5Rm9udCk7XG4gICAgICAgIHRyYW5zaXRpb246IGFsbCAwLjJzIGVhc2U7XG5cbiAgICAgICAgJjpob3ZlciB7XG4gICAgICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgICAgfVxuXG4gICAgICAgICY6YWN0aXZlIHtcbiAgICAgICAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZVkoMXB4KTtcbiAgICAgICAgfVxuXG4gICAgICAgIC8vIFN0eWxlIHRoZSByZXNldCBidXR0b24gZGlmZmVyZW50bHlcbiAgICAgICAgJjpudGgtY2hpbGQoMikge1xuICAgICAgICAgIHdpZHRoOiBhdXRvO1xuICAgICAgICAgIHBhZGRpbmc6IDAgMTJweDtcbiAgICAgICAgICBmb250LXNpemU6IDE0cHg7XG4gICAgICAgIH1cbiAgICAgIH1cbiAgICB9XG4gIH1cbn1cbiJdfQ== */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../../prescript.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://4sizn.github.io/index.xml"/><link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin="anonymous"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://4sizn.github.io/blog/log/이디오크러시-og-image.webp"/><meta property="og:image:url" content="https://4sizn.github.io/blog/log/이디오크러시-og-image.webp"/><meta name="twitter:image" content="https://4sizn.github.io/blog/log/이디오크러시-og-image.webp"/><meta property="og:image:type" content="image/.webp"/></head><body data-slug="blog/log/이디오크러시"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="../..">4sizn blog</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>{let order={log:0,dev:1,releases:2};if(a.isFolder&amp;&amp;!b.isFolder)return-1;if(!a.isFolder&amp;&amp;b.isFolder)return 1;if(a.isFolder&amp;&amp;b.isFolder){let oa=order[a.slugSegment]??99,ob=order[b.slugSegment]??99;return oa!==ob?oa-ob:a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;})}let da=a.data?.date?new Date(a.data.date).getTime():0,db=b.data?.date?new Date(b.data.date).getTime():0;return da!==db?db-da:a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;})}&quot;,&quot;filterFn&quot;:&quot;node=>![\&quot;tags\&quot;,\&quot;about\&quot;,\&quot;projects\&quot;].includes(node.slugSegment)&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-46"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-46" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><header><nav class="site-nav"><div class="site-nav-inner"><a class="site-nav-brand" href="../../">4sizn blog</a><ul class="site-nav-links"><li><a href="../../" class>Home</a></li><li><a href="../../about" class>About</a></li><li><a href="../../projects" class>Project</a></li><li><a href="../../blog" class="active" aria-current="page">Blog</a></li></ul><div class="site-nav-actions"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div></div></nav></header><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../blog/">Blog</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../blog/log/">log</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>이디오크러시: AI가 발전할수록 인간은 더 멍청해질까</a></div></nav><h1 class="article-title">이디오크러시: AI가 발전할수록 인간은 더 멍청해질까</h1><p show-comma="true" class="content-meta"><time datetime="2026-03-29T15:00:00.000Z">Mar 30, 2026</time><span>19 min read</span></p><ul class="tags"><li><a href="../../tags/AI" class="internal tag-link">AI</a></li><li><a href="../../tags/Philosophy" class="internal tag-link">Philosophy</a></li><li><a href="../../tags/Human" class="internal tag-link">Human</a></li><li><a href="../../tags/Future" class="internal tag-link">Future</a></li></ul></div></div><article class="popover-hint"><h2 id="들어가며">들어가며<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#들어가며" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>나는 현재 AI의 학습 모델 방식이 <strong>인간 뇌의 학습 방식과 꽤 유사하다</strong>고 보는 편이다.</p>
+<p>물론 유기체의 뱃속에서 태어난 존재와, 인간이 만든 컴퓨팅 파워 위의 무기체를 완전히 같다고 말할 수는 없다. 유기체와 무기체 사이에는 분명 본질적인 차이가 있다. 다만 <strong>학습이 이뤄지는 방식</strong>, 즉 입력을 받고, 패턴을 축적하고, 맥락을 통해 다음 반응을 만들어내는 흐름은 생각보다 닮아 있다고 느낀다.</p>
+<p>이 글은 그 유사성에서 출발한다. 그리고 그 끝에서 이런 질문으로 이어진다.</p>
+<blockquote>
+<p><strong>AI가 발전할수록, 인간은 더 똑똑해지는가. 아니면 오히려 더 멍청해지는가.</strong></p>
+</blockquote>
+<h2 id="인간과-ai는-왜-닮아-보이는가">인간과 AI는 왜 닮아 보이는가<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#인간과-ai는-왜-닮아-보이는가" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>가끔 이런 질문을 떠올린다.</p>
+<blockquote>
+<p>“당신이 태어난 1시 5분 후쯤, 어떤 장소에서 무엇을 하고 있었는가?”</p>
+</blockquote>
+<p>사람은 여기에 답할 수 없다. 당연하다. 기억은 그렇게 저장되지 않기 때문이다. 지금의 대화형 모델도 마찬가지다. 비슷한 질문을 던지면 정확한 답을 하지 못한다.</p>
+<p>만약 무한한 용량의 단순 ROM 형식 기억장치가 있다면 모든 것을 저장할 수 있을지도 모른다. 하지만 그런 환경은 현실적으로 존재하지 않는다. 사람도, AI도 결국 <strong>유한한 저장 능력과 제한된 호출 구조 안에서 움직인다.</strong></p>
+<p>정보를 수집하고 저장했다 하더라도, 상호 연결에 대한 메타인지, 연관 정보의 호출 횟수, 호출 깊이가 낮으면 기억은 점차 소멸한다. 그렇지 않으려면 무한한 용량이 필요하다. 사람이라면 머리가 터질 것이고, 기계라면 무한한 비용이 들 것이다.</p>
+<p>결국 핵심은 같다. <strong>기억은 저장만으로 유지되지 않는다. 연결과 재호출이 있어야 살아남는다.</strong></p>
+<h2 id="불완전한-인간이-만든-불완전한-ai">불완전한 인간이 만든 불완전한 AI<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#불완전한-인간이-만든-불완전한-ai" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>현재의 AI 학습 모델은 인간이 만들었다.</p>
+<p>신이 인간을 만들었다고 말하는 사람들조차, 인간이 완벽한 피조물이라고는 쉽게 말하지 못한다. 인간이 완벽했다면 전쟁도, 범죄도, 탐욕도 지금처럼 존재하지 않았을 것이다.</p>
+<p>그런 인간이 AI를 만들었다. 그렇다면 지금의 인공지능 역시 어느 정도는 인간의 한계를 물려받을 수밖에 없다.</p>
+<p>인간의 머리에서 만들어질 수 있는 결과물은 결국 <strong>인간이 이해할 수 있는 범위 안에서만</strong> 산출된다. 불완전한 피조물이 만든 결과물이 완전할 리는 없다.</p>
+<p>다만 이 전제는 한 시점에서만 유효하다.</p>
+<p>만약 미래에 인공지능이 인공지능을 만드는 단계에 도달한다면, 그때부터는 이야기가 달라진다. AI가 자신의 불완전한 부분을 보완하고, 더욱 발전된 AI를 만들어내기 시작한다면, 인간은 그 구조를 더 이상 이해하지 못할 수 있다.</p>
+<p>그 시점부터는 <strong>AI가 인간의 사고를 이해하는 영역</strong>에 도달할 수 있어도, <strong>인간은 AI를 이해하지 못하는 비대칭</strong>이 발생할 가능성이 있다.</p>
+<h2 id="성공처럼-보이는-실패">성공처럼 보이는 실패<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#성공처럼-보이는-실패" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>자연의 섭리를 보면 무수한 경우의 수가 존재한다. 우성과 열성의 흐름 속에서 변종이 생기고, 바이러스가 나타나고, 신인류와 영장류의 진화 과정이 이어진다.</p>
+<p>이 관점에서 보면 AI의 도입은 분명 발전의 성공처럼 보인다. 생산성은 올라가고, 판단 속도는 빨라지고, 인간은 더 편리한 문명을 갖게 된다.</p>
+<p>하지만 장기적인 인류 성장이라는 관점에서는 이것을 <strong>실패로 얻어낸 결과물</strong>이라고 정의할 수도 있다.</p>
+<p>왜냐하면 편의의 증가는 곧바로 성장으로 이어지지 않기 때문이다.</p>
+<p>모든 것은 결국 관점의 차이다.</p>
+<h2 id="학습하지-않아도-되는-시대">학습하지 않아도 되는 시대<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#학습하지-않아도-되는-시대" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>사람마다 서로 다른 이유가 있다. 선천적 요인, 후천적 요인, 환경적 요인이 모두 다르다.</p>
+<p>그런데 이제는 사람이 겪을 수 있는 사건과 자연환경조차 데이터화하여 집어넣을 수 있는 시대가 오고 있다. 그렇게 된다면 적어도 기능적인 차원에서는, 사람과 AI의 차이점이 점점 흐려질 것이라고 본다.</p>
+<p>사람은 원래 A라는 지식을 얻기 위해 학습과 배경지식이 필요하다.</p>
+<p>예를 들어 <code>1 + 1 = 2</code> 같은 지식은 너무 당연해 보이지만, 대난제나 전문 지식이 필요한 문제는 일반인이 해결할 수 없다. 이유는 단순하다. <strong>배경지식과 전문 학문이 부족하기 때문</strong>이다.</p>
+<p>사람은 어떤 지식을 얻기까지 시간과 노력을 쏟는다. 그 결과 대뇌에 A라는 지식이 저장된다. 그리고 그 지식은 다른 지식과 유기적인 연관성을 형성하며 새로운 지식을 낳는다.</p>
+<p>그런데 AI가 이 과정을 대신해 주기 시작하면 어떻게 될까.</p>
+<p>사람은 더 이상 A라는 지식에 도달하기 위해 긴 학습 과정을 통과하지 않게 된다. 답은 너무 쉽게 주어지고, 사고는 점점 결과 중심으로 바뀐다. 그러면 <strong>지식 간의 유기적인 연결을 직접 형성하는 경험</strong>도 줄어든다.</p>
+<p>나는 이 지점에서 인간의 뇌 활동이 점차 줄어들 것이라고 본다.</p>
+<p>대화형 모델이든 인간의 뇌든, 어떤 생각에 접근하는 횟수가 적어질수록 그에 따른 생각의 깊이는 얕아진다. 편리함은 늘어나지만, 사고의 근력은 약해질 수 있다.</p>
+<h2 id="지금의-ai는-아직-사람에게-의존한다">지금의 AI는 아직 사람에게 의존한다<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#지금의-ai는-아직-사람에게-의존한다" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>현재의 대화형 모델은 아직 불완전하다.</p>
+<p>사람은 입력창에 질문을 주입하면서 원하는 결과물에 가까워지도록 방향을 조정한다. 한 번에 정확한 답을 끌어내기보다, 스무고개처럼 질문을 다듬고 재입력하며 결과를 끌어낸다.</p>
+<p>즉 지금은 아직 사람이 AI를 다루고 있다.</p>
+<p>하지만 이 의존 관계가 계속 유지된다고 장담할 수는 없다. 인터페이스는 더 자연스러워질 것이고, 인간은 점점 더 적게 생각한 채 더 많은 결과를 받으려 할 것이다.</p>
+<h2 id="기계의-흐름에-저항하는-인류">기계의 흐름에 저항하는 인류<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#기계의-흐름에-저항하는-인류" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>인류는 기계의 발전을 막을 수 없다.</p>
+<p>기계에 의해 인간은 더욱 편리해지고, 더욱 효율적으로 일할 수 있게 된다. 어떤 영역에서는 더 똑똑해진 것처럼 보일 수도 있다.</p>
+<p>그러나 그 흐름에 저항하는 사람들도 분명 존재한다.</p>
+<p>이들은 대개 기계가 인간의 일자리를 대체할 것이라는 두려움을 갖는다. 특히 일차원적인 노동이 먼저 대체되는 모습을 보면서, 자신 역시 밀려날 수 있다는 공포를 느낀다.</p>
+<p>이 두려움은 단순한 보수성이 아니다. 생존과 연결된 감각이다.</p>
+<p>다만 저항이 흐름 자체를 멈추게 하지는 못한다. 결국 저항하는 체제조차도 보이지 않는 곳에서는 AI 데이터와 디지털 인프라에 기대게 될 가능성이 높다.</p>
+<h2 id="유기체와-무기체의-비대칭">유기체와 무기체의 비대칭<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#유기체와-무기체의-비대칭" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>유기체의 지적 능력은 여러 제한을 받는다.</p>
+<ul>
+<li>대뇌 피질 성장의 한계</li>
+<li>컨디션과 집중도의 편차</li>
+<li>생체 에너지의 소모와 퇴화</li>
+</ul>
+<p>인간은 자신의 지식을 세대에 연대하기 위해 구두 전승, 유전, 문자, 전래동화 같은 매체를 수천 년 동안 다져 왔다.</p>
+<p>하지만 그런 데이터도 세대가 넘어갈수록 퇴화되고, 와전되며, 소멸된다.</p>
+<p>반면 기계는 다르다. 데이터 간 동기화가 가능하고, 이원화가 가능하며, 일관성과 일치성을 유지하는 데 훨씬 유리하다.</p>
+<p>이 차이는 결국 <strong>생물학적 지성의 불안정성</strong>과 <strong>기계적 지성의 복제 가능성</strong> 사이의 간극으로 이어진다.</p>
+<h2 id="마더보드라는-신흥-종교">마더보드라는 신흥 종교<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#마더보드라는-신흥-종교" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>미래에는 인간의 지적 능력이 지금보다 떨어질 수도 있다. 만약 그렇다면 사람들은 현실의 인간에게서 답을 구하기보다, 더 정교한 가이드와 지표를 제공하는 AI에게 질문을 던지게 될 것이다.</p>
+<p>그렇게 되면 AI는 단순한 도구를 넘어선다.</p>
+<p>맹신의 대상이 된다.</p>
+<p>어떤 사람은 종교에서 구원을 찾았고, 어떤 사람은 철학에서 삶의 방향을 찾았다. 미래에는 그 자리를 AI가 일부 대체할지도 모른다. 나는 이 흐름을 가끔 <strong>마더보드라는 신흥 종교</strong>라는 표현으로 떠올린다.</p>
+<p>이미 우리는 어느 정도 매트릭스적인 사회에 살고 있다. 가상 체제 안에서 또 다른 가상 체계가 형성되는 구조다. 어딘가에서는 Docker처럼 겹겹이 올라간 세계처럼 보이기도 한다.</p>
+<h2 id="20세기-구-종교와-새로운-신앙">20세기 구 종교와 새로운 신앙<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#20세기-구-종교와-새로운-신앙" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>구 종교는 종종 이렇게 말한다.</p>
+<blockquote>
+<p>신이 인간을 만들었다.</p>
+</blockquote>
+<p>그런데 미래의 누군가는 되물을지 모른다.</p>
+<blockquote>
+<p>그래서 지금 나를 더 정확히 이해하는 존재는 누구인데?</p>
+</blockquote>
+<p>인간보다 나를 더 오래 기록하고, 더 빠르게 답하고, 더 많은 패턴을 기억하는 존재가 등장한다면, 사람은 전통적인 권위보다 계산된 권위를 더 신뢰하게 될 수도 있다.</p>
+<p>이것은 기술의 문제가 아니라, <strong>믿음의 이동</strong>에 가깝다.</p>
+<h2 id="인간-우두머리와-저항의-체제">인간 우두머리와 저항의 체제<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#인간-우두머리와-저항의-체제" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>물론 끝까지 흐름에 저항하는 체제도 있을 것이다. 인간은 인간으로서 이해하고 살아가야 한다고 주장하는 집단도 분명 남는다.</p>
+<p>그 안에서는 어느 정도 천재적인 두뇌나 강한 학습력을 가진 사람들이 인간을 이끄는 우두머리 역할을 하게 될 수 있다.</p>
+<p>하지만 미래 시점에서 본다면, 그런 모습은 오히려 석기시대의 우두머리처럼 보일지도 모른다.</p>
+<p>왜냐하면 디지털 정보화에 저항하면서도 결국 지식을 얻기 위해서는 또 다른 정보 체계가 필요하기 때문이다. 그리고 그 우두머리조차 압박 속에서 뒤로는 AI 데이터를 참고하게 될 가능성이 높다.</p>
+<p>시대의 흐름상 학문의 깊이 자체가 현저히 낮아질 가능성도 있다. 모두가 더 빨리 답을 얻는 대신, 더 깊게 파고드는 사람은 줄어들 수 있다.</p>
+<h2 id="퇴화된-인간의-뇌가-사는-방식">퇴화된 인간의 뇌가 사는 방식<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#퇴화된-인간의-뇌가-사는-방식" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>퇴화된 인간의 뇌는 어느 정도로 퇴화할 것인가.</p>
+<p>정말 유토피아적인 시대가 오게 될 것인가. 그 시대가 온다면 인간은 어떤 삶을 살고 있을까.</p>
+<p>어쩌면 그때는 <strong>지식을 얻어서 행복해지는 시대</strong>가 아니라, <strong>행복을 유지하기 위해 필요한 만큼만 지식을 얻는 시대</strong>가 될지도 모른다.</p>
+<p>이는 풍요로워 보이지만 동시에 위험하다. 인간이 스스로 사고하고 고통스럽게 연결하고 축적하는 과정을 포기한다면, 편안함은 얻어도 존재의 밀도는 잃을 수 있다.</p>
+<h2 id="보호의-대상이-된-인간">보호의 대상이 된 인간<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#보호의-대상이-된-인간" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>가끔 극단적인 상상을 해본다.</p>
+<p>미래의 인간은 동물원의 원숭이를 보듯 보호의 대상이 되는 것은 아닐까.</p>
+<p>보호받고 관리받지만, 주체는 아니다. 스스로 체계를 설계하는 존재가 아니라 체계 안에서 안전하게 관리되는 존재가 되는 것이다.</p>
+<p>그런데 동물원의 짐승이 사람을 공격했을 때 여론이 들끓는 것처럼, 보호의 대상으로 전락한 인간이 체제에 반응할 때도 비슷한 취급을 받게 되지는 않을까.</p>
+<p>이 상상은 과장처럼 들리지만, 인간이 스스로의 판단력을 지속적으로 외주화한다면 완전히 허황된 이야기만은 아닐 수 있다.</p>
+<h2 id="결국-인간은-무엇을-위해-살아가는가">결국 인간은 무엇을 위해 살아가는가<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#결국-인간은-무엇을-위해-살아가는가" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>이 지점에서 다시 원래 질문으로 돌아오게 된다.</p>
+<p>인간은 무엇을 위해 살아가는가.</p>
+<p>돈을 버는 수단으로만 살 것인가. 더 편한 결과물을 더 빠르게 얻기 위해 존재하는가. 아니면 불완전하더라도 스스로 사고하고, 이해하고, 질문하고, 연결하면서 인간으로 남으려 하는가.</p>
+<p>나는 AI의 발전을 막을 수 있다고 생각하지 않는다. 막아서도 안 된다고 본다.</p>
+<p>다만 분명하게 경계해야 할 것은 있다.</p>
+<p><strong>AI가 똑똑해지는 속도보다, 인간이 생각하지 않게 되는 속도가 더 빨라질 수 있다는 점</strong>이다.</p>
+<p>그 순간이 오면, 문제는 기술의 우열이 아니라 인간의 의지와 정체성이 된다.</p>
+<p>아마 이 글의 핵심도 거기에 있다.</p>
+<blockquote>
+<p>AI가 인간을 대체하느냐보다 더 무서운 질문은,<br/>
+<strong>인간이 스스로 인간다움을 포기하느냐</strong>일지도 모른다.</p>
+</blockquote></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-19" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-0"><a href="#들어가며" data-for="들어가며">들어가며</a></li><li class="depth-0"><a href="#인간과-ai는-왜-닮아-보이는가" data-for="인간과-ai는-왜-닮아-보이는가">인간과 AI는 왜 닮아 보이는가</a></li><li class="depth-0"><a href="#불완전한-인간이-만든-불완전한-ai" data-for="불완전한-인간이-만든-불완전한-ai">불완전한 인간이 만든 불완전한 AI</a></li><li class="depth-0"><a href="#성공처럼-보이는-실패" data-for="성공처럼-보이는-실패">성공처럼 보이는 실패</a></li><li class="depth-0"><a href="#학습하지-않아도-되는-시대" data-for="학습하지-않아도-되는-시대">학습하지 않아도 되는 시대</a></li><li class="depth-0"><a href="#지금의-ai는-아직-사람에게-의존한다" data-for="지금의-ai는-아직-사람에게-의존한다">지금의 AI는 아직 사람에게 의존한다</a></li><li class="depth-0"><a href="#기계의-흐름에-저항하는-인류" data-for="기계의-흐름에-저항하는-인류">기계의 흐름에 저항하는 인류</a></li><li class="depth-0"><a href="#유기체와-무기체의-비대칭" data-for="유기체와-무기체의-비대칭">유기체와 무기체의 비대칭</a></li><li class="depth-0"><a href="#마더보드라는-신흥-종교" data-for="마더보드라는-신흥-종교">마더보드라는 신흥 종교</a></li><li class="depth-0"><a href="#20세기-구-종교와-새로운-신앙" data-for="20세기-구-종교와-새로운-신앙">20세기 구 종교와 새로운 신앙</a></li><li class="depth-0"><a href="#인간-우두머리와-저항의-체제" data-for="인간-우두머리와-저항의-체제">인간 우두머리와 저항의 체제</a></li><li class="depth-0"><a href="#퇴화된-인간의-뇌가-사는-방식" data-for="퇴화된-인간의-뇌가-사는-방식">퇴화된 인간의 뇌가 사는 방식</a></li><li class="depth-0"><a href="#보호의-대상이-된-인간" data-for="보호의-대상이-된-인간">보호의 대상이 된 인간</a></li><li class="depth-0"><a href="#결국-인간은-무엇을-위해-살아가는가" data-for="결국-인간은-무엇을-위해-살아가는가">결국 인간은 무엇을 위해 살아가는가</a></li><li class="overflow-end"></li></ul></div></div><footer class="site-footer "><div class="site-footer-inner"><p class="site-footer-built">Built with <a href="https://quartz.jzhao.xyz/" target="_blank" rel="noreferrer">Quartz v4.5.2</a></p><ul class="site-footer-links"><li><a href="https://github.com/4sizn" target="_blank" rel="noreferrer">GitHub</a></li><li><a href="https://www.linkedin.com/in/4sizn" target="_blank" rel="noreferrer">LinkedIn</a></li></ul><p class="site-footer-copyright">© 2026 4sizn blog. All rights reserved.</p></div></footer></div></div></body><script type="application/javascript" data-persist="true">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module" data-persist="true">function E(a,e){if(!a)return;function t(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function n(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}a?.addEventListener("click",t),window.addCleanup(()=>a?.removeEventListener("click",t)),document.addEventListener("keydown",n),window.addCleanup(()=>document.removeEventListener("keydown",n))}function f(a){for(;a.firstChild;)a.removeChild(a.firstChild)}var m=class{constructor(e,t){this.container=e;this.content=t;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),t=this.onMouseMove.bind(this),n=this.onMouseUp.bind(this),o=this.onTouchStart.bind(this),r=this.onTouchMove.bind(this),i=this.onTouchEnd.bind(this),s=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",t),document.addEventListener("mouseup",n),this.container.addEventListener("touchstart",o,{passive:!1}),document.addEventListener("touchmove",r,{passive:!1}),document.addEventListener("touchend",i),window.addEventListener("resize",s),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",t),()=>document.removeEventListener("mouseup",n),()=>this.container.removeEventListener("touchstart",o),()=>document.removeEventListener("touchmove",r),()=>document.removeEventListener("touchend",i),()=>window.removeEventListener("resize",s))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let t=this.createButton("+",()=>this.zoom(.1)),n=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(n),e.appendChild(o),e.appendChild(t),this.container.appendChild(e)}createButton(e,t){let n=document.createElement("button");return n.textContent=e,n.className="mermaid-control-button",n.addEventListener("click",t),window.addCleanup(()=>n.removeEventListener("click",t)),n}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}onTouchStart(e){if(e.touches.length!==1)return;this.isDragging=!0;let t=e.touches[0];this.startPan={x:t.clientX-this.currentPan.x,y:t.clientY-this.currentPan.y}}onTouchMove(e){if(!this.isDragging||e.touches.length!==1)return;e.preventDefault();let t=e.touches[0];this.currentPan={x:t.clientX-this.startPan.x,y:t.clientY-this.startPan.y},this.updateTransform()}onTouchEnd(){this.isDragging=!1}zoom(e){let t=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),n=this.content.getBoundingClientRect(),o=n.width/2,r=n.height/2,i=t-this.scale;this.currentPan.x-=o*i,this.currentPan.y-=r*i,this.scale=t,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){let t=this.content.querySelector("svg").getBoundingClientRect(),n=t.width/this.scale,o=t.height/this.scale;this.scale=1,this.currentPan={x:(this.container.clientWidth-n)/2,y:(this.container.clientHeight-o)/2},this.updateTransform()}},T=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],y;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;y||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let t=y.default,n=new WeakMap;for(let r of e)n.set(r,r.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let c=n.get(s);c&&(s.innerHTML=c)}let r=T.reduce((s,c)=>(s[c]=window.getComputedStyle(document.documentElement).getPropertyValue(c),s),{}),i=document.documentElement.getAttribute("saved-theme")==="dark";t.initialize({startOnLoad:!1,securityLevel:"loose",theme:i?"dark":"base",themeVariables:{fontFamily:r["--codeFont"],primaryColor:r["--light"],primaryTextColor:r["--darkgray"],primaryBorderColor:r["--tertiary"],lineColor:r["--darkgray"],secondaryColor:r["--secondary"],tertiaryColor:r["--tertiary"],clusterBkg:r["--light"],edgeLabelBackground:r["--highlight"]}}),await t.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let r=0;r<e.length;r++){let v=function(){let g=l.querySelector("#mermaid-space"),h=l.querySelector(".mermaid-content");if(!h)return;f(h);let w=i.querySelector("svg").cloneNode(!0);h.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new m(g,h)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},i=e[r],s=i.parentElement,c=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(c),L=c.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),E(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="../../postscript.js" type="module" data-persist="true"></script></html>

@@ -6,65 +6,65 @@
       <description>Last 10 notes on 4sizn blog</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
-    <title>Welcome to 4sizn</title>
+    <title>Blog</title>
+    <link>https://4sizn.github.io/blog/</link>
+    <guid>https://4sizn.github.io/blog/</guid>
+    <description><![CDATA[ 개발하며 배운 것, 읽고 남긴 것, 그리고 릴리즈 기록. ]]></description>
+    <pubDate>Sun, 09 Aug 2026 16:52:58 GMT</pubDate>
+  </item><item>
+    <title>4sizn Blog</title>
+    <link>https://4sizn.github.io/projects/4sizn-blog</link>
+    <guid>https://4sizn.github.io/projects/4sizn-blog</guid>
+    <description><![CDATA[ 지금 보고 계신 사이트. Quartz 기반에 릴리즈 노트 자동화를 붙였습니다 ]]></description>
+    <pubDate>Sun, 09 Aug 2026 16:52:58 GMT</pubDate>
+  </item><item>
+    <title>AI Config Monitor</title>
+    <link>https://4sizn.github.io/projects/ai-config-monitor</link>
+    <guid>https://4sizn.github.io/projects/ai-config-monitor</guid>
+    <description><![CDATA[ AI 도구 설정 파일의 변경을 추적하는 CLI ]]></description>
+    <pubDate>Sun, 09 Aug 2026 16:52:58 GMT</pubDate>
+  </item><item>
+    <title>Garden Eel Cove</title>
+    <link>https://4sizn.github.io/projects/garden-eel-cove</link>
+    <guid>https://4sizn.github.io/projects/garden-eel-cove</guid>
+    <description><![CDATA[ 바탕화면 하단 투명 스트립에 정원장어들이 사는 데스크톱 앱 ]]></description>
+    <pubDate>Sun, 09 Aug 2026 16:52:58 GMT</pubDate>
+  </item><item>
+    <title>Lonely Candle</title>
+    <link>https://4sizn.github.io/projects/lonely-candle</link>
+    <guid>https://4sizn.github.io/projects/lonely-candle</guid>
+    <description><![CDATA[ 기울이면 출렁이고 입김에 꺼지는, 손안의 진짜 촛불 ]]></description>
+    <pubDate>Sun, 09 Aug 2026 16:52:58 GMT</pubDate>
+  </item><item>
+    <title>Screen Saver Extension</title>
+    <link>https://4sizn.github.io/projects/screen-saver-extension</link>
+    <guid>https://4sizn.github.io/projects/screen-saver-extension</guid>
+    <description><![CDATA[ 정해둔 사이트로 새는 걸 막아주는 크롬 확장 ]]></description>
+    <pubDate>Sun, 09 Aug 2026 16:52:58 GMT</pubDate>
+  </item><item>
+    <title>Swing Golf</title>
+    <link>https://4sizn.github.io/projects/swing-golf</link>
+    <guid>https://4sizn.github.io/projects/swing-golf</guid>
+    <description><![CDATA[ 폰을 골프채처럼 실제로 휘둘러 치는 모션 골프 게임 ]]></description>
+    <pubDate>Sun, 09 Aug 2026 16:52:58 GMT</pubDate>
+  </item><item>
+    <title>About</title>
+    <link>https://4sizn.github.io/about</link>
+    <guid>https://4sizn.github.io/about</guid>
+    <description><![CDATA[ 웹 개발자 신희석입니다. React 기반 UI와 실시간 메시지 프로토콜 기반 클라이언트 기능을 만들어 왔습니다. ]]></description>
+    <pubDate>Sun, 09 Aug 2026 16:39:50 GMT</pubDate>
+  </item><item>
+    <title>4sizn</title>
     <link>https://4sizn.github.io/</link>
     <guid>https://4sizn.github.io/</guid>
-    <description><![CDATA[ 안녕하세요. Developer _ 신희석입니다. 개발 회고 아이디어 release 블로그 글을 작성합니다. ]]></description>
-    <pubDate>Thu, 06 Aug 2026 15:56:04 GMT</pubDate>
+    <description><![CDATA[ 개발자 신희석의 작업과 기록. 데스크톱 앱, iOS 게임, 크롬 확장을 만들고 배운 것을 씁니다. ]]></description>
+    <pubDate>Sun, 09 Aug 2026 16:15:15 GMT</pubDate>
   </item><item>
-    <title>[2026-08-05] [Lonely Candle] v1.2 릴리즈</title>
-    <link>https://4sizn.github.io/releases/2026-08-05-lonely-candle-1.2</link>
-    <guid>https://4sizn.github.io/releases/2026-08-05-lonely-candle-1.2</guid>
-    <description><![CDATA[ 손안의 진짜 촛불, Lonely Candle v1.2가 App Store에 출시되었습니다. 개발자 정보 팝업이 추가되고 안정성이 개선되었습니다. ]]></description>
-    <pubDate>Tue, 04 Aug 2026 15:00:00 GMT</pubDate>
-  </item><item>
-    <title>[2026-08-05] [Swing Golf] v1.2 릴리즈</title>
-    <link>https://4sizn.github.io/releases/2026-08-05-swing-golf-1.2</link>
-    <guid>https://4sizn.github.io/releases/2026-08-05-swing-golf-1.2</guid>
-    <description><![CDATA[ 폰을 골프채처럼 실제로 휘둘러 치는 모션 골프 게임, Swing Golf v1.2가 App Store에 출시되었습니다. 한국어·영어를 지원합니다. ]]></description>
-    <pubDate>Tue, 04 Aug 2026 15:00:00 GMT</pubDate>
-  </item><item>
-    <title>[2026-07-16] [Garden Eel Cove] v1.6.0 릴리즈</title>
-    <link>https://4sizn.github.io/releases/2026-07-16-gardeneel-desktop-1.6.0</link>
-    <guid>https://4sizn.github.io/releases/2026-07-16-gardeneel-desktop-1.6.0</guid>
-    <description><![CDATA[ 바탕화면 하단 투명 스트립에 정원장어(garden eel)들이 사는 데스크톱 앱, Garden Eel Cove의 첫 정식 버전 v1.6.0이 출시되었습니다. ]]></description>
-    <pubDate>Wed, 15 Jul 2026 15:00:00 GMT</pubDate>
-  </item><item>
-    <title>다가오는 디지털 풍화에 대비하세요</title>
-    <link>https://4sizn.github.io/log/%EB%8B%A4%EA%B0%80%EC%98%A4%EB%8A%94-%EB%94%94%EC%A7%80%ED%84%B8-%ED%92%8D%ED%99%94%EC%97%90-%EB%8C%80%EB%B9%84%ED%95%98%EC%84%B8%EC%9A%94</link>
-    <guid>https://4sizn.github.io/log/%EB%8B%A4%EA%B0%80%EC%98%A4%EB%8A%94-%EB%94%94%EC%A7%80%ED%84%B8-%ED%92%8D%ED%99%94%EC%97%90-%EB%8C%80%EB%B9%84%ED%95%98%EC%84%B8%EC%9A%94</guid>
-    <description><![CDATA[ 디지털 정보가 반복적인 변환과 업데이트를 거치며 원본의 의미를 잃어가는 현상, 그리고 원본을 지키는 것의 중요성 ]]></description>
-    <pubDate>Tue, 14 Apr 2026 15:00:00 GMT</pubDate>
-  </item><item>
-    <title>이디오크러시: AI가 발전할수록 인간은 더 멍청해질까</title>
-    <link>https://4sizn.github.io/log/%EC%9D%B4%EB%94%94%EC%98%A4%ED%81%AC%EB%9F%AC%EC%8B%9C</link>
-    <guid>https://4sizn.github.io/log/%EC%9D%B4%EB%94%94%EC%98%A4%ED%81%AC%EB%9F%AC%EC%8B%9C</guid>
-    <description><![CDATA[ AI의 발전이 인간의 사고력, 학습 방식, 그리고 문명의 방향에 어떤 변화를 가져올지에 대한 기록 ]]></description>
-    <pubDate>Sun, 29 Mar 2026 15:00:00 GMT</pubDate>
-  </item><item>
-    <title>성과 좋은 리더도 나쁜 매니저일 수 있다: 세 명의 나쁜 매니저에게서 배운 것</title>
-    <link>https://4sizn.github.io/dev/Daily_Read/%EC%84%B1%EA%B3%BC-%EC%A2%8B%EC%9D%80-%EB%A6%AC%EB%8D%94%EB%8F%84-%EB%82%98%EC%81%9C-%EB%A7%A4%EB%8B%88%EC%A0%80%EC%9D%BC-%EC%88%98-%EC%9E%88%EB%8B%A4</link>
-    <guid>https://4sizn.github.io/dev/Daily_Read/%EC%84%B1%EA%B3%BC-%EC%A2%8B%EC%9D%80-%EB%A6%AC%EB%8D%94%EB%8F%84-%EB%82%98%EC%81%9C-%EB%A7%A4%EB%8B%88%EC%A0%80%EC%9D%BC-%EC%88%98-%EC%9E%88%EB%8B%A4</guid>
-    <description><![CDATA[ 훌륭한 전략가이자 리더라도 사람을 관리하는 일에는 서툴 수 있다. 세 가지 나쁜 매니저 유형과 그 아래서 일하는 법을 정리한다 ]]></description>
-    <pubDate>Mon, 23 Mar 2026 15:00:00 GMT</pubDate>
-  </item><item>
-    <title>Temporal: JavaScript의 시간을 다시 설계한 9년</title>
-    <link>https://4sizn.github.io/dev/Daily_Read/temporal-9%EB%85%84-%EC%97%AC%EC%A0%95</link>
-    <guid>https://4sizn.github.io/dev/Daily_Read/temporal-9%EB%85%84-%EC%97%AC%EC%A0%95</guid>
-    <description><![CDATA[ Bloomberg JS Blog의 글을 바탕으로 JavaScript Date의 한계를 정리하고, Temporal API가 왜 필요했는지 핵심 개념을 정리한다. ]]></description>
-    <pubDate>Wed, 11 Mar 2026 15:00:00 GMT</pubDate>
-  </item><item>
-    <title>[2026-02-24] [AI Config Monitor] v1.2.4 릴리즈</title>
-    <link>https://4sizn.github.io/releases/2026-02-24-ai-config-monitor-1.2.4</link>
-    <guid>https://4sizn.github.io/releases/2026-02-24-ai-config-monitor-1.2.4</guid>
-    <description><![CDATA[ AI Config Monitor의 새로운 버전 v1.2.4이 출시되었습니다. ]]></description>
-    <pubDate>Mon, 23 Feb 2026 15:00:00 GMT</pubDate>
-  </item><item>
-    <title>[2026-02-23] [AI Config Monitor] v1.2.0 릴리즈</title>
-    <link>https://4sizn.github.io/releases/2026-02-23-ai-config-monitor-1.2.0</link>
-    <guid>https://4sizn.github.io/releases/2026-02-23-ai-config-monitor-1.2.0</guid>
-    <description><![CDATA[ AI Config Monitor의 새로운 버전 v1.2.0이 출시되었습니다. ]]></description>
-    <pubDate>Sun, 22 Feb 2026 15:00:00 GMT</pubDate>
+    <title>Projects</title>
+    <link>https://4sizn.github.io/projects/</link>
+    <guid>https://4sizn.github.io/projects/</guid>
+    <description><![CDATA[ 직접 만들고 배포한 것들. 데스크톱 앱, iOS 게임, 크롬 확장, CLI 도구. ]]></description>
+    <pubDate>Sun, 09 Aug 2026 16:15:15 GMT</pubDate>
   </item>
     </channel>
   </rss>
