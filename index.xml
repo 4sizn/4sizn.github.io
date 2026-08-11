@@ -18,6 +18,18 @@
     <description><![CDATA[ 휴대폰 센서의 불확실한 움직임을 스윙·볼 물리·테스트 가능한 게임 규칙으로 바꾼 Swing Golf의 개발 기록 ]]></description>
     <pubDate>Wed, 12 Aug 2026 00:00:00 GMT</pubDate>
   </item><item>
+    <title>Blog</title>
+    <link>https://4sizn.github.io/blog/</link>
+    <guid>https://4sizn.github.io/blog/</guid>
+    <description><![CDATA[ 개발하며 배운 것, 읽고 남긴 것, 그리고 릴리즈 기록. ]]></description>
+    <pubDate>Tue, 11 Aug 2026 17:58:18 GMT</pubDate>
+  </item><item>
+    <title>4sizn</title>
+    <link>https://4sizn.github.io/</link>
+    <guid>https://4sizn.github.io/</guid>
+    <description><![CDATA[ 개발자 신희석의 작업과 기록. 데스크톱 앱, iOS 게임, 크롬 확장을 만들고 배운 것을 씁니다. ]]></description>
+    <pubDate>Tue, 11 Aug 2026 17:58:18 GMT</pubDate>
+  </item><item>
     <title>리모트미팅 제작기 — 집합 메시지를 화면 책임 단위의 상태로 되돌리기</title>
     <link>https://4sizn.github.io/blog/projects/remote-meeting</link>
     <guid>https://4sizn.github.io/blog/projects/remote-meeting</guid>
@@ -52,18 +64,6 @@
     <link>https://4sizn.github.io/blog/projects/lonely-candle</link>
     <guid>https://4sizn.github.io/blog/projects/lonely-candle</guid>
     <description><![CDATA[ Mantaflow 기반 레퍼런스를 Godot의 절차적 장면과 마이크·자이로 입력으로 다시 구성한 기록 ]]></description>
-    <pubDate>Tue, 11 Aug 2026 17:14:46 GMT</pubDate>
-  </item><item>
-    <title>모비즌 개발 참여 기록 — 미러링 제품과 WebRTC 다중 화면 POC</title>
-    <link>https://4sizn.github.io/blog/projects/mobizen</link>
-    <guid>https://4sizn.github.io/blog/projects/mobizen</guid>
-    <description><![CDATA[ 원격 제어·결제 화면 유지보수와 최대 4개 화면 공유 POC를 맡았던 이력 기반 기록 ]]></description>
-    <pubDate>Tue, 11 Aug 2026 17:14:46 GMT</pubDate>
-  </item><item>
-    <title>리모트 세미나 개발 참여 기록 — 웨비나의 실시간 상태를 여러 화면에 맞추기</title>
-    <link>https://4sizn.github.io/blog/projects/remote-seminar</link>
-    <guid>https://4sizn.github.io/blog/projects/remote-seminar</guid>
-    <description><![CDATA[ 세미나·관리자 신규 개발에서 BroadcastChannel·정규화·운영 기능을 구현한 이력 기반 기록 ]]></description>
     <pubDate>Tue, 11 Aug 2026 17:14:46 GMT</pubDate>
   </item>
     </channel>
