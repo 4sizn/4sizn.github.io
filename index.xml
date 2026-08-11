@@ -10,61 +10,61 @@
     <link>https://4sizn.github.io/about</link>
     <guid>https://4sizn.github.io/about</guid>
     <description><![CDATA[ 웹 개발자 신희석입니다. React 기반 UI와 실시간 메시지 프로토콜 기반 클라이언트 기능을 만들어 왔습니다. ]]></description>
-    <pubDate>Tue, 11 Aug 2026 15:16:37 GMT</pubDate>
+    <pubDate>Tue, 11 Aug 2026 15:44:15 GMT</pubDate>
   </item><item>
     <title>4sizn Blog</title>
     <link>https://4sizn.github.io/projects/4sizn-blog</link>
     <guid>https://4sizn.github.io/projects/4sizn-blog</guid>
     <description><![CDATA[ 지금 보고 계신 사이트. Quartz 기반에 릴리즈 노트 자동화를 붙였습니다 ]]></description>
-    <pubDate>Tue, 11 Aug 2026 08:17:51 GMT</pubDate>
+    <pubDate>Tue, 11 Aug 2026 15:44:15 GMT</pubDate>
+  </item><item>
+    <title>AI Config Monitor</title>
+    <link>https://4sizn.github.io/projects/ai-config-monitor</link>
+    <guid>https://4sizn.github.io/projects/ai-config-monitor</guid>
+    <description><![CDATA[ AI 도구 설정 파일의 변경을 추적하는 CLI ]]></description>
+    <pubDate>Tue, 11 Aug 2026 15:44:15 GMT</pubDate>
+  </item><item>
+    <title>Garden Eel Cove</title>
+    <link>https://4sizn.github.io/projects/garden-eel-cove</link>
+    <guid>https://4sizn.github.io/projects/garden-eel-cove</guid>
+    <description><![CDATA[ 바탕화면 하단 투명 스트립에 정원장어들이 사는 데스크톱 앱 ]]></description>
+    <pubDate>Tue, 11 Aug 2026 15:44:15 GMT</pubDate>
+  </item><item>
+    <title>Projects</title>
+    <link>https://4sizn.github.io/projects/</link>
+    <guid>https://4sizn.github.io/projects/</guid>
+    <description><![CDATA[ 직접 기획하고 만든 토이 프로젝트와 실무에서 개발한 경력 프로젝트를 나눠 소개합니다. ]]></description>
+    <pubDate>Tue, 11 Aug 2026 15:44:15 GMT</pubDate>
+  </item><item>
+    <title>Lonely Candle</title>
+    <link>https://4sizn.github.io/projects/lonely-candle</link>
+    <guid>https://4sizn.github.io/projects/lonely-candle</guid>
+    <description><![CDATA[ 기울이면 출렁이고 입김에 꺼지는, 손안의 진짜 촛불 ]]></description>
+    <pubDate>Tue, 11 Aug 2026 15:44:15 GMT</pubDate>
+  </item><item>
+    <title>모비즌</title>
+    <link>https://4sizn.github.io/projects/mobizen</link>
+    <guid>https://4sizn.github.io/projects/mobizen</guid>
+    <description><![CDATA[ PC와 모바일을 연결하는 미러링 서비스 및 WebRTC POC ]]></description>
+    <pubDate>Tue, 11 Aug 2026 15:44:15 GMT</pubDate>
+  </item><item>
+    <title>리모트미팅</title>
+    <link>https://4sizn.github.io/projects/remote-meeting</link>
+    <guid>https://4sizn.github.io/projects/remote-meeting</guid>
+    <description><![CDATA[ 레거시 jQuery UI를 React와 Recoil 기반으로 전환한 화상 미팅 서비스 ]]></description>
+    <pubDate>Tue, 11 Aug 2026 15:44:15 GMT</pubDate>
+  </item><item>
+    <title>리모트 세미나</title>
+    <link>https://4sizn.github.io/projects/remote-seminar</link>
+    <guid>https://4sizn.github.io/projects/remote-seminar</guid>
+    <description><![CDATA[ 실시간 데이터 동기화와 관리자 기능을 구축한 웹 기반 웨비나 서비스 ]]></description>
+    <pubDate>Tue, 11 Aug 2026 15:44:15 GMT</pubDate>
   </item><item>
     <title>Screen Saver Extension</title>
     <link>https://4sizn.github.io/projects/screen-saver-extension</link>
     <guid>https://4sizn.github.io/projects/screen-saver-extension</guid>
     <description><![CDATA[ 탭 하나를 전체화면 스크린세이버로 바꿔주는 브라우저 확장 ]]></description>
-    <pubDate>Tue, 11 Aug 2026 06:03:11 GMT</pubDate>
-  </item><item>
-    <title>[2026-02-03] [4sizn Blog] v1.0.0 릴리즈</title>
-    <link>https://4sizn.github.io/blog/releases/2026-02-03-blog-1.0.0</link>
-    <guid>https://4sizn.github.io/blog/releases/2026-02-03-blog-1.0.0</guid>
-    <description><![CDATA[ GitHub 릴리즈를 매일 긁어와 블로그 글로 만드는 자동 동기화 시스템을 붙였습니다. ]]></description>
-    <pubDate>Tue, 11 Aug 2026 00:00:00 GMT</pubDate>
-  </item><item>
-    <title>[2026-02-03] [Screen Saver Extension] v1.0.4 릴리즈</title>
-    <link>https://4sizn.github.io/blog/releases/2026-02-03-screen-saver-extension-1.0.4</link>
-    <guid>https://4sizn.github.io/blog/releases/2026-02-03-screen-saver-extension-1.0.4</guid>
-    <description><![CDATA[ 브라우저 언어에 맞춘 4개 언어 지원과, 스크린세이버 위에 시간을 띄우는 디지털 시계가 들어갔습니다. ]]></description>
-    <pubDate>Tue, 11 Aug 2026 00:00:00 GMT</pubDate>
-  </item><item>
-    <title>[2026-02-04] [Screen Saver Extension] v1.0.6 릴리즈</title>
-    <link>https://4sizn.github.io/blog/releases/2026-02-04-screen-saver-extension-1.0.6</link>
-    <guid>https://4sizn.github.io/blog/releases/2026-02-04-screen-saver-extension-1.0.6</guid>
-    <description><![CDATA[ Chrome Web Store 새 주소와 Google 계정 페이지에서 스크린세이버가 뜨지 않도록 막았습니다. ]]></description>
-    <pubDate>Tue, 11 Aug 2026 00:00:00 GMT</pubDate>
-  </item><item>
-    <title>[2026-02-11] [4sizn Blog] v1.0.1 릴리즈</title>
-    <link>https://4sizn.github.io/blog/releases/2026-02-11-blog-1.0.1</link>
-    <guid>https://4sizn.github.io/blog/releases/2026-02-11-blog-1.0.1</guid>
-    <description><![CDATA[ 동기화가 스스로를 다시 트리거하던 구멍을 막고, 블로그와 Quartz의 버전 번호를 갈랐습니다. ]]></description>
-    <pubDate>Tue, 11 Aug 2026 00:00:00 GMT</pubDate>
-  </item><item>
-    <title>[2026-02-23] [AI Config Monitor] v1.2.0 릴리즈</title>
-    <link>https://4sizn.github.io/blog/releases/2026-02-23-ai-config-monitor-1.2.0</link>
-    <guid>https://4sizn.github.io/blog/releases/2026-02-23-ai-config-monitor-1.2.0</guid>
-    <description><![CDATA[ 서버가 내려간 것을 놓치지 않도록 깜빡이는 ALERT 배너를 넣고 헬스체크 주기를 30초에서 10초로 줄였습니다. ]]></description>
-    <pubDate>Tue, 11 Aug 2026 00:00:00 GMT</pubDate>
-  </item><item>
-    <title>[2026-02-23] [AI Config Monitor] v1.2.1 릴리즈</title>
-    <link>https://4sizn.github.io/blog/releases/2026-02-23-ai-config-monitor-1.2.1</link>
-    <guid>https://4sizn.github.io/blog/releases/2026-02-23-ai-config-monitor-1.2.1</guid>
-    <description><![CDATA[ Codex의 프로젝트 MCP 설정을 읽고, --project 를 생략하면 현재 폴더를 프로젝트로 삼습니다. ]]></description>
-    <pubDate>Tue, 11 Aug 2026 00:00:00 GMT</pubDate>
-  </item><item>
-    <title>[2026-02-23] [AI Config Monitor] v1.2.2 릴리즈</title>
-    <link>https://4sizn.github.io/blog/releases/2026-02-23-ai-config-monitor-1.2.2</link>
-    <guid>https://4sizn.github.io/blog/releases/2026-02-23-ai-config-monitor-1.2.2</guid>
-    <description><![CDATA[ 화면에 잔상이 남고 헤더가 겹쳐 보이던 터미널 렌더링 문제를 고쳤습니다. ]]></description>
-    <pubDate>Tue, 11 Aug 2026 00:00:00 GMT</pubDate>
+    <pubDate>Tue, 11 Aug 2026 15:44:15 GMT</pubDate>
   </item>
     </channel>
   </rss>
