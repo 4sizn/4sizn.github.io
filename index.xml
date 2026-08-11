@@ -6,6 +6,12 @@
       <description>Last 10 notes on 4sizn blog</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>React.FC는 함수형 프로그래밍을 뜻하지 않는다</title>
+    <link>https://4sizn.github.io/blog/dev/react-fc-is-not-functional-component</link>
+    <guid>https://4sizn.github.io/blog/dev/react-fc-is-not-functional-component</guid>
+    <description><![CDATA[ React의 function component와 함수형 프로그래밍을 같은 말로 부르지 않아야 하는 이유 ]]></description>
+    <pubDate>Wed, 12 Aug 2026 00:00:00 GMT</pubDate>
+  </item><item>
     <title>Swing Golf 제작기 — 신체 모션을 재현 가능한 게임 입력으로 바꾸기</title>
     <link>https://4sizn.github.io/blog/projects/swing-golf</link>
     <guid>https://4sizn.github.io/blog/projects/swing-golf</guid>
@@ -58,12 +64,6 @@
     <link>https://4sizn.github.io/blog/projects/remote-seminar</link>
     <guid>https://4sizn.github.io/blog/projects/remote-seminar</guid>
     <description><![CDATA[ 세미나·관리자 신규 개발에서 BroadcastChannel·정규화·운영 기능을 구현한 이력 기반 기록 ]]></description>
-    <pubDate>Tue, 11 Aug 2026 17:14:46 GMT</pubDate>
-  </item><item>
-    <title>Screen Saver Extension 제작기 — 현재 탭을 덮되, 안전한 페이지는 건드리지 않기</title>
-    <link>https://4sizn.github.io/blog/projects/screen-saver-extension</link>
-    <guid>https://4sizn.github.io/blog/projects/screen-saver-extension</guid>
-    <description><![CDATA[ 탭별 전체화면 상태·브라우저 저장소·제한 페이지 정책을 분리한 확장 개발 기록 ]]></description>
     <pubDate>Tue, 11 Aug 2026 17:14:46 GMT</pubDate>
   </item>
     </channel>
