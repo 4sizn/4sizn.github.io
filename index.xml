@@ -6,6 +6,12 @@
       <description>Last 10 notes on 4sizn blog</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>4sizn Blog</title>
+    <link>https://4sizn.github.io/projects/4sizn-blog</link>
+    <guid>https://4sizn.github.io/projects/4sizn-blog</guid>
+    <description><![CDATA[ 지금 보고 계신 사이트. Quartz 기반에 릴리즈 노트 자동화를 붙였습니다 ]]></description>
+    <pubDate>Tue, 11 Aug 2026 08:17:51 GMT</pubDate>
+  </item><item>
     <title>Screen Saver Extension</title>
     <link>https://4sizn.github.io/projects/screen-saver-extension</link>
     <guid>https://4sizn.github.io/projects/screen-saver-extension</guid>
@@ -58,12 +64,6 @@
     <link>https://4sizn.github.io/blog/releases/2026-02-24-ai-config-monitor-1.2.3</link>
     <guid>https://4sizn.github.io/blog/releases/2026-02-24-ai-config-monitor-1.2.3</guid>
     <description><![CDATA[ Codex 설정 중 .codex/config.toml 에 적어둔 MCP 서버를 읽지 못하던 문제를 고쳤습니다. ]]></description>
-    <pubDate>Mon, 10 Aug 2026 15:00:00 GMT</pubDate>
-  </item><item>
-    <title>[2026-02-24] [AI Config Monitor] v1.2.4 릴리즈</title>
-    <link>https://4sizn.github.io/blog/releases/2026-02-24-ai-config-monitor-1.2.4</link>
-    <guid>https://4sizn.github.io/blog/releases/2026-02-24-ai-config-monitor-1.2.4</guid>
-    <description><![CDATA[ ai-monitor update 로 새 버전을 확인하고 그 자리에서 설치할 수 있게 했습니다. ]]></description>
     <pubDate>Mon, 10 Aug 2026 15:00:00 GMT</pubDate>
   </item>
     </channel>
