@@ -6,6 +6,12 @@
       <description>Last 10 notes on 4sizn blog</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>About</title>
+    <link>https://4sizn.github.io/about</link>
+    <guid>https://4sizn.github.io/about</guid>
+    <description><![CDATA[ 웹 개발자 신희석입니다. React 기반 UI와 실시간 메시지 프로토콜 기반 클라이언트 기능을 만들어 왔습니다. ]]></description>
+    <pubDate>Tue, 11 Aug 2026 14:45:41 GMT</pubDate>
+  </item><item>
     <title>4sizn Blog</title>
     <link>https://4sizn.github.io/projects/4sizn-blog</link>
     <guid>https://4sizn.github.io/projects/4sizn-blog</guid>
@@ -58,12 +64,6 @@
     <link>https://4sizn.github.io/blog/releases/2026-02-23-ai-config-monitor-1.2.2</link>
     <guid>https://4sizn.github.io/blog/releases/2026-02-23-ai-config-monitor-1.2.2</guid>
     <description><![CDATA[ 화면에 잔상이 남고 헤더가 겹쳐 보이던 터미널 렌더링 문제를 고쳤습니다. ]]></description>
-    <pubDate>Tue, 11 Aug 2026 00:00:00 GMT</pubDate>
-  </item><item>
-    <title>[2026-02-24] [AI Config Monitor] v1.2.3 릴리즈</title>
-    <link>https://4sizn.github.io/blog/releases/2026-02-24-ai-config-monitor-1.2.3</link>
-    <guid>https://4sizn.github.io/blog/releases/2026-02-24-ai-config-monitor-1.2.3</guid>
-    <description><![CDATA[ Codex 설정 중 .codex/config.toml 에 적어둔 MCP 서버를 읽지 못하던 문제를 고쳤습니다. ]]></description>
     <pubDate>Tue, 11 Aug 2026 00:00:00 GMT</pubDate>
   </item>
     </channel>
