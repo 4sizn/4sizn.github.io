@@ -12,59 +12,59 @@
     <description><![CDATA[ 탭 하나를 전체화면 스크린세이버로 바꿔주는 브라우저 확장 ]]></description>
     <pubDate>Tue, 11 Aug 2026 06:03:11 GMT</pubDate>
   </item><item>
-    <title>[2026-08-11] [Screen Saver Extension] Chrome Web Store 등록 준비</title>
-    <link>https://4sizn.github.io/blog/releases/2026-08-11-screen-saver-extension-store-assets</link>
-    <guid>https://4sizn.github.io/blog/releases/2026-08-11-screen-saver-extension-store-assets</guid>
-    <description><![CDATA[ Screen Saver Extension v1.0.6의 Chrome Web Store 제출 자산을 준비했습니다. 등록용 스크린샷 5장과 권한 정당화 문서를 정리했습니다. ]]></description>
+    <title>[2026-02-03] [4sizn Blog] v1.0.0 릴리즈</title>
+    <link>https://4sizn.github.io/blog/releases/2026-02-03-blog-1.0.0</link>
+    <guid>https://4sizn.github.io/blog/releases/2026-02-03-blog-1.0.0</guid>
+    <description><![CDATA[ GitHub 릴리즈를 매일 긁어와 블로그 글로 만드는 자동 동기화 시스템을 붙였습니다. ]]></description>
     <pubDate>Mon, 10 Aug 2026 15:00:00 GMT</pubDate>
   </item><item>
-    <title>Blog</title>
-    <link>https://4sizn.github.io/blog/</link>
-    <guid>https://4sizn.github.io/blog/</guid>
-    <description><![CDATA[ 개발하며 배운 것, 읽고 남긴 것, 그리고 릴리즈 기록. ]]></description>
-    <pubDate>Sun, 09 Aug 2026 16:52:58 GMT</pubDate>
+    <title>[2026-02-03] [Screen Saver Extension] v1.0.4 릴리즈</title>
+    <link>https://4sizn.github.io/blog/releases/2026-02-03-screen-saver-extension-1.0.4</link>
+    <guid>https://4sizn.github.io/blog/releases/2026-02-03-screen-saver-extension-1.0.4</guid>
+    <description><![CDATA[ 브라우저 언어에 맞춘 4개 언어 지원과, 스크린세이버 위에 시간을 띄우는 디지털 시계가 들어갔습니다. ]]></description>
+    <pubDate>Mon, 10 Aug 2026 15:00:00 GMT</pubDate>
   </item><item>
-    <title>4sizn Blog</title>
-    <link>https://4sizn.github.io/projects/4sizn-blog</link>
-    <guid>https://4sizn.github.io/projects/4sizn-blog</guid>
-    <description><![CDATA[ 지금 보고 계신 사이트. Quartz 기반에 릴리즈 노트 자동화를 붙였습니다 ]]></description>
-    <pubDate>Sun, 09 Aug 2026 16:52:58 GMT</pubDate>
+    <title>[2026-02-04] [Screen Saver Extension] v1.0.6 릴리즈</title>
+    <link>https://4sizn.github.io/blog/releases/2026-02-04-screen-saver-extension-1.0.6</link>
+    <guid>https://4sizn.github.io/blog/releases/2026-02-04-screen-saver-extension-1.0.6</guid>
+    <description><![CDATA[ Chrome Web Store 새 주소와 Google 계정 페이지에서 스크린세이버가 뜨지 않도록 막았습니다. ]]></description>
+    <pubDate>Mon, 10 Aug 2026 15:00:00 GMT</pubDate>
   </item><item>
-    <title>AI Config Monitor</title>
-    <link>https://4sizn.github.io/projects/ai-config-monitor</link>
-    <guid>https://4sizn.github.io/projects/ai-config-monitor</guid>
-    <description><![CDATA[ AI 도구 설정 파일의 변경을 추적하는 CLI ]]></description>
-    <pubDate>Sun, 09 Aug 2026 16:52:58 GMT</pubDate>
+    <title>[2026-02-11] [4sizn Blog] v1.0.1 릴리즈</title>
+    <link>https://4sizn.github.io/blog/releases/2026-02-11-blog-1.0.1</link>
+    <guid>https://4sizn.github.io/blog/releases/2026-02-11-blog-1.0.1</guid>
+    <description><![CDATA[ 동기화가 스스로를 다시 트리거하던 구멍을 막고, 블로그와 Quartz의 버전 번호를 갈랐습니다. ]]></description>
+    <pubDate>Mon, 10 Aug 2026 15:00:00 GMT</pubDate>
   </item><item>
-    <title>Garden Eel Cove</title>
-    <link>https://4sizn.github.io/projects/garden-eel-cove</link>
-    <guid>https://4sizn.github.io/projects/garden-eel-cove</guid>
-    <description><![CDATA[ 바탕화면 하단 투명 스트립에 정원장어들이 사는 데스크톱 앱 ]]></description>
-    <pubDate>Sun, 09 Aug 2026 16:52:58 GMT</pubDate>
+    <title>[2026-02-23] [AI Config Monitor] v1.2.0 릴리즈</title>
+    <link>https://4sizn.github.io/blog/releases/2026-02-23-ai-config-monitor-1.2.0</link>
+    <guid>https://4sizn.github.io/blog/releases/2026-02-23-ai-config-monitor-1.2.0</guid>
+    <description><![CDATA[ 서버가 내려간 것을 놓치지 않도록 깜빡이는 ALERT 배너를 넣고 헬스체크 주기를 30초에서 10초로 줄였습니다. ]]></description>
+    <pubDate>Mon, 10 Aug 2026 15:00:00 GMT</pubDate>
   </item><item>
-    <title>Lonely Candle</title>
-    <link>https://4sizn.github.io/projects/lonely-candle</link>
-    <guid>https://4sizn.github.io/projects/lonely-candle</guid>
-    <description><![CDATA[ 기울이면 출렁이고 입김에 꺼지는, 손안의 진짜 촛불 ]]></description>
-    <pubDate>Sun, 09 Aug 2026 16:52:58 GMT</pubDate>
+    <title>[2026-02-23] [AI Config Monitor] v1.2.1 릴리즈</title>
+    <link>https://4sizn.github.io/blog/releases/2026-02-23-ai-config-monitor-1.2.1</link>
+    <guid>https://4sizn.github.io/blog/releases/2026-02-23-ai-config-monitor-1.2.1</guid>
+    <description><![CDATA[ Codex의 프로젝트 MCP 설정을 읽고, --project 를 생략하면 현재 폴더를 프로젝트로 삼습니다. ]]></description>
+    <pubDate>Mon, 10 Aug 2026 15:00:00 GMT</pubDate>
   </item><item>
-    <title>Swing Golf</title>
-    <link>https://4sizn.github.io/projects/swing-golf</link>
-    <guid>https://4sizn.github.io/projects/swing-golf</guid>
-    <description><![CDATA[ 폰을 골프채처럼 실제로 휘둘러 치는 모션 골프 게임 ]]></description>
-    <pubDate>Sun, 09 Aug 2026 16:52:58 GMT</pubDate>
+    <title>[2026-02-23] [AI Config Monitor] v1.2.2 릴리즈</title>
+    <link>https://4sizn.github.io/blog/releases/2026-02-23-ai-config-monitor-1.2.2</link>
+    <guid>https://4sizn.github.io/blog/releases/2026-02-23-ai-config-monitor-1.2.2</guid>
+    <description><![CDATA[ 화면에 잔상이 남고 헤더가 겹쳐 보이던 터미널 렌더링 문제를 고쳤습니다. ]]></description>
+    <pubDate>Mon, 10 Aug 2026 15:00:00 GMT</pubDate>
   </item><item>
-    <title>About</title>
-    <link>https://4sizn.github.io/about</link>
-    <guid>https://4sizn.github.io/about</guid>
-    <description><![CDATA[ 웹 개발자 신희석입니다. React 기반 UI와 실시간 메시지 프로토콜 기반 클라이언트 기능을 만들어 왔습니다. ]]></description>
-    <pubDate>Sun, 09 Aug 2026 16:39:50 GMT</pubDate>
+    <title>[2026-02-24] [AI Config Monitor] v1.2.3 릴리즈</title>
+    <link>https://4sizn.github.io/blog/releases/2026-02-24-ai-config-monitor-1.2.3</link>
+    <guid>https://4sizn.github.io/blog/releases/2026-02-24-ai-config-monitor-1.2.3</guid>
+    <description><![CDATA[ Codex 설정 중 .codex/config.toml 에 적어둔 MCP 서버를 읽지 못하던 문제를 고쳤습니다. ]]></description>
+    <pubDate>Mon, 10 Aug 2026 15:00:00 GMT</pubDate>
   </item><item>
-    <title>4sizn</title>
-    <link>https://4sizn.github.io/</link>
-    <guid>https://4sizn.github.io/</guid>
-    <description><![CDATA[ 개발자 신희석의 작업과 기록. 데스크톱 앱, iOS 게임, 크롬 확장을 만들고 배운 것을 씁니다. ]]></description>
-    <pubDate>Sun, 09 Aug 2026 16:15:15 GMT</pubDate>
+    <title>[2026-02-24] [AI Config Monitor] v1.2.4 릴리즈</title>
+    <link>https://4sizn.github.io/blog/releases/2026-02-24-ai-config-monitor-1.2.4</link>
+    <guid>https://4sizn.github.io/blog/releases/2026-02-24-ai-config-monitor-1.2.4</guid>
+    <description><![CDATA[ ai-monitor update 로 새 버전을 확인하고 그 자리에서 설치할 수 있게 했습니다. ]]></description>
+    <pubDate>Mon, 10 Aug 2026 15:00:00 GMT</pubDate>
   </item>
     </channel>
   </rss>
