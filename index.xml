@@ -6,6 +6,18 @@
       <description>Last 10 notes on 4sizn blog</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>Blog</title>
+    <link>https://4sizn.github.io/blog/</link>
+    <guid>https://4sizn.github.io/blog/</guid>
+    <description><![CDATA[ 개발하며 배운 것, 읽고 남긴 것, 그리고 릴리즈 기록. ]]></description>
+    <pubDate>Tue, 11 Aug 2026 16:38:44 GMT</pubDate>
+  </item><item>
+    <title>Projects</title>
+    <link>https://4sizn.github.io/blog/projects/</link>
+    <guid>https://4sizn.github.io/blog/projects/</guid>
+    <description><![CDATA[ 직접 만들고 운영하는 제품과 게임을 기록합니다. ]]></description>
+    <pubDate>Tue, 11 Aug 2026 16:38:44 GMT</pubDate>
+  </item><item>
     <title>About</title>
     <link>https://4sizn.github.io/about</link>
     <guid>https://4sizn.github.io/about</guid>
@@ -52,18 +64,6 @@
     <link>https://4sizn.github.io/projects/remote-meeting</link>
     <guid>https://4sizn.github.io/projects/remote-meeting</guid>
     <description><![CDATA[ 레거시 jQuery UI를 React와 Recoil 기반으로 전환한 화상 미팅 서비스 ]]></description>
-    <pubDate>Tue, 11 Aug 2026 15:44:15 GMT</pubDate>
-  </item><item>
-    <title>리모트 세미나</title>
-    <link>https://4sizn.github.io/projects/remote-seminar</link>
-    <guid>https://4sizn.github.io/projects/remote-seminar</guid>
-    <description><![CDATA[ 실시간 데이터 동기화와 관리자 기능을 구축한 웹 기반 웨비나 서비스 ]]></description>
-    <pubDate>Tue, 11 Aug 2026 15:44:15 GMT</pubDate>
-  </item><item>
-    <title>Screen Saver Extension</title>
-    <link>https://4sizn.github.io/projects/screen-saver-extension</link>
-    <guid>https://4sizn.github.io/projects/screen-saver-extension</guid>
-    <description><![CDATA[ 탭 하나를 전체화면 스크린세이버로 바꿔주는 브라우저 확장 ]]></description>
     <pubDate>Tue, 11 Aug 2026 15:44:15 GMT</pubDate>
   </item>
     </channel>
