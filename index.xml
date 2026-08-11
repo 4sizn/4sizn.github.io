@@ -6,6 +6,18 @@
       <description>Last 10 notes on 4sizn blog</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>Screen Saver Extension</title>
+    <link>https://4sizn.github.io/projects/screen-saver-extension</link>
+    <guid>https://4sizn.github.io/projects/screen-saver-extension</guid>
+    <description><![CDATA[ 탭 하나를 전체화면 스크린세이버로 바꿔주는 브라우저 확장 ]]></description>
+    <pubDate>Tue, 11 Aug 2026 06:03:11 GMT</pubDate>
+  </item><item>
+    <title>[2026-08-11] [Screen Saver Extension] Chrome Web Store 등록 준비</title>
+    <link>https://4sizn.github.io/blog/releases/2026-08-11-screen-saver-extension-store-assets</link>
+    <guid>https://4sizn.github.io/blog/releases/2026-08-11-screen-saver-extension-store-assets</guid>
+    <description><![CDATA[ Screen Saver Extension v1.0.6의 Chrome Web Store 제출 자산을 준비했습니다. 등록용 스크린샷 5장과 권한 정당화 문서를 정리했습니다. ]]></description>
+    <pubDate>Mon, 10 Aug 2026 15:00:00 GMT</pubDate>
+  </item><item>
     <title>Blog</title>
     <link>https://4sizn.github.io/blog/</link>
     <guid>https://4sizn.github.io/blog/</guid>
@@ -36,12 +48,6 @@
     <description><![CDATA[ 기울이면 출렁이고 입김에 꺼지는, 손안의 진짜 촛불 ]]></description>
     <pubDate>Sun, 09 Aug 2026 16:52:58 GMT</pubDate>
   </item><item>
-    <title>Screen Saver Extension</title>
-    <link>https://4sizn.github.io/projects/screen-saver-extension</link>
-    <guid>https://4sizn.github.io/projects/screen-saver-extension</guid>
-    <description><![CDATA[ 정해둔 사이트로 새는 걸 막아주는 크롬 확장 ]]></description>
-    <pubDate>Sun, 09 Aug 2026 16:52:58 GMT</pubDate>
-  </item><item>
     <title>Swing Golf</title>
     <link>https://4sizn.github.io/projects/swing-golf</link>
     <guid>https://4sizn.github.io/projects/swing-golf</guid>
@@ -58,12 +64,6 @@
     <link>https://4sizn.github.io/</link>
     <guid>https://4sizn.github.io/</guid>
     <description><![CDATA[ 개발자 신희석의 작업과 기록. 데스크톱 앱, iOS 게임, 크롬 확장을 만들고 배운 것을 씁니다. ]]></description>
-    <pubDate>Sun, 09 Aug 2026 16:15:15 GMT</pubDate>
-  </item><item>
-    <title>Projects</title>
-    <link>https://4sizn.github.io/projects/</link>
-    <guid>https://4sizn.github.io/projects/</guid>
-    <description><![CDATA[ 직접 만들고 배포한 것들. 데스크톱 앱, iOS 게임, 크롬 확장, CLI 도구. ]]></description>
     <pubDate>Sun, 09 Aug 2026 16:15:15 GMT</pubDate>
   </item>
     </channel>
