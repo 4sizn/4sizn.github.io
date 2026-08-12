@@ -10,7 +10,13 @@
     <link>https://4sizn.github.io/blog/projects/mobizen</link>
     <guid>https://4sizn.github.io/blog/projects/mobizen</guid>
     <description><![CDATA[ PC·모바일 원격 제어·미러링 유지보수, 결제 페이지, Mobizen Party 다중 화면 POC를 맡은 프로젝트 기록 ]]></description>
-    <pubDate>Wed, 12 Aug 2026 05:27:01 GMT</pubDate>
+    <pubDate>Wed, 12 Aug 2026 05:39:17 GMT</pubDate>
+  </item><item>
+    <title>SpecialForce ARVR 개발 참여 기록 — VR FPS의 행동 상태와 사용자 안내를 함께 설계하기</title>
+    <link>https://4sizn.github.io/blog/projects/specialforce-arvr</link>
+    <guid>https://4sizn.github.io/blog/projects/specialforce-arvr</guid>
+    <description><![CDATA[ Unity 기반 VR 밀리터리 FPS에서 FSM AI·UI·튜토리얼·VR UX와 QA를 맡은 프로젝트 기록 ]]></description>
+    <pubDate>Wed, 12 Aug 2026 05:39:17 GMT</pubDate>
   </item><item>
     <title>리모트미팅 제작기 — 집합 메시지를 화면 책임 단위의 상태로 되돌리기</title>
     <link>https://4sizn.github.io/blog/projects/remote-meeting</link>
@@ -22,12 +28,6 @@
     <link>https://4sizn.github.io/blog/projects/remote-seminar</link>
     <guid>https://4sizn.github.io/blog/projects/remote-seminar</guid>
     <description><![CDATA[ React·Redux 기반 웨비나와 관리자 신규 개발에서 BroadcastChannel·정규화·운영 기능을 구현한 프로젝트 기록 ]]></description>
-    <pubDate>Wed, 12 Aug 2026 05:27:01 GMT</pubDate>
-  </item><item>
-    <title>SpecialForce ARVR 개발 참여 기록 — VR FPS의 행동 상태와 사용자 안내를 함께 설계하기</title>
-    <link>https://4sizn.github.io/blog/projects/specialforce-arvr</link>
-    <guid>https://4sizn.github.io/blog/projects/specialforce-arvr</guid>
-    <description><![CDATA[ Unity 기반 VR 밀리터리 FPS에서 FSM AI·UI·튜토리얼·VR UX와 QA를 맡은 프로젝트 기록 ]]></description>
     <pubDate>Wed, 12 Aug 2026 05:27:01 GMT</pubDate>
   </item><item>
     <title>모비즌</title>
