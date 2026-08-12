@@ -6,6 +6,24 @@
       <description>Last 10 notes on 4sizn blog</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>모비즌</title>
+    <link>https://4sizn.github.io/projects/mobizen</link>
+    <guid>https://4sizn.github.io/projects/mobizen</guid>
+    <description><![CDATA[ PC와 모바일을 연결하는 미러링 서비스 및 WebRTC POC ]]></description>
+    <pubDate>Wed, 12 Aug 2026 04:01:01 GMT</pubDate>
+  </item><item>
+    <title>리모트 세미나</title>
+    <link>https://4sizn.github.io/projects/remote-seminar</link>
+    <guid>https://4sizn.github.io/projects/remote-seminar</guid>
+    <description><![CDATA[ 실시간 데이터 동기화와 관리자 기능을 구축한 웹 기반 웨비나 서비스 ]]></description>
+    <pubDate>Wed, 12 Aug 2026 04:01:01 GMT</pubDate>
+  </item><item>
+    <title>SpecialForce ARVR</title>
+    <link>https://4sizn.github.io/projects/specialforce-arvr</link>
+    <guid>https://4sizn.github.io/projects/specialforce-arvr</guid>
+    <description><![CDATA[ Unity와 FSM 기반 AI로 제작한 VR FPS 게임 ]]></description>
+    <pubDate>Wed, 12 Aug 2026 04:01:01 GMT</pubDate>
+  </item><item>
     <title>AI Config Monitor</title>
     <link>https://4sizn.github.io/projects/ai-config-monitor</link>
     <guid>https://4sizn.github.io/projects/ai-config-monitor</guid>
@@ -18,34 +36,16 @@
     <description><![CDATA[ 기울이면 출렁이고 입김에 꺼지는, 손안의 진짜 촛불 ]]></description>
     <pubDate>Wed, 12 Aug 2026 02:53:43 GMT</pubDate>
   </item><item>
-    <title>모비즌</title>
-    <link>https://4sizn.github.io/projects/mobizen</link>
-    <guid>https://4sizn.github.io/projects/mobizen</guid>
-    <description><![CDATA[ PC와 모바일을 연결하는 미러링 서비스 및 WebRTC POC ]]></description>
-    <pubDate>Wed, 12 Aug 2026 02:53:43 GMT</pubDate>
-  </item><item>
     <title>리모트미팅</title>
     <link>https://4sizn.github.io/projects/remote-meeting</link>
     <guid>https://4sizn.github.io/projects/remote-meeting</guid>
     <description><![CDATA[ 레거시 jQuery UI를 React와 Recoil 기반으로 전환한 화상 미팅 서비스 ]]></description>
     <pubDate>Wed, 12 Aug 2026 02:53:43 GMT</pubDate>
   </item><item>
-    <title>리모트 세미나</title>
-    <link>https://4sizn.github.io/projects/remote-seminar</link>
-    <guid>https://4sizn.github.io/projects/remote-seminar</guid>
-    <description><![CDATA[ 실시간 데이터 동기화와 관리자 기능을 구축한 웹 기반 웨비나 서비스 ]]></description>
-    <pubDate>Wed, 12 Aug 2026 02:53:43 GMT</pubDate>
-  </item><item>
     <title>Screen Saver Extension</title>
     <link>https://4sizn.github.io/projects/screen-saver-extension</link>
     <guid>https://4sizn.github.io/projects/screen-saver-extension</guid>
     <description><![CDATA[ 탭 하나를 전체화면 스크린세이버로 바꿔주는 브라우저 확장 ]]></description>
-    <pubDate>Wed, 12 Aug 2026 02:53:43 GMT</pubDate>
-  </item><item>
-    <title>SpecialForce ARVR</title>
-    <link>https://4sizn.github.io/projects/specialforce-arvr</link>
-    <guid>https://4sizn.github.io/projects/specialforce-arvr</guid>
-    <description><![CDATA[ Unity와 FSM 기반 AI로 제작한 VR FPS 게임 ]]></description>
     <pubDate>Wed, 12 Aug 2026 02:53:43 GMT</pubDate>
   </item><item>
     <title>Swing Golf</title>
