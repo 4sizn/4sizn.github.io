@@ -6,6 +6,18 @@
       <description>Last 10 notes on 4sizn blog</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>4sizn Blog</title>
+    <link>https://4sizn.github.io/projects/4sizn-blog</link>
+    <guid>https://4sizn.github.io/projects/4sizn-blog</guid>
+    <description><![CDATA[ 지금 보고 계신 사이트. Quartz 기반에 릴리즈 노트 자동화를 붙였습니다 ]]></description>
+    <pubDate>Wed, 12 Aug 2026 12:34:18 GMT</pubDate>
+  </item><item>
+    <title>Garden Eel Cove</title>
+    <link>https://4sizn.github.io/projects/garden-eel-cove</link>
+    <guid>https://4sizn.github.io/projects/garden-eel-cove</guid>
+    <description><![CDATA[ 바탕화면 하단 투명 스트립에 정원장어들이 사는 데스크톱 앱 ]]></description>
+    <pubDate>Wed, 12 Aug 2026 12:34:18 GMT</pubDate>
+  </item><item>
     <title>리모트미팅</title>
     <link>https://4sizn.github.io/blog/projects/remote-meeting</link>
     <guid>https://4sizn.github.io/blog/projects/remote-meeting</guid>
@@ -52,18 +64,6 @@
     <link>https://4sizn.github.io/blog/projects/</link>
     <guid>https://4sizn.github.io/blog/projects/</guid>
     <description><![CDATA[ 프로젝트별 제품 맥락, 작업 범위, 구현 기록을 모은 아카이브 ]]></description>
-    <pubDate>Wed, 12 Aug 2026 06:28:14 GMT</pubDate>
-  </item><item>
-    <title>Lonely Candle</title>
-    <link>https://4sizn.github.io/blog/projects/lonely-candle</link>
-    <guid>https://4sizn.github.io/blog/projects/lonely-candle</guid>
-    <description><![CDATA[ 기울기와 입김에 반응하는 촛불 장면을 Godot으로 구성한 모바일 앱이다. ]]></description>
-    <pubDate>Wed, 12 Aug 2026 06:28:14 GMT</pubDate>
-  </item><item>
-    <title>모비즌</title>
-    <link>https://4sizn.github.io/blog/projects/mobizen</link>
-    <guid>https://4sizn.github.io/blog/projects/mobizen</guid>
-    <description><![CDATA[ 2018년 12월부터 2020년 12월까지 원격 제어·미러링 서비스와 WebRTC POC에 참여한 기록 ]]></description>
     <pubDate>Wed, 12 Aug 2026 06:28:14 GMT</pubDate>
   </item>
     </channel>
