@@ -6,6 +6,12 @@
       <description>Last 10 notes on 4sizn blog</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>Swing Golf</title>
+    <link>https://4sizn.github.io/projects/swing-golf</link>
+    <guid>https://4sizn.github.io/projects/swing-golf</guid>
+    <description><![CDATA[ 휴대폰을 골프채처럼 휘두르는 모션 입력 골프 게임 ]]></description>
+    <pubDate>Wed, 12 Aug 2026 02:38:54 GMT</pubDate>
+  </item><item>
     <title>React.FC는 함수형 프로그래밍을 뜻하지 않는다</title>
     <link>https://4sizn.github.io/blog/dev/react-fc-is-not-functional-component</link>
     <guid>https://4sizn.github.io/blog/dev/react-fc-is-not-functional-component</guid>
@@ -58,12 +64,6 @@
     <link>https://4sizn.github.io/blog/projects/</link>
     <guid>https://4sizn.github.io/blog/projects/</guid>
     <description><![CDATA[ 코드·테스트·이력 자료를 바탕으로 문제와 제작 결정을 남기는 개발 기록 아카이브 ]]></description>
-    <pubDate>Tue, 11 Aug 2026 17:14:46 GMT</pubDate>
-  </item><item>
-    <title>Lonely Candle 제작기 — Blender의 촛불 룩을 모바일 상호작용으로 옮기기</title>
-    <link>https://4sizn.github.io/blog/projects/lonely-candle</link>
-    <guid>https://4sizn.github.io/blog/projects/lonely-candle</guid>
-    <description><![CDATA[ Mantaflow 기반 레퍼런스를 Godot의 절차적 장면과 마이크·자이로 입력으로 다시 구성한 기록 ]]></description>
     <pubDate>Tue, 11 Aug 2026 17:14:46 GMT</pubDate>
   </item>
     </channel>
