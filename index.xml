@@ -12,6 +12,24 @@
     <description><![CDATA[ 가족 원격 지원 앱을 기획하고, 신뢰의 흐름을 제품과 운영 검증으로 연결한 과정 ]]></description>
     <pubDate>Thu, 13 Aug 2026 00:00:00 GMT</pubDate>
   </item><item>
+    <title>[2026-08-11] [Screen Saver Extension] Chrome Web Store 게시</title>
+    <link>https://4sizn.github.io/blog/releases/2026-08-11-screen-saver-extension-store-assets</link>
+    <guid>https://4sizn.github.io/blog/releases/2026-08-11-screen-saver-extension-store-assets</guid>
+    <description><![CDATA[ Screen Saver Extension v1.0.6의 Chrome Web Store 등록 자산을 준비하고, 2026년 8월 13일 스토어에 게시했습니다. ]]></description>
+    <pubDate>Thu, 13 Aug 2026 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Screen Saver Extension</title>
+    <link>https://4sizn.github.io/blog/projects/screen-saver-extension</link>
+    <guid>https://4sizn.github.io/blog/projects/screen-saver-extension</guid>
+    <description><![CDATA[ 현재 탭을 사진과 시계가 있는 전체 화면 스크린세이버로 바꾸는 Chrome 확장 프로그램이다. ]]></description>
+    <pubDate>Wed, 12 Aug 2026 15:55:45 GMT</pubDate>
+  </item><item>
+    <title>Screen Saver Extension</title>
+    <link>https://4sizn.github.io/projects/screen-saver-extension</link>
+    <guid>https://4sizn.github.io/projects/screen-saver-extension</guid>
+    <description><![CDATA[ 탭 하나를 전체화면 스크린세이버로 바꿔주는 브라우저 확장 ]]></description>
+    <pubDate>Wed, 12 Aug 2026 15:55:45 GMT</pubDate>
+  </item><item>
     <title>효자손 브랜드 사이트</title>
     <link>https://4sizn.github.io/blog/projects/parent-view-brandsite</link>
     <guid>https://4sizn.github.io/blog/projects/parent-view-brandsite</guid>
@@ -47,24 +65,6 @@
     <guid>https://4sizn.github.io/projects/parent-view-brandsite</guid>
     <description><![CDATA[ 부모님 스마트폰을 자녀가 함께 보며 돕는 효자손의 브랜드 경험을 소개하는 웹사이트 ]]></description>
     <pubDate>Wed, 12 Aug 2026 15:33:39 GMT</pubDate>
-  </item><item>
-    <title>4sizn Blog</title>
-    <link>https://4sizn.github.io/blog/projects/4sizn-blog</link>
-    <guid>https://4sizn.github.io/blog/projects/4sizn-blog</guid>
-    <description><![CDATA[ 개인 작업과 생각, 프로젝트 기록을 Markdown으로 정리해 공개하는 4sizn의 블로그다. ]]></description>
-    <pubDate>Wed, 12 Aug 2026 15:28:09 GMT</pubDate>
-  </item><item>
-    <title>Garden Eel Cove</title>
-    <link>https://4sizn.github.io/blog/projects/garden-eel-cove</link>
-    <guid>https://4sizn.github.io/blog/projects/garden-eel-cove</guid>
-    <description><![CDATA[ 바탕화면 하단의 투명한 장면에서 정원장어를 관찰하고 먹이를 주는 데스크톱 앱이다. ]]></description>
-    <pubDate>Wed, 12 Aug 2026 15:28:09 GMT</pubDate>
-  </item><item>
-    <title>Screen Saver Extension</title>
-    <link>https://4sizn.github.io/blog/projects/screen-saver-extension</link>
-    <guid>https://4sizn.github.io/blog/projects/screen-saver-extension</guid>
-    <description><![CDATA[ 현재 탭을 사진과 시계가 있는 전체 화면 스크린세이버로 바꾸는 Chrome 확장 프로그램이다. ]]></description>
-    <pubDate>Wed, 12 Aug 2026 15:05:36 GMT</pubDate>
   </item>
     </channel>
   </rss>
