@@ -6,65 +6,65 @@
       <description>Last 10 notes on 4sizn blog</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
-    <title>리모트미팅 제작기 — 집합 메시지를 화면 책임 단위의 상태로 되돌리기</title>
-    <link>https://4sizn.github.io/blog/projects/remote-meeting</link>
-    <guid>https://4sizn.github.io/blog/projects/remote-meeting</guid>
-    <description><![CDATA[ jQuery 리뉴얼 뒤 Recoil·MQTT 상태에서 생긴 불필요한 렌더링과 callback 불일치를 해결해 간 공개 회고 기반 기록 ]]></description>
-    <pubDate>Wed, 12 Aug 2026 05:48:10 GMT</pubDate>
-  </item><item>
-    <title>모비즌 개발 참여 기록 — 기존 미러링 서비스와 다중 화면 WebRTC POC를 병행하기</title>
-    <link>https://4sizn.github.io/blog/projects/mobizen</link>
-    <guid>https://4sizn.github.io/blog/projects/mobizen</guid>
-    <description><![CDATA[ PC·모바일 원격 제어·미러링 유지보수, 결제 페이지, Mobizen Party 다중 화면 POC를 맡은 프로젝트 기록 ]]></description>
-    <pubDate>Wed, 12 Aug 2026 05:39:17 GMT</pubDate>
-  </item><item>
-    <title>SpecialForce ARVR 개발 참여 기록 — VR FPS의 행동 상태와 사용자 안내를 함께 설계하기</title>
-    <link>https://4sizn.github.io/blog/projects/specialforce-arvr</link>
-    <guid>https://4sizn.github.io/blog/projects/specialforce-arvr</guid>
-    <description><![CDATA[ Unity 기반 VR 밀리터리 FPS에서 FSM AI·UI·튜토리얼·VR UX와 QA를 맡은 프로젝트 기록 ]]></description>
-    <pubDate>Wed, 12 Aug 2026 05:39:17 GMT</pubDate>
-  </item><item>
-    <title>리모트 세미나 개발 참여 기록 — 진행·관리 화면의 실시간 상태를 연결하기</title>
-    <link>https://4sizn.github.io/blog/projects/remote-seminar</link>
-    <guid>https://4sizn.github.io/blog/projects/remote-seminar</guid>
-    <description><![CDATA[ React·Redux 기반 웨비나와 관리자 신규 개발에서 BroadcastChannel·정규화·운영 기능을 구현한 프로젝트 기록 ]]></description>
-    <pubDate>Wed, 12 Aug 2026 05:27:01 GMT</pubDate>
-  </item><item>
-    <title>모비즌</title>
-    <link>https://4sizn.github.io/projects/mobizen</link>
-    <guid>https://4sizn.github.io/projects/mobizen</guid>
-    <description><![CDATA[ PC·모바일 원격 제어·미러링과 WebRTC 다중 화면 POC 서비스 ]]></description>
-    <pubDate>Wed, 12 Aug 2026 05:27:01 GMT</pubDate>
-  </item><item>
-    <title>리모트미팅</title>
-    <link>https://4sizn.github.io/projects/remote-meeting</link>
-    <guid>https://4sizn.github.io/projects/remote-meeting</guid>
-    <description><![CDATA[ jQuery UI를 React·Recoil로 리뉴얼한 웹·모바일 화상 미팅 서비스 ]]></description>
-    <pubDate>Wed, 12 Aug 2026 05:27:01 GMT</pubDate>
-  </item><item>
-    <title>리모트 세미나</title>
-    <link>https://4sizn.github.io/projects/remote-seminar</link>
-    <guid>https://4sizn.github.io/projects/remote-seminar</guid>
-    <description><![CDATA[ React·Redux로 개발한 웹 브라우저 기반 온라인 웨비나·관리자 서비스 ]]></description>
-    <pubDate>Wed, 12 Aug 2026 05:27:01 GMT</pubDate>
-  </item><item>
-    <title>SpecialForce ARVR</title>
-    <link>https://4sizn.github.io/projects/specialforce-arvr</link>
-    <guid>https://4sizn.github.io/projects/specialforce-arvr</guid>
-    <description><![CDATA[ Unity로 제작한 VR 밀리터리 FPS 게임의 AI·UI·튜토리얼 개발 ]]></description>
-    <pubDate>Wed, 12 Aug 2026 05:27:01 GMT</pubDate>
+    <title>4sizn Blog</title>
+    <link>https://4sizn.github.io/blog/projects/4sizn-blog</link>
+    <guid>https://4sizn.github.io/blog/projects/4sizn-blog</guid>
+    <description><![CDATA[ Quartz 기반 개인 블로그로, Markdown 콘텐츠·프로젝트 카드·릴리즈 초안을 관리한다. ]]></description>
+    <pubDate>Wed, 12 Aug 2026 06:28:14 GMT</pubDate>
   </item><item>
     <title>AI Config Monitor</title>
-    <link>https://4sizn.github.io/projects/ai-config-monitor</link>
-    <guid>https://4sizn.github.io/projects/ai-config-monitor</guid>
-    <description><![CDATA[ AI 도구 설정 파일의 변경을 추적하는 CLI ]]></description>
-    <pubDate>Wed, 12 Aug 2026 02:53:43 GMT</pubDate>
+    <link>https://4sizn.github.io/blog/projects/ai-config-monitor</link>
+    <guid>https://4sizn.github.io/blog/projects/ai-config-monitor</guid>
+    <description><![CDATA[ 여러 AI 도구의 MCP 설정과 상태를 수집해 터미널 대시보드로 표시하는 CLI다. ]]></description>
+    <pubDate>Wed, 12 Aug 2026 06:28:14 GMT</pubDate>
+  </item><item>
+    <title>Garden Eel Cove</title>
+    <link>https://4sizn.github.io/blog/projects/garden-eel-cove</link>
+    <guid>https://4sizn.github.io/blog/projects/garden-eel-cove</guid>
+    <description><![CDATA[ 바탕화면 하단의 투명 창에서 정원장어와 상호작용하는 데스크톱 앱이다. ]]></description>
+    <pubDate>Wed, 12 Aug 2026 06:28:14 GMT</pubDate>
+  </item><item>
+    <title>Projects</title>
+    <link>https://4sizn.github.io/blog/projects/</link>
+    <guid>https://4sizn.github.io/blog/projects/</guid>
+    <description><![CDATA[ 프로젝트별 제품 맥락, 작업 범위, 구현 기록을 모은 아카이브 ]]></description>
+    <pubDate>Wed, 12 Aug 2026 06:28:14 GMT</pubDate>
   </item><item>
     <title>Lonely Candle</title>
-    <link>https://4sizn.github.io/projects/lonely-candle</link>
-    <guid>https://4sizn.github.io/projects/lonely-candle</guid>
-    <description><![CDATA[ 기울이면 출렁이고 입김에 꺼지는, 손안의 진짜 촛불 ]]></description>
-    <pubDate>Wed, 12 Aug 2026 02:53:43 GMT</pubDate>
+    <link>https://4sizn.github.io/blog/projects/lonely-candle</link>
+    <guid>https://4sizn.github.io/blog/projects/lonely-candle</guid>
+    <description><![CDATA[ 기울기와 입김에 반응하는 촛불 장면을 Godot으로 구성한 모바일 앱이다. ]]></description>
+    <pubDate>Wed, 12 Aug 2026 06:28:14 GMT</pubDate>
+  </item><item>
+    <title>모비즌</title>
+    <link>https://4sizn.github.io/blog/projects/mobizen</link>
+    <guid>https://4sizn.github.io/blog/projects/mobizen</guid>
+    <description><![CDATA[ 2018년 12월부터 2020년 12월까지 원격 제어·미러링 서비스와 WebRTC POC에 참여한 기록 ]]></description>
+    <pubDate>Wed, 12 Aug 2026 06:28:14 GMT</pubDate>
+  </item><item>
+    <title>리모트미팅</title>
+    <link>https://4sizn.github.io/blog/projects/remote-meeting</link>
+    <guid>https://4sizn.github.io/blog/projects/remote-meeting</guid>
+    <description><![CDATA[ 2021년 6월부터 2022년 3월까지 화상 미팅 서비스 리뉴얼에 참여한 작업 기록 ]]></description>
+    <pubDate>Wed, 12 Aug 2026 06:28:14 GMT</pubDate>
+  </item><item>
+    <title>리모트 세미나</title>
+    <link>https://4sizn.github.io/blog/projects/remote-seminar</link>
+    <guid>https://4sizn.github.io/blog/projects/remote-seminar</guid>
+    <description><![CDATA[ 2019년 4월부터 2021년 4월까지 웹 기반 웨비나와 관리자 서비스 개발에 참여한 기록 ]]></description>
+    <pubDate>Wed, 12 Aug 2026 06:28:14 GMT</pubDate>
+  </item><item>
+    <title>Screen Saver Extension</title>
+    <link>https://4sizn.github.io/blog/projects/screen-saver-extension</link>
+    <guid>https://4sizn.github.io/blog/projects/screen-saver-extension</guid>
+    <description><![CDATA[ 현재 탭을 전체 화면 스크린세이버로 전환하는 Chrome 확장 프로그램이다. ]]></description>
+    <pubDate>Wed, 12 Aug 2026 06:28:14 GMT</pubDate>
+  </item><item>
+    <title>SpecialForce ARVR</title>
+    <link>https://4sizn.github.io/blog/projects/specialforce-arvr</link>
+    <guid>https://4sizn.github.io/blog/projects/specialforce-arvr</guid>
+    <description><![CDATA[ 2017년 3월부터 2017년 9월까지 Unity 기반 VR FPS 제작에 참여한 기록 ]]></description>
+    <pubDate>Wed, 12 Aug 2026 06:28:14 GMT</pubDate>
   </item>
     </channel>
   </rss>
