@@ -6,6 +6,30 @@
       <description>Last 10 notes on 4sizn blog</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>리모트미팅</title>
+    <link>https://4sizn.github.io/blog/projects/remote-meeting</link>
+    <guid>https://4sizn.github.io/blog/projects/remote-meeting</guid>
+    <description><![CDATA[ 2021년 6월부터 2022년 3월까지 화상 미팅 서비스 리뉴얼에 참여한 작업 기록 ]]></description>
+    <pubDate>Wed, 12 Aug 2026 07:11:55 GMT</pubDate>
+  </item><item>
+    <title>리모트 세미나</title>
+    <link>https://4sizn.github.io/blog/projects/remote-seminar</link>
+    <guid>https://4sizn.github.io/blog/projects/remote-seminar</guid>
+    <description><![CDATA[ 2019년 4월부터 2021년 4월까지 웹 기반 웨비나와 관리자 서비스 개발에 참여한 기록 ]]></description>
+    <pubDate>Wed, 12 Aug 2026 07:11:55 GMT</pubDate>
+  </item><item>
+    <title>리모트미팅</title>
+    <link>https://4sizn.github.io/projects/remote-meeting</link>
+    <guid>https://4sizn.github.io/projects/remote-meeting</guid>
+    <description><![CDATA[ jQuery UI를 React·Recoil로 리뉴얼한 웹·모바일 화상 미팅 서비스 ]]></description>
+    <pubDate>Wed, 12 Aug 2026 07:11:55 GMT</pubDate>
+  </item><item>
+    <title>리모트 세미나</title>
+    <link>https://4sizn.github.io/projects/remote-seminar</link>
+    <guid>https://4sizn.github.io/projects/remote-seminar</guid>
+    <description><![CDATA[ React·Redux로 개발한 웹 브라우저 기반 온라인 웨비나·관리자 서비스 ]]></description>
+    <pubDate>Wed, 12 Aug 2026 07:11:55 GMT</pubDate>
+  </item><item>
     <title>4sizn Blog</title>
     <link>https://4sizn.github.io/blog/projects/4sizn-blog</link>
     <guid>https://4sizn.github.io/blog/projects/4sizn-blog</guid>
@@ -40,30 +64,6 @@
     <link>https://4sizn.github.io/blog/projects/mobizen</link>
     <guid>https://4sizn.github.io/blog/projects/mobizen</guid>
     <description><![CDATA[ 2018년 12월부터 2020년 12월까지 원격 제어·미러링 서비스와 WebRTC POC에 참여한 기록 ]]></description>
-    <pubDate>Wed, 12 Aug 2026 06:28:14 GMT</pubDate>
-  </item><item>
-    <title>리모트미팅</title>
-    <link>https://4sizn.github.io/blog/projects/remote-meeting</link>
-    <guid>https://4sizn.github.io/blog/projects/remote-meeting</guid>
-    <description><![CDATA[ 2021년 6월부터 2022년 3월까지 화상 미팅 서비스 리뉴얼에 참여한 작업 기록 ]]></description>
-    <pubDate>Wed, 12 Aug 2026 06:28:14 GMT</pubDate>
-  </item><item>
-    <title>리모트 세미나</title>
-    <link>https://4sizn.github.io/blog/projects/remote-seminar</link>
-    <guid>https://4sizn.github.io/blog/projects/remote-seminar</guid>
-    <description><![CDATA[ 2019년 4월부터 2021년 4월까지 웹 기반 웨비나와 관리자 서비스 개발에 참여한 기록 ]]></description>
-    <pubDate>Wed, 12 Aug 2026 06:28:14 GMT</pubDate>
-  </item><item>
-    <title>Screen Saver Extension</title>
-    <link>https://4sizn.github.io/blog/projects/screen-saver-extension</link>
-    <guid>https://4sizn.github.io/blog/projects/screen-saver-extension</guid>
-    <description><![CDATA[ 현재 탭을 전체 화면 스크린세이버로 전환하는 Chrome 확장 프로그램이다. ]]></description>
-    <pubDate>Wed, 12 Aug 2026 06:28:14 GMT</pubDate>
-  </item><item>
-    <title>SpecialForce ARVR</title>
-    <link>https://4sizn.github.io/blog/projects/specialforce-arvr</link>
-    <guid>https://4sizn.github.io/blog/projects/specialforce-arvr</guid>
-    <description><![CDATA[ 2017년 3월부터 2017년 9월까지 Unity 기반 VR FPS 제작에 참여한 기록 ]]></description>
     <pubDate>Wed, 12 Aug 2026 06:28:14 GMT</pubDate>
   </item>
     </channel>
