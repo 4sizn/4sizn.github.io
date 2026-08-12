@@ -6,6 +6,12 @@
       <description>Last 10 notes on 4sizn blog</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>리모트미팅 제작기 — 집합 메시지를 화면 책임 단위의 상태로 되돌리기</title>
+    <link>https://4sizn.github.io/blog/projects/remote-meeting</link>
+    <guid>https://4sizn.github.io/blog/projects/remote-meeting</guid>
+    <description><![CDATA[ jQuery 리뉴얼 뒤 Recoil·MQTT 상태에서 생긴 불필요한 렌더링과 callback 불일치를 해결해 간 공개 회고 기반 기록 ]]></description>
+    <pubDate>Wed, 12 Aug 2026 05:48:10 GMT</pubDate>
+  </item><item>
     <title>모비즌 개발 참여 기록 — 기존 미러링 서비스와 다중 화면 WebRTC POC를 병행하기</title>
     <link>https://4sizn.github.io/blog/projects/mobizen</link>
     <guid>https://4sizn.github.io/blog/projects/mobizen</guid>
@@ -17,12 +23,6 @@
     <guid>https://4sizn.github.io/blog/projects/specialforce-arvr</guid>
     <description><![CDATA[ Unity 기반 VR 밀리터리 FPS에서 FSM AI·UI·튜토리얼·VR UX와 QA를 맡은 프로젝트 기록 ]]></description>
     <pubDate>Wed, 12 Aug 2026 05:39:17 GMT</pubDate>
-  </item><item>
-    <title>리모트미팅 제작기 — 집합 메시지를 화면 책임 단위의 상태로 되돌리기</title>
-    <link>https://4sizn.github.io/blog/projects/remote-meeting</link>
-    <guid>https://4sizn.github.io/blog/projects/remote-meeting</guid>
-    <description><![CDATA[ jQuery 리뉴얼 뒤 Recoil·MQTT 상태에서 생긴 불필요한 렌더링과 callback 불일치를 해결해 간 공개 회고 기반 기록 ]]></description>
-    <pubDate>Wed, 12 Aug 2026 05:27:01 GMT</pubDate>
   </item><item>
     <title>리모트 세미나 개발 참여 기록 — 진행·관리 화면의 실시간 상태를 연결하기</title>
     <link>https://4sizn.github.io/blog/projects/remote-seminar</link>
