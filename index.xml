@@ -6,6 +6,12 @@
       <description>Last 10 notes on 4sizn blog</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>AI Config Monitor</title>
+    <link>https://4sizn.github.io/blog/projects/ai-config-monitor</link>
+    <guid>https://4sizn.github.io/blog/projects/ai-config-monitor</guid>
+    <description><![CDATA[ 여러 AI 도구의 설정 상태를 한 화면에서 살피고 갱신 여부를 확인하는 커맨드라인 도구다. ]]></description>
+    <pubDate>Wed, 12 Aug 2026 15:37:09 GMT</pubDate>
+  </item><item>
     <title>Projects</title>
     <link>https://4sizn.github.io/blog/projects/</link>
     <guid>https://4sizn.github.io/blog/projects/</guid>
@@ -35,12 +41,6 @@
     <guid>https://4sizn.github.io/blog/projects/garden-eel-cove</guid>
     <description><![CDATA[ 바탕화면 하단의 투명한 장면에서 정원장어를 관찰하고 먹이를 주는 데스크톱 앱이다. ]]></description>
     <pubDate>Wed, 12 Aug 2026 15:28:09 GMT</pubDate>
-  </item><item>
-    <title>AI Config Monitor</title>
-    <link>https://4sizn.github.io/blog/projects/ai-config-monitor</link>
-    <guid>https://4sizn.github.io/blog/projects/ai-config-monitor</guid>
-    <description><![CDATA[ 여러 AI 도구의 설정 상태를 한 화면에서 살피고 갱신 여부를 확인하는 커맨드라인 도구다. ]]></description>
-    <pubDate>Wed, 12 Aug 2026 15:05:36 GMT</pubDate>
   </item><item>
     <title>Screen Saver Extension</title>
     <link>https://4sizn.github.io/blog/projects/screen-saver-extension</link>
