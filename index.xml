@@ -6,6 +6,12 @@
       <description>Last 10 notes on 4sizn blog</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>Swing Golf</title>
+    <link>https://4sizn.github.io/projects/swing-golf</link>
+    <guid>https://4sizn.github.io/projects/swing-golf</guid>
+    <description><![CDATA[ 휴대폰을 골프채처럼 휘두르는 모션 입력 골프 게임 ]]></description>
+    <pubDate>Wed, 12 Aug 2026 14:09:35 GMT</pubDate>
+  </item><item>
     <title>4sizn Blog</title>
     <link>https://4sizn.github.io/projects/4sizn-blog</link>
     <guid>https://4sizn.github.io/projects/4sizn-blog</guid>
@@ -58,12 +64,6 @@
     <link>https://4sizn.github.io/blog/projects/garden-eel-cove</link>
     <guid>https://4sizn.github.io/blog/projects/garden-eel-cove</guid>
     <description><![CDATA[ 바탕화면 하단의 투명 창에서 정원장어와 상호작용하는 데스크톱 앱이다. ]]></description>
-    <pubDate>Wed, 12 Aug 2026 06:28:14 GMT</pubDate>
-  </item><item>
-    <title>Projects</title>
-    <link>https://4sizn.github.io/blog/projects/</link>
-    <guid>https://4sizn.github.io/blog/projects/</guid>
-    <description><![CDATA[ 프로젝트별 제품 맥락, 작업 범위, 구현 기록을 모은 아카이브 ]]></description>
     <pubDate>Wed, 12 Aug 2026 06:28:14 GMT</pubDate>
   </item>
     </channel>
