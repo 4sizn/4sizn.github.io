@@ -6,23 +6,53 @@
       <description>Last 10 notes on 4sizn blog</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>모비즌 개발 참여 기록 — 기존 미러링 서비스와 다중 화면 WebRTC POC를 병행하기</title>
+    <link>https://4sizn.github.io/blog/projects/mobizen</link>
+    <guid>https://4sizn.github.io/blog/projects/mobizen</guid>
+    <description><![CDATA[ PC·모바일 원격 제어·미러링 유지보수, 결제 페이지, Mobizen Party 다중 화면 POC를 맡은 프로젝트 기록 ]]></description>
+    <pubDate>Wed, 12 Aug 2026 05:27:01 GMT</pubDate>
+  </item><item>
+    <title>리모트미팅 제작기 — 집합 메시지를 화면 책임 단위의 상태로 되돌리기</title>
+    <link>https://4sizn.github.io/blog/projects/remote-meeting</link>
+    <guid>https://4sizn.github.io/blog/projects/remote-meeting</guid>
+    <description><![CDATA[ jQuery 리뉴얼 뒤 Recoil·MQTT 상태에서 생긴 불필요한 렌더링과 callback 불일치를 해결해 간 공개 회고 기반 기록 ]]></description>
+    <pubDate>Wed, 12 Aug 2026 05:27:01 GMT</pubDate>
+  </item><item>
+    <title>리모트 세미나 개발 참여 기록 — 진행·관리 화면의 실시간 상태를 연결하기</title>
+    <link>https://4sizn.github.io/blog/projects/remote-seminar</link>
+    <guid>https://4sizn.github.io/blog/projects/remote-seminar</guid>
+    <description><![CDATA[ React·Redux 기반 웨비나와 관리자 신규 개발에서 BroadcastChannel·정규화·운영 기능을 구현한 프로젝트 기록 ]]></description>
+    <pubDate>Wed, 12 Aug 2026 05:27:01 GMT</pubDate>
+  </item><item>
+    <title>SpecialForce ARVR 개발 참여 기록 — VR FPS의 행동 상태와 사용자 안내를 함께 설계하기</title>
+    <link>https://4sizn.github.io/blog/projects/specialforce-arvr</link>
+    <guid>https://4sizn.github.io/blog/projects/specialforce-arvr</guid>
+    <description><![CDATA[ Unity 기반 VR 밀리터리 FPS에서 FSM AI·UI·튜토리얼·VR UX와 QA를 맡은 프로젝트 기록 ]]></description>
+    <pubDate>Wed, 12 Aug 2026 05:27:01 GMT</pubDate>
+  </item><item>
     <title>모비즌</title>
     <link>https://4sizn.github.io/projects/mobizen</link>
     <guid>https://4sizn.github.io/projects/mobizen</guid>
-    <description><![CDATA[ PC와 모바일을 연결하는 미러링 서비스 및 WebRTC POC ]]></description>
-    <pubDate>Wed, 12 Aug 2026 05:11:56 GMT</pubDate>
+    <description><![CDATA[ PC·모바일 원격 제어·미러링과 WebRTC 다중 화면 POC 서비스 ]]></description>
+    <pubDate>Wed, 12 Aug 2026 05:27:01 GMT</pubDate>
   </item><item>
-    <title>SpecialForce ARVR</title>
-    <link>https://4sizn.github.io/projects/specialforce-arvr</link>
-    <guid>https://4sizn.github.io/projects/specialforce-arvr</guid>
-    <description><![CDATA[ Unity와 FSM 기반 AI로 제작한 VR FPS 게임 ]]></description>
-    <pubDate>Wed, 12 Aug 2026 05:11:56 GMT</pubDate>
+    <title>리모트미팅</title>
+    <link>https://4sizn.github.io/projects/remote-meeting</link>
+    <guid>https://4sizn.github.io/projects/remote-meeting</guid>
+    <description><![CDATA[ jQuery UI를 React·Recoil로 리뉴얼한 웹·모바일 화상 미팅 서비스 ]]></description>
+    <pubDate>Wed, 12 Aug 2026 05:27:01 GMT</pubDate>
   </item><item>
     <title>리모트 세미나</title>
     <link>https://4sizn.github.io/projects/remote-seminar</link>
     <guid>https://4sizn.github.io/projects/remote-seminar</guid>
-    <description><![CDATA[ 실시간 데이터 동기화와 관리자 기능을 구축한 웹 기반 웨비나 서비스 ]]></description>
-    <pubDate>Wed, 12 Aug 2026 04:01:01 GMT</pubDate>
+    <description><![CDATA[ React·Redux로 개발한 웹 브라우저 기반 온라인 웨비나·관리자 서비스 ]]></description>
+    <pubDate>Wed, 12 Aug 2026 05:27:01 GMT</pubDate>
+  </item><item>
+    <title>SpecialForce ARVR</title>
+    <link>https://4sizn.github.io/projects/specialforce-arvr</link>
+    <guid>https://4sizn.github.io/projects/specialforce-arvr</guid>
+    <description><![CDATA[ Unity로 제작한 VR 밀리터리 FPS 게임의 AI·UI·튜토리얼 개발 ]]></description>
+    <pubDate>Wed, 12 Aug 2026 05:27:01 GMT</pubDate>
   </item><item>
     <title>AI Config Monitor</title>
     <link>https://4sizn.github.io/projects/ai-config-monitor</link>
@@ -35,36 +65,6 @@
     <guid>https://4sizn.github.io/projects/lonely-candle</guid>
     <description><![CDATA[ 기울이면 출렁이고 입김에 꺼지는, 손안의 진짜 촛불 ]]></description>
     <pubDate>Wed, 12 Aug 2026 02:53:43 GMT</pubDate>
-  </item><item>
-    <title>리모트미팅</title>
-    <link>https://4sizn.github.io/projects/remote-meeting</link>
-    <guid>https://4sizn.github.io/projects/remote-meeting</guid>
-    <description><![CDATA[ 레거시 jQuery UI를 React와 Recoil 기반으로 전환한 화상 미팅 서비스 ]]></description>
-    <pubDate>Wed, 12 Aug 2026 02:53:43 GMT</pubDate>
-  </item><item>
-    <title>Screen Saver Extension</title>
-    <link>https://4sizn.github.io/projects/screen-saver-extension</link>
-    <guid>https://4sizn.github.io/projects/screen-saver-extension</guid>
-    <description><![CDATA[ 탭 하나를 전체화면 스크린세이버로 바꿔주는 브라우저 확장 ]]></description>
-    <pubDate>Wed, 12 Aug 2026 02:53:43 GMT</pubDate>
-  </item><item>
-    <title>Swing Golf</title>
-    <link>https://4sizn.github.io/projects/swing-golf</link>
-    <guid>https://4sizn.github.io/projects/swing-golf</guid>
-    <description><![CDATA[ 휴대폰을 골프채처럼 휘두르는 모션 입력 골프 게임 ]]></description>
-    <pubDate>Wed, 12 Aug 2026 02:53:43 GMT</pubDate>
-  </item><item>
-    <title>React.FC는 함수형 프로그래밍을 뜻하지 않는다</title>
-    <link>https://4sizn.github.io/blog/dev/react-fc-is-not-functional-component</link>
-    <guid>https://4sizn.github.io/blog/dev/react-fc-is-not-functional-component</guid>
-    <description><![CDATA[ React의 function component와 함수형 프로그래밍을 같은 말로 부르지 않아야 하는 이유 ]]></description>
-    <pubDate>Wed, 12 Aug 2026 00:00:00 GMT</pubDate>
-  </item><item>
-    <title>Swing Golf 제작기 — 신체 모션을 재현 가능한 게임 입력으로 바꾸기</title>
-    <link>https://4sizn.github.io/blog/projects/swing-golf</link>
-    <guid>https://4sizn.github.io/blog/projects/swing-golf</guid>
-    <description><![CDATA[ 휴대폰 센서의 불확실한 움직임을 스윙·볼 물리·테스트 가능한 게임 규칙으로 바꾼 Swing Golf의 개발 기록 ]]></description>
-    <pubDate>Wed, 12 Aug 2026 00:00:00 GMT</pubDate>
   </item>
     </channel>
   </rss>
