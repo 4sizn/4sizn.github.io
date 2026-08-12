@@ -6,11 +6,53 @@
       <description>Last 10 notes on 4sizn blog</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>AI Config Monitor</title>
+    <link>https://4sizn.github.io/projects/ai-config-monitor</link>
+    <guid>https://4sizn.github.io/projects/ai-config-monitor</guid>
+    <description><![CDATA[ AI 도구 설정 파일의 변경을 추적하는 CLI ]]></description>
+    <pubDate>Wed, 12 Aug 2026 02:53:43 GMT</pubDate>
+  </item><item>
+    <title>Lonely Candle</title>
+    <link>https://4sizn.github.io/projects/lonely-candle</link>
+    <guid>https://4sizn.github.io/projects/lonely-candle</guid>
+    <description><![CDATA[ 기울이면 출렁이고 입김에 꺼지는, 손안의 진짜 촛불 ]]></description>
+    <pubDate>Wed, 12 Aug 2026 02:53:43 GMT</pubDate>
+  </item><item>
+    <title>모비즌</title>
+    <link>https://4sizn.github.io/projects/mobizen</link>
+    <guid>https://4sizn.github.io/projects/mobizen</guid>
+    <description><![CDATA[ PC와 모바일을 연결하는 미러링 서비스 및 WebRTC POC ]]></description>
+    <pubDate>Wed, 12 Aug 2026 02:53:43 GMT</pubDate>
+  </item><item>
+    <title>리모트미팅</title>
+    <link>https://4sizn.github.io/projects/remote-meeting</link>
+    <guid>https://4sizn.github.io/projects/remote-meeting</guid>
+    <description><![CDATA[ 레거시 jQuery UI를 React와 Recoil 기반으로 전환한 화상 미팅 서비스 ]]></description>
+    <pubDate>Wed, 12 Aug 2026 02:53:43 GMT</pubDate>
+  </item><item>
+    <title>리모트 세미나</title>
+    <link>https://4sizn.github.io/projects/remote-seminar</link>
+    <guid>https://4sizn.github.io/projects/remote-seminar</guid>
+    <description><![CDATA[ 실시간 데이터 동기화와 관리자 기능을 구축한 웹 기반 웨비나 서비스 ]]></description>
+    <pubDate>Wed, 12 Aug 2026 02:53:43 GMT</pubDate>
+  </item><item>
+    <title>Screen Saver Extension</title>
+    <link>https://4sizn.github.io/projects/screen-saver-extension</link>
+    <guid>https://4sizn.github.io/projects/screen-saver-extension</guid>
+    <description><![CDATA[ 탭 하나를 전체화면 스크린세이버로 바꿔주는 브라우저 확장 ]]></description>
+    <pubDate>Wed, 12 Aug 2026 02:53:43 GMT</pubDate>
+  </item><item>
+    <title>SpecialForce ARVR</title>
+    <link>https://4sizn.github.io/projects/specialforce-arvr</link>
+    <guid>https://4sizn.github.io/projects/specialforce-arvr</guid>
+    <description><![CDATA[ Unity와 FSM 기반 AI로 제작한 VR FPS 게임 ]]></description>
+    <pubDate>Wed, 12 Aug 2026 02:53:43 GMT</pubDate>
+  </item><item>
     <title>Swing Golf</title>
     <link>https://4sizn.github.io/projects/swing-golf</link>
     <guid>https://4sizn.github.io/projects/swing-golf</guid>
     <description><![CDATA[ 휴대폰을 골프채처럼 휘두르는 모션 입력 골프 게임 ]]></description>
-    <pubDate>Wed, 12 Aug 2026 02:38:54 GMT</pubDate>
+    <pubDate>Wed, 12 Aug 2026 02:53:43 GMT</pubDate>
   </item><item>
     <title>React.FC는 함수형 프로그래밍을 뜻하지 않는다</title>
     <link>https://4sizn.github.io/blog/dev/react-fc-is-not-functional-component</link>
@@ -23,48 +65,6 @@
     <guid>https://4sizn.github.io/blog/projects/swing-golf</guid>
     <description><![CDATA[ 휴대폰 센서의 불확실한 움직임을 스윙·볼 물리·테스트 가능한 게임 규칙으로 바꾼 Swing Golf의 개발 기록 ]]></description>
     <pubDate>Wed, 12 Aug 2026 00:00:00 GMT</pubDate>
-  </item><item>
-    <title>Blog</title>
-    <link>https://4sizn.github.io/blog/</link>
-    <guid>https://4sizn.github.io/blog/</guid>
-    <description><![CDATA[ 개발하며 배운 것, 읽고 남긴 것, 그리고 릴리즈 기록. ]]></description>
-    <pubDate>Tue, 11 Aug 2026 17:58:18 GMT</pubDate>
-  </item><item>
-    <title>4sizn</title>
-    <link>https://4sizn.github.io/</link>
-    <guid>https://4sizn.github.io/</guid>
-    <description><![CDATA[ 개발자 신희석의 작업과 기록. 데스크톱 앱, iOS 게임, 크롬 확장을 만들고 배운 것을 씁니다. ]]></description>
-    <pubDate>Tue, 11 Aug 2026 17:58:18 GMT</pubDate>
-  </item><item>
-    <title>리모트미팅 제작기 — 집합 메시지를 화면 책임 단위의 상태로 되돌리기</title>
-    <link>https://4sizn.github.io/blog/projects/remote-meeting</link>
-    <guid>https://4sizn.github.io/blog/projects/remote-meeting</guid>
-    <description><![CDATA[ jQuery 리뉴얼 뒤 Recoil·MQTT 상태에서 생긴 불필요한 렌더링과 callback 불일치를 해결해 간 공개 회고 기반 기록 ]]></description>
-    <pubDate>Tue, 11 Aug 2026 17:32:09 GMT</pubDate>
-  </item><item>
-    <title>4sizn Blog 제작기 — 자동 초안과 사람의 편집을 분리한 개인 문서 시스템</title>
-    <link>https://4sizn.github.io/blog/projects/4sizn-blog</link>
-    <guid>https://4sizn.github.io/blog/projects/4sizn-blog</guid>
-    <description><![CDATA[ Quartz 사이트에서 포트폴리오·개발 기록·릴리즈 초안을 한 흐름으로 관리한 기록 ]]></description>
-    <pubDate>Tue, 11 Aug 2026 17:14:46 GMT</pubDate>
-  </item><item>
-    <title>AI Config Monitor 제작기 — 서로 다른 AI 설정을 하나의 점검 화면으로 모으기</title>
-    <link>https://4sizn.github.io/blog/projects/ai-config-monitor</link>
-    <guid>https://4sizn.github.io/blog/projects/ai-config-monitor</guid>
-    <description><![CDATA[ 도구마다 흩어진 MCP·skills·hooks 설정을 수집·감시하고, CLI에서 읽을 수 있는 상태로 만든 기록 ]]></description>
-    <pubDate>Tue, 11 Aug 2026 17:14:46 GMT</pubDate>
-  </item><item>
-    <title>Garden Eel Cove 제작기 — 바탕화면을 가리지 않는 인터랙티브 스트립</title>
-    <link>https://4sizn.github.io/blog/projects/garden-eel-cove</link>
-    <guid>https://4sizn.github.io/blog/projects/garden-eel-cove</guid>
-    <description><![CDATA[ 데스크톱 하단의 투명 창에서 장어가 반응하면서도 뒤의 작업을 방해하지 않게 만든 기록 ]]></description>
-    <pubDate>Tue, 11 Aug 2026 17:14:46 GMT</pubDate>
-  </item><item>
-    <title>Projects</title>
-    <link>https://4sizn.github.io/blog/projects/</link>
-    <guid>https://4sizn.github.io/blog/projects/</guid>
-    <description><![CDATA[ 코드·테스트·이력 자료를 바탕으로 문제와 제작 결정을 남기는 개발 기록 아카이브 ]]></description>
-    <pubDate>Tue, 11 Aug 2026 17:14:46 GMT</pubDate>
   </item>
     </channel>
   </rss>
