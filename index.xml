@@ -6,6 +6,24 @@
       <description>Last 10 notes on 4sizn blog</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>효자손 프로젝트 개발기</title>
+    <link>https://4sizn.github.io/blog/dev/hyojason-project-development</link>
+    <guid>https://4sizn.github.io/blog/dev/hyojason-project-development</guid>
+    <description><![CDATA[ 가족 원격 지원 앱을 기획하고, 신뢰의 흐름을 제품과 운영 검증으로 연결한 과정 ]]></description>
+    <pubDate>Thu, 13 Aug 2026 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>효자손</title>
+    <link>https://4sizn.github.io/blog/projects/hyojason</link>
+    <guid>https://4sizn.github.io/blog/projects/hyojason</guid>
+    <description><![CDATA[ 부모님과 자녀가 같은 화면을 보며 스마트폰 문제를 해결하는 가족 원격 지원 앱의 공개 프로젝트 기록 ]]></description>
+    <pubDate>Wed, 12 Aug 2026 15:49:24 GMT</pubDate>
+  </item><item>
+    <title>효자손</title>
+    <link>https://4sizn.github.io/projects/hyojason</link>
+    <guid>https://4sizn.github.io/projects/hyojason</guid>
+    <description><![CDATA[ 부모님 스마트폰을 자녀가 함께 보며 도울 수 있도록 설계한 가족 원격 지원 앱 ]]></description>
+    <pubDate>Wed, 12 Aug 2026 15:49:24 GMT</pubDate>
+  </item><item>
     <title>AI Config Monitor</title>
     <link>https://4sizn.github.io/blog/projects/ai-config-monitor</link>
     <guid>https://4sizn.github.io/blog/projects/ai-config-monitor</guid>
@@ -47,24 +65,6 @@
     <guid>https://4sizn.github.io/blog/projects/screen-saver-extension</guid>
     <description><![CDATA[ 현재 탭을 사진과 시계가 있는 전체 화면 스크린세이버로 바꾸는 Chrome 확장 프로그램이다. ]]></description>
     <pubDate>Wed, 12 Aug 2026 15:05:36 GMT</pubDate>
-  </item><item>
-    <title>Projects</title>
-    <link>https://4sizn.github.io/projects/</link>
-    <guid>https://4sizn.github.io/projects/</guid>
-    <description><![CDATA[ 직접 기획하고 만든 토이 프로젝트와 실무에서 개발한 경력 프로젝트를 나눠 소개합니다. ]]></description>
-    <pubDate>Wed, 12 Aug 2026 15:05:36 GMT</pubDate>
-  </item><item>
-    <title>Swing Golf</title>
-    <link>https://4sizn.github.io/projects/swing-golf</link>
-    <guid>https://4sizn.github.io/projects/swing-golf</guid>
-    <description><![CDATA[ 휴대폰을 골프채처럼 휘두르는 모션 입력 골프 게임 ]]></description>
-    <pubDate>Wed, 12 Aug 2026 15:05:36 GMT</pubDate>
-  </item><item>
-    <title>4sizn Blog</title>
-    <link>https://4sizn.github.io/projects/4sizn-blog</link>
-    <guid>https://4sizn.github.io/projects/4sizn-blog</guid>
-    <description><![CDATA[ 지금 보고 계신 사이트. Quartz 기반에 릴리즈 노트 자동화를 붙였습니다 ]]></description>
-    <pubDate>Wed, 12 Aug 2026 12:34:18 GMT</pubDate>
   </item>
     </channel>
   </rss>
