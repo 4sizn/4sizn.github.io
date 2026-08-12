@@ -6,6 +6,24 @@
       <description>Last 10 notes on 4sizn blog</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>Projects</title>
+    <link>https://4sizn.github.io/blog/projects/</link>
+    <guid>https://4sizn.github.io/blog/projects/</guid>
+    <description><![CDATA[ 프로젝트별 제품 맥락과 작업 범위를 모은 아카이브 ]]></description>
+    <pubDate>Wed, 12 Aug 2026 15:33:39 GMT</pubDate>
+  </item><item>
+    <title>효자손 브랜드 사이트</title>
+    <link>https://4sizn.github.io/blog/projects/parent-view-brandsite</link>
+    <guid>https://4sizn.github.io/blog/projects/parent-view-brandsite</guid>
+    <description><![CDATA[ 부모님 스마트폰을 자녀가 함께 보며 돕는 효자손의 브랜드 경험을 소개하는 웹사이트다. ]]></description>
+    <pubDate>Wed, 12 Aug 2026 15:33:39 GMT</pubDate>
+  </item><item>
+    <title>효자손 브랜드 사이트</title>
+    <link>https://4sizn.github.io/projects/parent-view-brandsite</link>
+    <guid>https://4sizn.github.io/projects/parent-view-brandsite</guid>
+    <description><![CDATA[ 부모님 스마트폰을 자녀가 함께 보며 돕는 효자손의 브랜드 경험을 소개하는 웹사이트 ]]></description>
+    <pubDate>Wed, 12 Aug 2026 15:33:39 GMT</pubDate>
+  </item><item>
     <title>4sizn Blog</title>
     <link>https://4sizn.github.io/blog/projects/4sizn-blog</link>
     <guid>https://4sizn.github.io/blog/projects/4sizn-blog</guid>
@@ -22,12 +40,6 @@
     <link>https://4sizn.github.io/blog/projects/ai-config-monitor</link>
     <guid>https://4sizn.github.io/blog/projects/ai-config-monitor</guid>
     <description><![CDATA[ 여러 AI 도구의 설정 상태를 한 화면에서 살피고 갱신 여부를 확인하는 커맨드라인 도구다. ]]></description>
-    <pubDate>Wed, 12 Aug 2026 15:05:36 GMT</pubDate>
-  </item><item>
-    <title>Projects</title>
-    <link>https://4sizn.github.io/blog/projects/</link>
-    <guid>https://4sizn.github.io/blog/projects/</guid>
-    <description><![CDATA[ 프로젝트별 제품 맥락과 작업 범위를 모은 아카이브 ]]></description>
     <pubDate>Wed, 12 Aug 2026 15:05:36 GMT</pubDate>
   </item><item>
     <title>Screen Saver Extension</title>
@@ -53,18 +65,6 @@
     <guid>https://4sizn.github.io/projects/4sizn-blog</guid>
     <description><![CDATA[ 지금 보고 계신 사이트. Quartz 기반에 릴리즈 노트 자동화를 붙였습니다 ]]></description>
     <pubDate>Wed, 12 Aug 2026 12:34:18 GMT</pubDate>
-  </item><item>
-    <title>Garden Eel Cove</title>
-    <link>https://4sizn.github.io/projects/garden-eel-cove</link>
-    <guid>https://4sizn.github.io/projects/garden-eel-cove</guid>
-    <description><![CDATA[ 바탕화면 하단 투명 스트립에 정원장어들이 사는 데스크톱 앱 ]]></description>
-    <pubDate>Wed, 12 Aug 2026 12:34:18 GMT</pubDate>
-  </item><item>
-    <title>AI Config Monitor</title>
-    <link>https://4sizn.github.io/projects/ai-config-monitor</link>
-    <guid>https://4sizn.github.io/projects/ai-config-monitor</guid>
-    <description><![CDATA[ AI 도구 설정 파일의 변경을 추적하는 CLI ]]></description>
-    <pubDate>Wed, 12 Aug 2026 02:53:43 GMT</pubDate>
   </item>
     </channel>
   </rss>
