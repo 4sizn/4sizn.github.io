@@ -6,6 +6,12 @@
       <description>Last 10 notes on 4sizn blog</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>Garden Eel Cove</title>
+    <link>https://4sizn.github.io/blog/projects/garden-eel-cove</link>
+    <guid>https://4sizn.github.io/blog/projects/garden-eel-cove</guid>
+    <description><![CDATA[ 20년 지기 친구가 바탕화면에 두고 싶다던 정원장어 ]]></description>
+    <pubDate>Thu, 13 Aug 2026 15:56:18 GMT</pubDate>
+  </item><item>
     <title>효자손 프로젝트 개발기</title>
     <link>https://4sizn.github.io/blog/dev/hyojason-project-development</link>
     <guid>https://4sizn.github.io/blog/dev/hyojason-project-development</guid>
@@ -58,12 +64,6 @@
     <link>https://4sizn.github.io/blog/projects/</link>
     <guid>https://4sizn.github.io/blog/projects/</guid>
     <description><![CDATA[ 프로젝트별 제품 맥락과 작업 범위를 모은 아카이브 ]]></description>
-    <pubDate>Wed, 12 Aug 2026 15:33:39 GMT</pubDate>
-  </item><item>
-    <title>효자손 브랜드 사이트</title>
-    <link>https://4sizn.github.io/projects/parent-view-brandsite</link>
-    <guid>https://4sizn.github.io/projects/parent-view-brandsite</guid>
-    <description><![CDATA[ 부모님 스마트폰을 자녀가 함께 보며 돕는 효자손의 브랜드 경험을 소개하는 웹사이트 ]]></description>
     <pubDate>Wed, 12 Aug 2026 15:33:39 GMT</pubDate>
   </item>
     </channel>
