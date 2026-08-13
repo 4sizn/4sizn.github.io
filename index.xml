@@ -6,6 +6,12 @@
       <description>Last 10 notes on 4sizn blog</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>AI 설정이 보이지 않을 때, 터미널 대시보드를 만들었다</title>
+    <link>https://4sizn.github.io/blog/dev/ai-config-monitor</link>
+    <guid>https://4sizn.github.io/blog/dev/ai-config-monitor</guid>
+    <description><![CDATA[ Claude와 Codex를 오가며 흩어진 MCP·skills·hooks 설정을 한 화면에서 확인하려고 만든 CLI의 개발 기록 ]]></description>
+    <pubDate>Fri, 14 Aug 2026 00:00:00 GMT</pubDate>
+  </item><item>
     <title>Lonely Candle</title>
     <link>https://4sizn.github.io/blog/dev/lonely-candle</link>
     <guid>https://4sizn.github.io/blog/dev/lonely-candle</guid>
@@ -23,6 +29,12 @@
     <guid>https://4sizn.github.io/blog/projects/swing-golf</guid>
     <description><![CDATA[ 식사 뒤 오간 골프 스윙 자랑에서 출발해, 휴대폰을 직접 휘둘러 한 홀을 플레이하도록 만든 iOS 모션 골프 게임이다. ]]></description>
     <pubDate>Fri, 14 Aug 2026 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>AI Config Monitor</title>
+    <link>https://4sizn.github.io/projects/ai-config-monitor</link>
+    <guid>https://4sizn.github.io/projects/ai-config-monitor</guid>
+    <description><![CDATA[ AI 도구 설정 파일의 변경을 추적하는 CLI ]]></description>
+    <pubDate>Thu, 13 Aug 2026 17:02:11 GMT</pubDate>
   </item><item>
     <title>4sizn Blog</title>
     <link>https://4sizn.github.io/blog/projects/4sizn-blog</link>
@@ -53,18 +65,6 @@
     <guid>https://4sizn.github.io/blog/projects/screen-saver-extension</guid>
     <description><![CDATA[ 현재 탭을 사진과 시계가 있는 전체 화면 스크린세이버로 바꾸는 Chrome 확장 프로그램이다. ]]></description>
     <pubDate>Thu, 13 Aug 2026 16:39:07 GMT</pubDate>
-  </item><item>
-    <title>Screen Saver Extension</title>
-    <link>https://4sizn.github.io/projects/screen-saver-extension</link>
-    <guid>https://4sizn.github.io/projects/screen-saver-extension</guid>
-    <description><![CDATA[ 탭 하나를 전체화면 스크린세이버로 바꿔주는 브라우저 확장 ]]></description>
-    <pubDate>Thu, 13 Aug 2026 16:28:23 GMT</pubDate>
-  </item><item>
-    <title>Garden Eel Cove</title>
-    <link>https://4sizn.github.io/blog/projects/garden-eel-cove</link>
-    <guid>https://4sizn.github.io/blog/projects/garden-eel-cove</guid>
-    <description><![CDATA[ 20년 지기 친구가 바탕화면에 두고 싶다던 정원장어 ]]></description>
-    <pubDate>Thu, 13 Aug 2026 15:56:18 GMT</pubDate>
   </item>
     </channel>
   </rss>
