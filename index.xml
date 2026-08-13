@@ -6,11 +6,23 @@
       <description>Last 10 notes on 4sizn blog</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>Screen Saver</title>
+    <link>https://4sizn.github.io/blog/dev/screen-saver-extension</link>
+    <guid>https://4sizn.github.io/blog/dev/screen-saver-extension</guid>
+    <description><![CDATA[ 자리를 비울 때 브라우저 탭을 잠시 가리고 싶어 만든 Chrome 확장 프로그램의 개발 기록 ]]></description>
+    <pubDate>Fri, 14 Aug 2026 00:00:00 GMT</pubDate>
+  </item><item>
     <title>Swing Golf</title>
     <link>https://4sizn.github.io/blog/projects/swing-golf</link>
     <guid>https://4sizn.github.io/blog/projects/swing-golf</guid>
     <description><![CDATA[ 식사 뒤 오간 골프 스윙 자랑에서 출발해, 휴대폰을 직접 휘둘러 한 홀을 플레이하도록 만든 iOS 모션 골프 게임이다. ]]></description>
     <pubDate>Fri, 14 Aug 2026 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Screen Saver Extension</title>
+    <link>https://4sizn.github.io/projects/screen-saver-extension</link>
+    <guid>https://4sizn.github.io/projects/screen-saver-extension</guid>
+    <description><![CDATA[ 탭 하나를 전체화면 스크린세이버로 바꿔주는 브라우저 확장 ]]></description>
+    <pubDate>Thu, 13 Aug 2026 16:28:23 GMT</pubDate>
   </item><item>
     <title>Garden Eel Cove</title>
     <link>https://4sizn.github.io/blog/projects/garden-eel-cove</link>
@@ -36,12 +48,6 @@
     <description><![CDATA[ 현재 탭을 사진과 시계가 있는 전체 화면 스크린세이버로 바꾸는 Chrome 확장 프로그램이다. ]]></description>
     <pubDate>Wed, 12 Aug 2026 15:55:45 GMT</pubDate>
   </item><item>
-    <title>Screen Saver Extension</title>
-    <link>https://4sizn.github.io/projects/screen-saver-extension</link>
-    <guid>https://4sizn.github.io/projects/screen-saver-extension</guid>
-    <description><![CDATA[ 탭 하나를 전체화면 스크린세이버로 바꿔주는 브라우저 확장 ]]></description>
-    <pubDate>Wed, 12 Aug 2026 15:55:45 GMT</pubDate>
-  </item><item>
     <title>효자손 브랜드 사이트</title>
     <link>https://4sizn.github.io/blog/projects/parent-view-brandsite</link>
     <guid>https://4sizn.github.io/blog/projects/parent-view-brandsite</guid>
@@ -59,12 +65,6 @@
     <guid>https://4sizn.github.io/projects/hyojason</guid>
     <description><![CDATA[ 부모님 스마트폰을 자녀가 함께 보며 도울 수 있도록 설계한 가족 원격 지원 앱 ]]></description>
     <pubDate>Wed, 12 Aug 2026 15:49:24 GMT</pubDate>
-  </item><item>
-    <title>AI Config Monitor</title>
-    <link>https://4sizn.github.io/blog/projects/ai-config-monitor</link>
-    <guid>https://4sizn.github.io/blog/projects/ai-config-monitor</guid>
-    <description><![CDATA[ 여러 AI 도구의 설정 상태를 한 화면에서 살피고 갱신 여부를 확인하는 커맨드라인 도구다. ]]></description>
-    <pubDate>Wed, 12 Aug 2026 15:37:09 GMT</pubDate>
   </item>
     </channel>
   </rss>
