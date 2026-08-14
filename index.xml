@@ -6,6 +6,24 @@
       <description>Last 10 notes on 4sizn blog</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>효자손</title>
+    <link>https://4sizn.github.io/blog/projects/hyojason</link>
+    <guid>https://4sizn.github.io/blog/projects/hyojason</guid>
+    <description><![CDATA[ 부모님과 자녀가 같은 화면을 보며 스마트폰 문제를 해결하는 가족 원격 지원 앱의 공개 프로젝트 기록 ]]></description>
+    <pubDate>Fri, 14 Aug 2026 02:09:51 GMT</pubDate>
+  </item><item>
+    <title>Projects</title>
+    <link>https://4sizn.github.io/blog/projects/</link>
+    <guid>https://4sizn.github.io/blog/projects/</guid>
+    <description><![CDATA[ 프로젝트별 제품 맥락과 작업 범위를 모은 아카이브 ]]></description>
+    <pubDate>Fri, 14 Aug 2026 02:09:51 GMT</pubDate>
+  </item><item>
+    <title>효자손</title>
+    <link>https://4sizn.github.io/projects/hyojason</link>
+    <guid>https://4sizn.github.io/projects/hyojason</guid>
+    <description><![CDATA[ 부모님 스마트폰을 자녀가 함께 보며 도울 수 있도록 설계한 가족 원격 지원 앱 ]]></description>
+    <pubDate>Fri, 14 Aug 2026 02:09:51 GMT</pubDate>
+  </item><item>
     <title>AI 설정이 보이지 않을 때, 터미널 대시보드를 만들었다</title>
     <link>https://4sizn.github.io/blog/dev/ai-config-monitor</link>
     <guid>https://4sizn.github.io/blog/dev/ai-config-monitor</guid>
@@ -46,24 +64,6 @@
     <link>https://4sizn.github.io/blog/projects/ai-config-monitor</link>
     <guid>https://4sizn.github.io/blog/projects/ai-config-monitor</guid>
     <description><![CDATA[ 여러 AI 도구의 설정 상태를 한 화면에서 살피고 갱신 여부를 확인하는 커맨드라인 도구다. ]]></description>
-    <pubDate>Thu, 13 Aug 2026 16:39:07 GMT</pubDate>
-  </item><item>
-    <title>효자손</title>
-    <link>https://4sizn.github.io/blog/projects/hyojason</link>
-    <guid>https://4sizn.github.io/blog/projects/hyojason</guid>
-    <description><![CDATA[ 부모님과 자녀가 같은 화면을 보며 스마트폰 문제를 해결하는 가족 원격 지원 앱의 공개 프로젝트 기록 ]]></description>
-    <pubDate>Thu, 13 Aug 2026 16:39:07 GMT</pubDate>
-  </item><item>
-    <title>효자손 브랜드 사이트</title>
-    <link>https://4sizn.github.io/blog/projects/parent-view-brandsite</link>
-    <guid>https://4sizn.github.io/blog/projects/parent-view-brandsite</guid>
-    <description><![CDATA[ 부모님 스마트폰을 자녀가 함께 보며 돕는 효자손의 브랜드 경험을 소개하는 웹사이트다. ]]></description>
-    <pubDate>Thu, 13 Aug 2026 16:39:07 GMT</pubDate>
-  </item><item>
-    <title>Screen Saver Extension</title>
-    <link>https://4sizn.github.io/blog/projects/screen-saver-extension</link>
-    <guid>https://4sizn.github.io/blog/projects/screen-saver-extension</guid>
-    <description><![CDATA[ 현재 탭을 사진과 시계가 있는 전체 화면 스크린세이버로 바꾸는 Chrome 확장 프로그램이다. ]]></description>
     <pubDate>Thu, 13 Aug 2026 16:39:07 GMT</pubDate>
   </item>
     </channel>
