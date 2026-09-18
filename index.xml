@@ -6,10 +6,28 @@
       <description>Last 10 notes on 4sizn blog</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>Projects</title>
+    <link>https://4sizn.github.io/blog/projects/</link>
+    <guid>https://4sizn.github.io/blog/projects/</guid>
+    <description><![CDATA[ 프로젝트별 제품 맥락과 작업 범위를 모은 아카이브 ]]></description>
+    <pubDate>Fri, 18 Sep 2026 06:22:13 GMT</pubDate>
+  </item><item>
     <title>스크린샷 1,478장을 쌓아두고 나서야 만든 앱, Moa</title>
     <link>https://4sizn.github.io/blog/dev/moa</link>
     <guid>https://4sizn.github.io/blog/dev/moa</guid>
     <description><![CDATA[ Swift를 한 줄도 안 써본 프론트엔드 개발자가 온디바이스 스크린샷 분류 앱을 만들어 심사에 올리기까지, 어디서 막혔는지에 대한 기록 ]]></description>
+    <pubDate>Fri, 18 Sep 2026 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Moa</title>
+    <link>https://4sizn.github.io/blog/projects/moa</link>
+    <guid>https://4sizn.github.io/blog/projects/moa</guid>
+    <description><![CDATA[ iPhone에 쌓인 스크린샷을 기기 안에서 분석해 내용별 폴더와 태그로 정리하는 앱이다. ]]></description>
+    <pubDate>Fri, 18 Sep 2026 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Moa</title>
+    <link>https://4sizn.github.io/projects/moa</link>
+    <guid>https://4sizn.github.io/projects/moa</guid>
+    <description><![CDATA[ 쌓인 스크린샷을 iPhone 안에서 분석해 내용별 폴더와 태그로 정리하는 앱 ]]></description>
     <pubDate>Fri, 18 Sep 2026 00:00:00 GMT</pubDate>
   </item><item>
     <title>방안과 결정, 좋습니다. 근데 책임지십시오</title>
@@ -22,12 +40,6 @@
     <link>https://4sizn.github.io/blog/projects/hyojason</link>
     <guid>https://4sizn.github.io/blog/projects/hyojason</guid>
     <description><![CDATA[ 부모님과 자녀가 같은 화면을 보며 스마트폰 문제를 해결하는 가족 원격 지원 앱의 공개 프로젝트 기록 ]]></description>
-    <pubDate>Fri, 14 Aug 2026 02:09:51 GMT</pubDate>
-  </item><item>
-    <title>Projects</title>
-    <link>https://4sizn.github.io/blog/projects/</link>
-    <guid>https://4sizn.github.io/blog/projects/</guid>
-    <description><![CDATA[ 프로젝트별 제품 맥락과 작업 범위를 모은 아카이브 ]]></description>
     <pubDate>Fri, 14 Aug 2026 02:09:51 GMT</pubDate>
   </item><item>
     <title>효자손</title>
@@ -53,18 +65,6 @@
     <guid>https://4sizn.github.io/blog/dev/screen-saver-extension</guid>
     <description><![CDATA[ 자리를 비울 때 브라우저 탭을 잠시 가리고 싶어 만든 Chrome 확장 프로그램의 개발 기록 ]]></description>
     <pubDate>Fri, 14 Aug 2026 00:00:00 GMT</pubDate>
-  </item><item>
-    <title>Swing Golf</title>
-    <link>https://4sizn.github.io/blog/projects/swing-golf</link>
-    <guid>https://4sizn.github.io/blog/projects/swing-golf</guid>
-    <description><![CDATA[ 식사 뒤 오간 골프 스윙 자랑에서 출발해, 휴대폰을 직접 휘둘러 한 홀을 플레이하도록 만든 iOS 모션 골프 게임이다. ]]></description>
-    <pubDate>Fri, 14 Aug 2026 00:00:00 GMT</pubDate>
-  </item><item>
-    <title>AI Config Monitor</title>
-    <link>https://4sizn.github.io/projects/ai-config-monitor</link>
-    <guid>https://4sizn.github.io/projects/ai-config-monitor</guid>
-    <description><![CDATA[ AI 도구 설정 파일의 변경을 추적하는 CLI ]]></description>
-    <pubDate>Thu, 13 Aug 2026 17:02:11 GMT</pubDate>
   </item>
     </channel>
   </rss>
