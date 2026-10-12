@@ -6,65 +6,65 @@
       <description>Last 10 notes on 4sizn blog</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
-    <title>Moa</title>
-    <link>https://4sizn.github.io/blog/projects/moa</link>
-    <guid>https://4sizn.github.io/blog/projects/moa</guid>
-    <description><![CDATA[ Swift를 한 줄도 안 써본 프론트엔드 개발자가 온디바이스 스크린샷 분류 앱을 만들어 심사에 올리기까지, 어디서 막혔는지에 대한 기록 ]]></description>
-    <pubDate>Mon, 28 Sep 2026 00:00:00 GMT</pubDate>
+    <title>Swing Golf</title>
+    <link>https://4sizn.github.io/projects/swing-golf</link>
+    <guid>https://4sizn.github.io/projects/swing-golf</guid>
+    <description><![CDATA[ 휴대폰을 골프채처럼 휘두르는 모션 입력 골프 게임 ]]></description>
+    <pubDate>Mon, 12 Oct 2026 14:53:15 GMT</pubDate>
   </item><item>
-    <title>[2026-09-28] [Moa] v1.3 릴리즈</title>
-    <link>https://4sizn.github.io/blog/releases/2026-09-28-ios-screenshot-manager-1.3</link>
-    <guid>https://4sizn.github.io/blog/releases/2026-09-28-ios-screenshot-manager-1.3</guid>
-    <description><![CDATA[ 스크린샷을 기기 안에서 정리하는 iOS 앱 Moa가 App Store에 올라갔습니다. 2026-09-24 첫 출시부터 광고를 붙인 v1.3까지, 그리고 심사 중인 v1.4. ]]></description>
-    <pubDate>Mon, 28 Sep 2026 00:00:00 GMT</pubDate>
+    <title>[2026-09-29] [유리 카메라] v1.0.2 릴리즈</title>
+    <link>https://4sizn.github.io/blog/releases/2026-09-29-glass-camera-1.0.2</link>
+    <guid>https://4sizn.github.io/blog/releases/2026-09-29-glass-camera-1.0.2</guid>
+    <description><![CDATA[ 패턴 유리 너머로 찍는 iPhone 카메라, 유리 카메라(Yuri Camera)의 첫 기록. 1.0 등록 준비부터 고양이 아이콘의 1.0.1, 전면 광고와 추적 동의를 넣은 1.0.2(빌드 6)까지. ]]></description>
+    <pubDate>Mon, 12 Oct 2026 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>[2026-10-04] [Cloud Minesweeper] v1.1.0 릴리즈</title>
+    <link>https://4sizn.github.io/blog/releases/2026-10-04-cloud-minesweeper-1.1.0</link>
+    <guid>https://4sizn.github.io/blog/releases/2026-10-04-cloud-minesweeper-1.1.0</guid>
+    <description><![CDATA[ 하늘 사진의 구름 모양으로 지뢰찾기 판을 만드는 iOS 게임 지뢰찾기:구름이 영어·일본어·중국어(간체)를 지원합니다. 2026-09-24 첫 출시부터 광고를 붙인 v1.0.1, 연령 등급 설문 때문에 한 번 거절된 v1.1.0까지. ]]></description>
+    <pubDate>Mon, 12 Oct 2026 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>[2026-10-12] [Moa] v1.8 릴리즈</title>
+    <link>https://4sizn.github.io/blog/releases/2026-10-12-ios-screenshot-manager-1.8</link>
+    <guid>https://4sizn.github.io/blog/releases/2026-10-12-ios-screenshot-manager-1.8</guid>
+    <description><![CDATA[ 보름 동안 Moa v1.4부터 v1.8까지 이어 낸 기록입니다. 광고 게재 제한 해제와 광고 요청 축소, 끌어서 범위 선택, iCloud 전용 원본 처리, 사진 앱식 보기, 백그라운드 정리 중단과 장당 3.8초 문제를 다뤘습니다. ]]></description>
+    <pubDate>Mon, 12 Oct 2026 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>[2026-10-12] [Lonely Candle] v1.7 릴리즈</title>
+    <link>https://4sizn.github.io/blog/releases/2026-10-12-lonely-candle-1.7</link>
+    <guid>https://4sizn.github.io/blog/releases/2026-10-12-lonely-candle-1.7</guid>
+    <description><![CDATA[ Lonely Candle v1.3부터 v1.7까지의 기록입니다. 전면광고와 광고가 안 나오던 이유, 영어 기본 다국어화와 국가별 스토어 정비, 그리고 말소리에는 꺼지지 않는 입김 판정까지 담았습니다. ]]></description>
+    <pubDate>Mon, 12 Oct 2026 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>[2026-10-12] [Swing Golf] v1.11 릴리즈</title>
+    <link>https://4sizn.github.io/blog/releases/2026-10-12-swing-golf-1.11</link>
+    <guid>https://4sizn.github.io/blog/releases/2026-10-12-swing-golf-1.11</guid>
+    <description><![CDATA[ Swing Golf v1.4부터 v1.11까지 두 달치 기록입니다. 광고 동의 타임아웃과 씨름한 1.5, Game Center 순위표, 로우폴리 코스와 고스트, 8개 언어, 섬 코스 코랄 아일, 친구 도전 링크까지 담았습니다. ]]></description>
+    <pubDate>Mon, 12 Oct 2026 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Cloud Minesweeper</title>
+    <link>https://4sizn.github.io/projects/cloud-minesweeper</link>
+    <guid>https://4sizn.github.io/projects/cloud-minesweeper</guid>
+    <description><![CDATA[ 하늘을 찍으면 구름 모양 그대로 지뢰찾기 판이 되고, 풀어낸 구름을 휴대폰이 향한 방향에 걸어 두는 iPhone 게임 ]]></description>
+    <pubDate>Mon, 12 Oct 2026 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>유리 카메라</title>
+    <link>https://4sizn.github.io/projects/glass-camera</link>
+    <guid>https://4sizn.github.io/projects/glass-camera</guid>
+    <description><![CDATA[ 눈앞의 장면을 패턴 유리 너머로 보여 주고, 보이는 그대로 사진과 동영상으로 남기는 iPhone 카메라 ]]></description>
+    <pubDate>Mon, 12 Oct 2026 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Lonely Candle</title>
+    <link>https://4sizn.github.io/projects/lonely-candle</link>
+    <guid>https://4sizn.github.io/projects/lonely-candle</guid>
+    <description><![CDATA[ 생일 촛불이 없던 자리에서 출발한, 입김과 기울기에 반응하는 손안의 촛불 ]]></description>
+    <pubDate>Mon, 12 Oct 2026 00:00:00 GMT</pubDate>
   </item><item>
     <title>Moa</title>
     <link>https://4sizn.github.io/projects/moa</link>
     <guid>https://4sizn.github.io/projects/moa</guid>
     <description><![CDATA[ 쌓인 스크린샷을 iPhone 안에서 분석해 내용별 폴더와 태그로 정리하는 앱 ]]></description>
-    <pubDate>Mon, 28 Sep 2026 00:00:00 GMT</pubDate>
-  </item><item>
-    <title>Projects</title>
-    <link>https://4sizn.github.io/blog/projects/</link>
-    <guid>https://4sizn.github.io/blog/projects/</guid>
-    <description><![CDATA[ 프로젝트별 제품 맥락과 작업 범위를 모은 아카이브 ]]></description>
-    <pubDate>Fri, 18 Sep 2026 06:22:13 GMT</pubDate>
-  </item><item>
-    <title>방안과 결정, 좋습니다. 근데 책임지십시오</title>
-    <link>https://4sizn.github.io/blog/log/%EB%B0%A9%EC%95%88%EA%B3%BC-%EA%B2%B0%EC%A0%95-%EC%A2%8B%EC%8A%B5%EB%8B%88%EB%8B%A4-%EA%B7%BC%EB%8D%B0-%EC%B1%85%EC%9E%84%EC%A7%80%EC%8B%AD%EC%8B%9C%EC%98%A4</link>
-    <guid>https://4sizn.github.io/blog/log/%EB%B0%A9%EC%95%88%EA%B3%BC-%EA%B2%B0%EC%A0%95-%EC%A2%8B%EC%8A%B5%EB%8B%88%EB%8B%A4-%EA%B7%BC%EB%8D%B0-%EC%B1%85%EC%9E%84%EC%A7%80%EC%8B%AD%EC%8B%9C%EC%98%A4</guid>
-    <description><![CDATA[ 조직에서 방향을 정한 사람과 그것을 실행한 사람의 책임은 어떻게 나뉘어야 하는가에 대한 기록 ]]></description>
-    <pubDate>Wed, 16 Sep 2026 00:00:00 GMT</pubDate>
-  </item><item>
-    <title>효자손</title>
-    <link>https://4sizn.github.io/blog/projects/hyojason</link>
-    <guid>https://4sizn.github.io/blog/projects/hyojason</guid>
-    <description><![CDATA[ 부모님과 자녀가 같은 화면을 보며 스마트폰 문제를 해결하는 가족 원격 지원 앱의 공개 프로젝트 기록 ]]></description>
-    <pubDate>Fri, 14 Aug 2026 02:09:51 GMT</pubDate>
-  </item><item>
-    <title>효자손</title>
-    <link>https://4sizn.github.io/projects/hyojason</link>
-    <guid>https://4sizn.github.io/projects/hyojason</guid>
-    <description><![CDATA[ 부모님 스마트폰을 자녀가 함께 보며 도울 수 있도록 설계한 가족 원격 지원 앱 ]]></description>
-    <pubDate>Fri, 14 Aug 2026 02:09:51 GMT</pubDate>
-  </item><item>
-    <title>AI 설정이 보이지 않을 때, 터미널 대시보드를 만들었다</title>
-    <link>https://4sizn.github.io/blog/dev/ai-config-monitor</link>
-    <guid>https://4sizn.github.io/blog/dev/ai-config-monitor</guid>
-    <description><![CDATA[ Claude와 Codex를 오가며 흩어진 MCP·skills·hooks 설정을 한 화면에서 확인하려고 만든 CLI의 개발 기록 ]]></description>
-    <pubDate>Fri, 14 Aug 2026 00:00:00 GMT</pubDate>
-  </item><item>
-    <title>Lonely Candle</title>
-    <link>https://4sizn.github.io/blog/dev/lonely-candle</link>
-    <guid>https://4sizn.github.io/blog/dev/lonely-candle</guid>
-    <description><![CDATA[ 생일 촛불이 없던 자리에서 시작해, 입김과 기울기에 반응하는 손안의 촛불을 만든 기록이다. ]]></description>
-    <pubDate>Fri, 14 Aug 2026 00:00:00 GMT</pubDate>
-  </item><item>
-    <title>Screen Saver</title>
-    <link>https://4sizn.github.io/blog/dev/screen-saver-extension</link>
-    <guid>https://4sizn.github.io/blog/dev/screen-saver-extension</guid>
-    <description><![CDATA[ 자리를 비울 때 브라우저 탭을 잠시 가리고 싶어 만든 Chrome 확장 프로그램의 개발 기록 ]]></description>
-    <pubDate>Fri, 14 Aug 2026 00:00:00 GMT</pubDate>
+    <pubDate>Mon, 12 Oct 2026 00:00:00 GMT</pubDate>
   </item>
     </channel>
   </rss>

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr"><head><title>[2026-10-12] [Swing Golf] v1.11 릴리즈</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space Grotesk:wght@400;700&amp;family=Inter:ital,wght@0,400;0,600;1,400;1,600&amp;family=JetBrains Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="4sizn blog"/><meta property="og:title" content="[2026-10-12] [Swing Golf] v1.11 릴리즈"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="[2026-10-12] [Swing Golf] v1.11 릴리즈"/><meta name="twitter:description" content="Swing Golf v1.4부터 v1.11까지 두 달치 기록입니다. 광고 동의 타임아웃과 씨름한 1.5, Game Center 순위표, 로우폴리 코스와 고스트, 8개 언어, 섬 코스 코랄 아일, 친구 도전 링크까지 담았습니다."/><meta property="og:description" content="Swing Golf v1.4부터 v1.11까지 두 달치 기록입니다. 광고 동의 타임아웃과 씨름한 1.5, Game Center 순위표, 로우폴리 코스와 고스트, 8개 언어, 섬 코스 코랄 아일, 친구 도전 링크까지 담았습니다."/><meta property="og:image:alt" content="Swing Golf v1.4부터 v1.11까지 두 달치 기록입니다. 광고 동의 타임아웃과 씨름한 1.5, Game Center 순위표, 로우폴리 코스와 고스트, 8개 언어, 섬 코스 코랄 아일, 친구 도전 링크까지 담았습니다."/><meta property="twitter:domain" content="4sizn.github.io"/><meta property="og:url" content="https://4sizn.github.io/blog/releases/2026-10-12-swing-golf-1.11"/><meta property="twitter:url" content="https://4sizn.github.io/blog/releases/2026-10-12-swing-golf-1.11"/><link rel="icon" href="../../static/icon.png"/><meta name="description" content="Swing Golf v1.4부터 v1.11까지 두 달치 기록입니다. 광고 동의 타임아웃과 씨름한 1.5, Game Center 순위표, 로우폴리 코스와 고스트, 8개 언어, 섬 코스 코랄 아일, 친구 도전 링크까지 담았습니다."/><meta name="generator" content="Quartz"/><link href="../../index.css" rel="stylesheet" type="text/css" data-persist="true"/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL2hvbWUvcnVubmVyL3dvcmsvYmxvZy9ibG9nL3F1YXJ0ei9jb21wb25lbnRzL3N0eWxlcyIsInNvdXJjZXMiOlsibWVybWFpZC5pbmxpbmUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTs7O0FBS0Y7RUFDRTtFQUNBOzs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBSUo7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFOztBQUdGO0VBQ0U7O0FBSUY7RUFDRTtFQUNBO0VBQ0EiLCJzb3VyY2VzQ29udGVudCI6WyIuZXhwYW5kLWJ1dHRvbiB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgZGlzcGxheTogZmxleDtcbiAgZmxvYXQ6IHJpZ2h0O1xuICBwYWRkaW5nOiAwLjRyZW07XG4gIG1hcmdpbjogMC4zcmVtO1xuICByaWdodDogMDsgLy8gTk9URTogcmlnaHQgd2lsbCBiZSBzZXQgaW4gbWVybWFpZC5pbmxpbmUudHNcbiAgY29sb3I6IHZhcigtLWdyYXkpO1xuICBib3JkZXItY29sb3I6IHZhcigtLWRhcmspO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gIGJvcmRlcjogMXB4IHNvbGlkO1xuICBib3JkZXItcmFkaXVzOiA1cHg7XG4gIG9wYWNpdHk6IDA7XG4gIHRyYW5zaXRpb246IDAuMnM7XG5cbiAgJiA+IHN2ZyB7XG4gICAgZmlsbDogdmFyKC0tbGlnaHQpO1xuICAgIGZpbHRlcjogY29udHJhc3QoMC4zKTtcbiAgfVxuXG4gICY6aG92ZXIge1xuICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICBib3JkZXItY29sb3I6IHZhcigtLXNlY29uZGFyeSk7XG4gIH1cblxuICAmOmZvY3VzIHtcbiAgICBvdXRsaW5lOiAwO1xuICB9XG59XG5cbnByZSB7XG4gICY6aG92ZXIgPiAuZXhwYW5kLWJ1dHRvbiB7XG4gICAgb3BhY2l0eTogMTtcbiAgICB0cmFuc2l0aW9uOiAwLjJzO1xuICB9XG59XG5cbiNtZXJtYWlkLWNvbnRhaW5lciB7XG4gIHBvc2l0aW9uOiBmaXhlZDtcbiAgY29udGFpbjogbGF5b3V0O1xuICB6LWluZGV4OiA5OTk7XG4gIGxlZnQ6IDA7XG4gIHRvcDogMDtcbiAgd2lkdGg6IDEwMHZ3O1xuICBoZWlnaHQ6IDEwMHZoO1xuICBvdmVyZmxvdzogaGlkZGVuO1xuICBkaXNwbGF5OiBub25lO1xuICBiYWNrZHJvcC1maWx0ZXI6IGJsdXIoNHB4KTtcbiAgYmFja2dyb3VuZDogcmdiYSgwLCAwLCAwLCAwLjUpO1xuXG4gICYuYWN0aXZlIHtcbiAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG4gIH1cblxuICAmID4gI21lcm1haWQtc3BhY2Uge1xuICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tbGlnaHQpO1xuICAgIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgICBwb3NpdGlvbjogZml4ZWQ7XG4gICAgdG9wOiA1MCU7XG4gICAgbGVmdDogNTAlO1xuICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlKC01MCUsIC01MCUpO1xuICAgIGhlaWdodDogODB2aDtcbiAgICB3aWR0aDogODB2dztcbiAgICBvdmVyZmxvdzogaGlkZGVuO1xuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRlbnQge1xuICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgdHJhbnNmb3JtLW9yaWdpbjogMCAwO1xuICAgICAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIDAuMXMgZWFzZTtcbiAgICAgIG92ZXJmbG93OiB2aXNpYmxlO1xuICAgICAgbWluLWhlaWdodDogMjAwcHg7XG4gICAgICBtaW4td2lkdGg6IDIwMHB4O1xuXG4gICAgICBwcmUge1xuICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgIGJvcmRlcjogbm9uZTtcbiAgICAgIH1cblxuICAgICAgc3ZnIHtcbiAgICAgICAgbWF4LXdpZHRoOiBub25lO1xuICAgICAgICBoZWlnaHQ6IGF1dG87XG4gICAgICB9XG4gICAgfVxuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRyb2xzIHtcbiAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgIGJvdHRvbTogMjBweDtcbiAgICAgIHJpZ2h0OiAyMHB4O1xuICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgIGdhcDogOHB4O1xuICAgICAgcGFkZGluZzogOHB4O1xuICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgICAgIGJveC1zaGFkb3c6IDAgMnB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMSk7XG4gICAgICB6LWluZGV4OiAyO1xuXG4gICAgICAubWVybWFpZC1jb250cm9sLWJ1dHRvbiB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgICAgICB3aWR0aDogMzJweDtcbiAgICAgICAgaGVpZ2h0OiAzMnB4O1xuICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICAgIGNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgICAgICAgYm9yZGVyLXJhZGl1czogNHB4O1xuICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICAgIGZvbnQtc2l6ZTogMTZweDtcbiAgICAgICAgZm9udC1mYW1pbHk6IHZhcigtLWJvZHlGb250KTtcbiAgICAgICAgdHJhbnNpdGlvbjogYWxsIDAuMnMgZWFzZTtcblxuICAgICAgICAmOmhvdmVyIHtcbiAgICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICB9XG5cbiAgICAgICAgJjphY3RpdmUge1xuICAgICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgxcHgpO1xuICAgICAgICB9XG5cbiAgICAgICAgLy8gU3R5bGUgdGhlIHJlc2V0IGJ1dHRvbiBkaWZmZXJlbnRseVxuICAgICAgICAmOm50aC1jaGlsZCgyKSB7XG4gICAgICAgICAgd2lkdGg6IGF1dG87XG4gICAgICAgICAgcGFkZGluZzogMCAxMnB4O1xuICAgICAgICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICAgICAgfVxuICAgICAgfVxuICAgIH1cbiAgfVxufVxuIl19 */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../../prescript.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://4sizn.github.io/index.xml"/><link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin="anonymous"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://4sizn.github.io/static/og-image.png"/><meta property="og:image:url" content="https://4sizn.github.io/static/og-image.png"/><meta name="twitter:image" content="https://4sizn.github.io/static/og-image.png"/><meta property="og:image:type" content="image/png"/></head><body data-slug="blog/releases/2026-10-12-swing-golf-1.11"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="../..">4sizn blog</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>{let order={log:0,dev:1,releases:2,projects:3};if(a.isFolder&amp;&amp;!b.isFolder)return-1;if(!a.isFolder&amp;&amp;b.isFolder)return 1;if(a.isFolder&amp;&amp;b.isFolder){let oa=order[a.slugSegment]??99,ob=order[b.slugSegment]??99;return oa!==ob?oa-ob:a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;})}let da=a.data?.published??a.data?.created??a.data?.modified??a.data?.date,db=b.data?.published??b.data?.created??b.data?.modified??b.data?.date,daTime=da?new Date(da).getTime():0,dbTime=db?new Date(db).getTime():0;return daTime!==dbTime?dbTime-daTime:a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;})}&quot;,&quot;filterFn&quot;:&quot;node=>![\&quot;tags/index\&quot;,\&quot;about\&quot;,\&quot;projects/index\&quot;].includes(node.slug)&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-136"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-136" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><header><nav class="site-nav"><div class="site-nav-inner"><a class="site-nav-brand" href="../../">4sizn blog</a><ul class="site-nav-links"><li><a href="../../" class>Home</a></li><li><a href="../../about" class>About</a></li><li><a href="../../projects" class>Project</a></li><li><a href="../../blog" class="active" aria-current="page">Blog</a></li></ul><div class="site-nav-actions"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div></div></nav></header><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../blog/">Blog</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../blog/releases/">releases</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>[2026 10 12] [Swing Golf] v1.11 릴리즈</a></div></nav><h1 class="article-title">[2026-10-12] [Swing Golf] v1.11 릴리즈</h1><p show-comma="true" class="content-meta"><time datetime="2026-10-12T00:00:00.000Z">Oct 12, 2026</time><span>24 min read</span></p><ul class="tags"><li><a href="../../tags/release" class="internal tag-link">release</a></li><li><a href="../../tags/app" class="internal tag-link">app</a></li><li><a href="../../tags/game" class="internal tag-link">game</a></li><li><a href="../../tags/swing-golf" class="internal tag-link">swing-golf</a></li></ul></div></div><article class="popover-hint release changelog"><h2 id="-swing-golf-v111-릴리즈">🎉 [Swing Golf] v1.11 릴리즈<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-swing-golf-v111-릴리즈" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote>
+<p>📅 v1.11 빌드 업로드: 2026-10-12 · 이 글이 다루는 범위: v1.4(2026-08-13) ~ v1.11(2026-10-12)</p>
+</blockquote>
+<p><img src="../../static/swing-golf/store-lowpoly-flight.jpg" alt="App Store 두 번째 스크린샷 — &quot;로우폴리 코스 위로 날아가는 공&quot; 문구와 산·나무가 보이는 코스 위를 공이 날아가는 장면, 아래쪽에 유리판 위 클럽 선택 카드"/></p>
+<p>Swing Golf v1.11을 공개합니다. 지난 글이 v1.3(2026-08-09)이었으니 두 달 사이 v1.4부터 v1.11까지 여덟 개 버전이 나왔고 이 글에 한꺼번에 정리합니다. 이번 구간에서는 <strong>혼자 치던 게임을 누군가와 겨루는 게임으로 바꾸는 일</strong>에 집중했습니다. Game Center 순위표로 시작해 내 베스트 기록과 겨루는 고스트, 그 고스트를 친구에게 보내는 도전 링크까지 이어졌습니다.</p>
+<p>중간에 막힌 구간도 있었습니다. 8월에는 광고가 한 번도 나가지 않는 문제 하나로 1.5 빌드를 일곱 번 올렸고, 원인은 결국 코드가 아니었습니다. 그 이야기도 함께 적어 둡니다.</p>
+<h2 id="-whats-new">✨ What’s New<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-whats-new" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="친구에게-도전장을-보낼-수-있습니다-v110">친구에게 도전장을 보낼 수 있습니다 (v1.10)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#친구에게-도전장을-보낼-수-있습니다-v110" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>라운드 결과 화면에 ‘친구에게 공유’ 버튼이 생겼습니다. 누르면 OS 공유 시트가 열리고 이번 라운드가 링크 하나에 담겨 나갑니다. 링크를 받은 친구가 열면 같은 코스, 같은 모드, 같은 바람에서 내 샷을 고스트로 보면서 라운드를 칩니다. 끝나면 이겼는지 졌는지가 나옵니다.</p>
+<p><img src="../../static/swing-golf/friend-challenge-result.jpg" alt="인스타그램 홍보 이미지 — &quot;라운드가 끝나면 친구에게 도전장&quot; 문구 아래, 9타 -3 기록과 '다시 플레이'·'친구에게 공유'·'메뉴로' 버튼이 있는 실제 라운드 완료 카드"/></p>
+<p>서버는 두지 않았습니다. 코스·모드·닉네임·타수·시간과 홀별 고스트를 압축해 링크의 <code>#</code> 뒤에 그대로 싣습니다. 프래그먼트라서 링크를 안내하는 웹 페이지의 서버 로그에도 기록 내용이 남지 않습니다. 고스트에는 기록 당시의 바람과 코스 서명도 같이 저장하는데, 나중에 물리 상수가 바뀌어도 그때 궤적 그대로 재생하고, 코스 자체가 바뀌었으면 그 홀 고스트는 재생하지 않으려는 것입니다.</p>
+<p>링크는 Universal Link로 앱을 열고 앱 안 브라우저에서 “앱에서 열기”를 쓸 수 있도록 <code>phoneswinggolf://</code> 커스텀 스킴도 함께 넣었습니다. iPhone 15 Pro와 Galaxy A20s 사이에서 도전 링크를 주고받아 3홀 고스트가 모두 재생되는 것, 카카오톡 링크에서 앱이 열리는 것을 실기로 확인했습니다.</p>
+<p>붙이는 과정에서 한 번 크게 걸렸습니다. 딥링크 플러그인이 iOS 빌드 시 entitlements 파일을 통째로 다시 쓰는 바람에 Game Center 권한이 지워지고 있었습니다. 플러그인을 패치해 기존 파일에 associated-domains 항목만 덧붙이도록 바꿨습니다. 예전 결과 공유용이던 공유 카드 이미지는 이 링크로 대체하면서 뺐습니다.</p>
+<h3 id="고스트가-말을-겁니다-v17--v110">고스트가 말을 겁니다 (v1.7 → v1.10)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#고스트가-말을-겁니다-v17--v110" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>고스트는 v1.7에서 처음 들어왔습니다. 내 베스트 라운드의 샷을 기록해 두었다가 다음 라운드에서 같은 홀 시계에 맞춰 반투명 공으로 다시 날립니다. 설정에서 끌 수 있습니다.</p>
+<p>v1.10에서는 고스트를 ‘상대’로 만들었습니다. 고스트 위에 닉네임 이름표를 달고(설정에서 입력, iOS는 Game Center 별칭으로 한 번 자동 채움) 상황마다 말풍선으로 반응하게 했습니다. 홀마다 고스트의 첫 샷에서는 으쓱하고, 내가 넣기 전에 고스트가 먼저 홀인하면 약을 올리고, 내가 먼저 넣으면 웁니다. 반응마다 대사가 다섯 줄씩 있고 직전 대사는 연달아 나오지 않습니다.</p>
+<p><img src="../../static/swing-golf/ghost-speech-bubble.jpg" alt="인스타그램 홍보 이미지 — &quot;같은 코스, 같은 바람 내 고스트와 대결&quot; 문구 아래, 고스트 모양 이모트와 '시니서기' 이름이 붙은 말풍선이 &quot;잘 봐, 이렇게 치는 거야~&quot;라고 말하는 실제 게임 화면"/></p>
+<p>처음 만든 말풍선은 누가 말하는지가 분명하지 않았습니다. ‘졌다’는 대사를 보고 고스트가 진 건지 내가 진 건지 모르겠다는 피드백을 받았고, 원인을 짚어 보니 네 가지였습니다. 둥근 얼굴 이모트가 내 감정 이모지처럼 읽혔고, 말풍선에 화자가 없었고, 결과 카드 위로 올라가면 꼬리가 고스트를 가리키지 못했고, 대사의 주어가 모호했습니다. 이모트를 고스트 실루엣으로 다시 그리고, 말풍선 위에 고스트 이름을 붙이고, 대사를 ‘으앙… 네가 이겼어!’로 바꿨습니다.</p>
+<p>같은 버전에서 클래식 모드의 스윙 차례 표시도 바꿨습니다. “좋아요! 이제 백스윙 → 스윙!” 같은 문장 대신, 준비 중에는 흐린 유리 알약만 두고 차례가 오면 SWING!/PUTT! 스티커가 튀어 오르며 짧게(60ms) 진동합니다.</p>
+<h3 id="game-center-순위표와-결과-카드-top-5-v16--v111">Game Center 순위표와 결과 카드 Top 5 (v1.6 → v1.11)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#game-center-순위표와-결과-카드-top-5-v16--v111" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>v1.6에서 iOS Game Center 순위표를 붙였습니다. 처음에는 코스 3개 × 클래식/패스트로 6개였습니다. 클래식은 타수로, 패스트는 시간으로 순위를 매깁니다. 이 플러그인이 iOS 17.0 이상을 요구해서 최소 지원 버전이 함께 올라갔습니다. 이후 v1.7에 오늘의 챌린지 순위표, v1.9에 코랄 아일 순위표 2개가 더해졌습니다.</p>
+<p>v1.10에서는 라운드가 끝나면 결과 카드에 “최고 기록 N위 / M명”(20명 이상이면 상위 %)을 띄우고 v1.11에서는 그 아래 상위 5명의 순위·별명·기록을 보여 줍니다. 내 줄은 금색입니다. 누구를 넘어야 하는지 결과 화면에서 바로 보이도록 했습니다.</p>
+<p>v1.11 작업 중 한 가지를 고쳤습니다. 처음 만든 코드는 내 기록을 먼저 읽고 나서 목록을 내보냈는데, 처음 하는 코스처럼 순위표에 내 기록이 없으면 목록까지 통째로 뜨지 않았습니다. 지금은 순위 칩만 내 기록에 의존하고 Top 5는 항상 보입니다. Android에는 Game Center가 없어 이 표시가 나오지 않습니다.</p>
+<h3 id="섬-코스-코랄-아일과-물-해저드-v19">섬 코스 ‘코랄 아일’과 물 해저드 (v1.9)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#섬-코스-코랄-아일과-물-해저드-v19" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>네 번째 코스입니다. 둥근 페어웨이 섬 사이가 전부 물이고, 공이 물에 닿으면 수면에서 멈춘 뒤 1벌타를 받고 직전에 친 자리에서 다시 칩니다.</p>
+<p><img src="../../static/swing-golf/coral-isle-tee.jpg" alt="코랄 아일 1번 홀 실기 화면 — 바다 한가운데 초록 섬을 향해 공이 날아가고, 위쪽 고도 단면에는 물이 파란 띠로 표시된다"/></p>
+<p>처음 만든 섬은 실기로 쳐 보니 너무 어려웠습니다. 섬 반경을 약 1.35배로 키우고 그린마다 페어웨이 에이프런 섬을 붙였습니다. 섬 윗면과 그린이 같은 높이라 그린 주변이 반짝이는 z-파이팅도 있어서 섬 면을 그린·벙커보다 살짝 아래로 내렸습니다. v1.10에서는 3번 홀처럼 기본 선택 거리(드라이버 220m)로 치면 물에 빠지는 홀에서, 마른 땅에 멈추는 가장 긴 거리(190m)로 시작하도록 고쳤습니다.</p>
+<p>물이 생기면서 조준 화면 위쪽 고도 단면도 손봤습니다. 지금 거리 게이지를 풀파워로 쳤을 때 공이 멈출 예상 지점을 ▼로 찍고 땅이면 노랑, 물이면 파랑으로 표시합니다. 컵 위치에는 빨간 깃발을 세웠습니다.</p>
+<h3 id="로우폴리-코스와-글래스--라임-ui-v17">로우폴리 코스와 ‘글래스 &amp; 라임’ UI (v1.7)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#로우폴리-코스와-글래스--라임-ui-v17" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>코스 그래픽을 통째로 다시 만들었습니다. 면마다 색을 조금씩 다르게 한 플랫 셰이딩 지형, 페어웨이 회랑 밖의 산(최대 34m)·호수·설산, 소나무·활엽수·바위·덤불 약 280개, 납작한 구름, 따뜻한 해와 안개 원근이 들어갔습니다. 공의 물리는 같은 지형 높이 함수 하나를 그대로 쓰고 페어웨이 회랑 안·티·그린 배치는 바꾸지 않았습니다. 볼거리는 늘리되 손에 익은 비거리는 건드리지 않으려는 선택이었습니다.</p>
+<p>풍경이 늘어난 만큼 무거워졌습니다. 구름을 병합 메시로 바꾸고 지형 아래 깔려 있던 넓은 수면 평면 대신 물이 실제로 보이는 골짜기 칸에만 수면을 그려 드로우콜을 53개에서 17개로 줄였습니다. iPhone 15 Pro에서 120fps를 확인했습니다.</p>
+<p>2D UI도 바꿨습니다. 크림색 패널과 베벨 버튼의 ‘캔디 스코어카드’ 대신, 살아 있는 3D 코스 위에 어두운 유리판을 얹고 강조색은 라임 하나만 씁니다. 클럽 선택 카드에는 직접 그린 드라이버·7번 아이언·웨지·퍼터 일러스트를 넣었고 워드마크는 Lilita One 서체로 바꿨습니다.</p>
+<h3 id="오늘의-챌린지와-홀-신기록-v17--v19">오늘의 챌린지와 홀 신기록 (v1.7 → v1.9)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#오늘의-챌린지와-홀-신기록-v17--v19" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>v1.7에서 오늘의 챌린지를 넣었습니다. 처음에는 날짜로 정해지는 1홀이었습니다. 하루 첫 완주만 기록하고 연속 참여 스트릭을 쌓습니다. 홀마다 베스트를 따로 기록하고 깨면 ‘홀 신기록!’ 배지와 컨페티가 터집니다.</p>
+<p>1홀짜리 데일리가 밋밋하다는 피드백이 있어 v1.9에서 하루 한 코스의 3홀 라운드로 바꿨습니다. 그린힐 → 샌드베이 → 스톰릿지 → 코랄 아일 순으로 날마다 돌아가고 조건은 일반 코스와 같습니다.</p>
+<h3 id="8개-언어-v18">8개 언어 (v1.8)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#8개-언어-v18" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>일본어·중국어(간체)·스페인어·독일어·프랑스어·포르투갈어를 더해 한국어·영어까지 8개 언어가 됐습니다. App Store 상품 페이지와 스크린샷도 8개 언어로 맞췄습니다.</p>
+<p>일본어·중국어를 넣자 iPhone 실기에서 한자가 네모(tofu)로 나왔습니다. 본문 서체 Pretendard에 그 한자들이 없고, iOS에서는 Godot의 시스템 폰트 폴백이 동작하지 않았기 때문입니다. Noto Sans JP/SC에서 게임 문구에 실제로 쓰는 글자만 잘라 낸 서브셋(87KB)을 번들하고 폴백으로 걸었습니다. 문구를 고치면 서브셋을 다시 만들도록, 모든 한자가 번들 폰트에 있는지 검사하는 테스트도 넣었습니다.</p>
+<p>이걸 보다가 다른 버그도 하나 찾았습니다. Godot의 Control은 바로 위 부모가 Control이나 Window일 때만 테마를 물려받는데, UI 전체가 일반 Node 아래 붙어 있어서 그동안 지정한 폰트 대신 Godot 내장 기본 폰트로 그려지고 있었습니다. 기본 테마의 폰트를 직접 바꿔 본문도 Pretendard Bold로 통일했습니다. 그래서 v1.8부터 본문 글자가 예전보다 굵어 보입니다.</p>
+<h2 id="-bug-fixes">🐛 Bug Fixes<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-bug-fixes" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>설정 화면이 터치로 스크롤되지 않던 문제</strong> (v1.7) — 카드가 드래그 입력을 삼키고 있었습니다. 닫기 버튼도 화면에 고정했습니다</li>
+<li><strong>App Store에 지원 언어가 영어만 표시되던 문제</strong> (v1.8.1) — 스토어의 지원 언어는 App Store Connect 현지화가 아니라 앱 번들 Info.plist의 <code>CFBundleLocalizations</code>를 읽습니다. 8개 언어를 선언한 빌드만 따로 냈습니다</li>
+<li><strong>2·3번 홀 고도 단면에 1번 홀 단면이 남던 문제</strong> (v1.10)</li>
+<li><strong>영어 단복수 표기와 라운드 신기록에 홀 배지가 잘못 붙던 문제</strong> (v1.7)</li>
+</ul>
+<h2 id="️-under-the-hood">⚙️ Under the Hood<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#️-under-the-hood" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="광고가-한-번도-나가지-않았던-15">광고가 한 번도 나가지 않았던 1.5<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#광고가-한-번도-나가지-않았던-15" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>v1.4에서 3홀 라운드를 마친 뒤 전면 광고를 붙였고 광고가 닫히면 결과 화면이 바로 보이도록 순서를 다듬었습니다. 그런데 출시용 빌드에서 광고 요청이 한 번도 나가지 않았습니다. AdMob 콘솔의 요청 수가 0으로 남아 있었습니다.</p>
+<p>광고를 띄우기 전에 Google의 동의 SDK(UMP)로 개인정보 동의 상태를 확인하는데, 그 결과를 알려 주는 콜백이 돌아오지 않는 것이 증상이었습니다. 코드 쪽 문제라고 보고 1.5 빌드를 하나씩 올리며 좁혀 갔습니다.</p>
+<ul>
+<li>빌드 13 — 모바일 광고 SDK 초기화를 기다리도록</li>
+<li>빌드 14 — 출시 빌드에서 광고 처리 단계를 추적하는 로그 추가</li>
+<li>빌드 15 — UMP 요청을 보내기 전에 응답 신호를 먼저 구독하도록</li>
+<li>빌드 16 — 콜백이 5초 안에 오지 않을 때, 이미 저장된 동의 상태가 ‘필요 없음’ 또는 ‘받음’일 때만 광고를 초기화하는 타임아웃 경로</li>
+<li>빌드 17 — 실패 코드 기록</li>
+</ul>
+<p>진짜 원인은 AdMob 콘솔에 있었습니다. 개인정보 메시지(유럽 규정·미국 주 규정)를 게시하지 않은 상태에서는 UMP가 콜백을 아예 돌려주지 않습니다. 2026-08-26에 메시지를 게시하자 앱을 다시 빌드하지 않았는데도 풀렸습니다. 기기에 깔려 있던 TestFlight 1.5(17) 그대로 광고가 정상으로 나오는 것을 확인했습니다. 빌드 14부터 17까지 네 개를 콘솔 설정 하나 때문에 쓴 셈입니다.</p>
+<p>타임아웃 경로는 지우지 않았습니다. 동의 상태가 ‘필요함’이나 ‘알 수 없음’이면 광고를 띄우지 않는 쪽으로 닫혀 있고 추적 로그로 정상 콜백과 구분되기 때문에 원인을 가리지 않습니다. 다른 이유로 콜백이 사라질 때의 방어로도 남겨 둘 만했습니다. 대신 코드 주석에 “이 타임아웃이 늘 발동하면 코드보다 AdMob 콘솔을 먼저 보라”고 적고 판별 기준도 남겼습니다. 기기 로그에서 광고 로드가 0.3초 안에 찍히면 정상 콜백이고, 5초쯤 뒤에 찍히면 타임아웃 경로입니다.</p>
+<p>1.4는 App Store Connect에서 직접 내린(DEVELOPER_REJECTED) 상태로 남아 새 1.5 버전을 만들 수 없었습니다. 1.4 레코드에서 빌드 연결만 풀고 같은 레코드의 버전 문자열을 1.5로 바꿔 이어 갔습니다.</p>
+<p>v1.6.1은 코드 변경 없이 App Store 마케팅 URL만 넣은 빌드입니다. AdMob이 app-ads.txt를 찾을 도메인을 알 수 있게 하려는 것이었습니다.</p>
+<h3 id="검증-하니스가-실제-순위표에-점수를-올리고-있었습니다">검증 하니스가 실제 순위표에 점수를 올리고 있었습니다<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#검증-하니스가-실제-순위표에-점수를-올리고-있었습니다" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>실기에서 자동으로 3홀을 도는 검증 하니스(proof harness)가 로그인된 Game Center 계정으로 점수를 실제 순위표에 제출하고 있었습니다. 3홀 3타 같은 기록이 순위표에 올라가 있었던 것입니다. v1.9에서 하니스 실행 중에는 점수 제출을 건너뛰게 했습니다. 하니스가 끝난 뒤 늦게 도착한 저장이 실기 세이브를 하니스 기록으로 덮어쓰던 문제(v1.10)와, 고스트 표시 설정을 꺼 둔 세이브에서 도전·고스트 검증이 전부 실패하던 문제(v1.11)도 고쳤습니다.</p>
+<h3 id="그-밖에">그 밖에<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#그-밖에" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>오늘의 챌린지 순위표 점수를 타수만으로 바꿨습니다(v1.7 빌드 21). 처음에는 타수와 시간을 합친 큰 정수로 올렸는데 Game Center 화면에서 읽을 수가 없었습니다</li>
+<li>테스트 러너가 스크립트 에러를 실패로 집계합니다(v1.10)</li>
+</ul>
+<h2 id="-platforms">💻 Platforms<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-platforms" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>iOS</strong> — iOS 17.0 이상(v1.6부터. 이전에는 14.0). App Store 무료. 한국어·영어·일본어·중국어(간체)·스페인어·독일어·프랑스어·포르투갈어</li>
+<li><strong>Android</strong> — 이번 구간에는 iOS 빌드만 올렸습니다. Android 태그는 v1.2가 마지막입니다</li>
+</ul>
+<h2 id="-version-history">📜 Version History<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-version-history" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>버전</th><th>빌드</th><th>날짜</th><th>내용</th></tr></thead><tbody><tr><td>v1.4</td><td>8</td><td>2026-08-13</td><td>3홀 완주 후 전면 광고, 광고 뒤 결과 화면 순서 정리. 출시하지 않고 1.5로 대체</td></tr><tr><td>v1.5</td><td>11–17</td><td>2026-08-16 ~ 08-19</td><td>1.4와 같은 광고 흐름. UMP 동의 콜백 문제로 빌드 7개</td></tr><tr><td>v1.6</td><td>18</td><td>2026-09-26</td><td>Game Center 순위표(코스 3개 × 클래식/패스트), 최소 iOS 17.0</td></tr><tr><td>v1.6.1</td><td>19</td><td>2026-09-28</td><td>App Store 마케팅 URL. 코드 변경 없음</td></tr><tr><td>v1.7</td><td>20, 21</td><td>2026-09-30</td><td>로우폴리 코스, 글래스 &amp; 라임 UI, 오늘의 챌린지, 홀 신기록, 고스트</td></tr><tr><td>v1.8</td><td>23</td><td>2026-10-02</td><td>8개 언어, CJK 서브셋 폰트, 테마 폰트 상속 버그 수정. 2026-10-03 판매 시작</td></tr><tr><td>v1.8.1</td><td>24</td><td>2026-10-03</td><td>App Store 지원 언어 표시 수정</td></tr><tr><td>v1.9</td><td>25</td><td>2026-10-06</td><td>섬 코스 코랄 아일, 물 해저드, 예상 정지 지점, 데일리 3홀 코스 순환</td></tr><tr><td>v1.10</td><td>26</td><td>2026-10-11</td><td>친구 도전 링크, 고스트 이름표·말풍선, SWING! 스티커와 진동, 결과 카드 순위</td></tr><tr><td>v1.11</td><td>27</td><td>2026-10-12</td><td>결과 카드 Game Center Top 5</td></tr></tbody></table></div>
+<p>날짜는 iOS 빌드를 올리며 남긴 태그의 날짜입니다. 1.5는 첫 빌드(11)와 마지막 빌드(17)의 날짜를 적었습니다. 저장소 기록상 v1.8은 2026-10-03, v1.9는 2026-10-07, v1.10은 2026-10-12에 App Store에 나갔고, v1.11은 아직 준비 중입니다.</p>
+<h2 id="-whats-next">🔜 What’s Next<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-whats-next" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>v1.11 심사</strong> — 빌드 27을 올렸고 출시 전입니다</li>
+<li><strong>App Store 평가 요청</strong> — v1.11 빌드 뒤에 코드만 들어가 있습니다. 나라마다 평가가 0~1개라 스토어 순위에 불리해서 만들었습니다. 3라운드 이상 친 사람이 신기록을 냈거나 친구 도전에서 이겼을 때, 버전마다 한 번만, 다음에 메뉴가 열릴 때 iOS 평가 창을 요청합니다. 전면 광고가 뜰 수 있는 결과 카드에서는 묻지 않습니다. 실제로 창을 띄울지는 iOS가 정합니다. 어느 버전에 실릴지는 미정입니다</li>
+</ul>
+<p>그 밖의 방향은 미정입니다.</p>
+<h2 id="-try-it">🚀 Try it<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-try-it" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><a href="https://apps.apple.com/kr/app/swing-golf/id6796625813" class="external">App Store에서 받기<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="../../blog/releases/2026-08-09-swing-golf-1.3" class="internal alias" data-slug="blog/releases/2026-08-09-swing-golf-1.3">이전 릴리즈 — v1.3</a></li>
+<li><a href="../../projects/swing-golf" class="internal alias" data-slug="projects/swing-golf">프로젝트 카드</a></li>
+</ul>
+<blockquote>
+<p>⚠️ 팔을 휘두르는 게임입니다. 주변에 사람이나 물건이 없는 곳에서 폰을 꼭 쥐고 플레이해 주세요.</p>
+</blockquote></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-63" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-0"><a href="#-swing-golf-v111-릴리즈" data-for="-swing-golf-v111-릴리즈">🎉 [Swing Golf] v1.11 릴리즈</a></li><li class="depth-0"><a href="#-whats-new" data-for="-whats-new">✨ What’s New</a></li><li class="depth-1"><a href="#친구에게-도전장을-보낼-수-있습니다-v110" data-for="친구에게-도전장을-보낼-수-있습니다-v110">친구에게 도전장을 보낼 수 있습니다 (v1.10)</a></li><li class="depth-1"><a href="#고스트가-말을-겁니다-v17--v110" data-for="고스트가-말을-겁니다-v17--v110">고스트가 말을 겁니다 (v1.7 → v1.10)</a></li><li class="depth-1"><a href="#game-center-순위표와-결과-카드-top-5-v16--v111" data-for="game-center-순위표와-결과-카드-top-5-v16--v111">Game Center 순위표와 결과 카드 Top 5 (v1.6 → v1.11)</a></li><li class="depth-1"><a href="#섬-코스-코랄-아일과-물-해저드-v19" data-for="섬-코스-코랄-아일과-물-해저드-v19">섬 코스 ‘코랄 아일’과 물 해저드 (v1.9)</a></li><li class="depth-1"><a href="#로우폴리-코스와-글래스--라임-ui-v17" data-for="로우폴리-코스와-글래스--라임-ui-v17">로우폴리 코스와 ‘글래스 &amp; 라임’ UI (v1.7)</a></li><li class="depth-1"><a href="#오늘의-챌린지와-홀-신기록-v17--v19" data-for="오늘의-챌린지와-홀-신기록-v17--v19">오늘의 챌린지와 홀 신기록 (v1.7 → v1.9)</a></li><li class="depth-1"><a href="#8개-언어-v18" data-for="8개-언어-v18">8개 언어 (v1.8)</a></li><li class="depth-0"><a href="#-bug-fixes" data-for="-bug-fixes">🐛 Bug Fixes</a></li><li class="depth-0"><a href="#️-under-the-hood" data-for="️-under-the-hood">⚙️ Under the Hood</a></li><li class="depth-1"><a href="#광고가-한-번도-나가지-않았던-15" data-for="광고가-한-번도-나가지-않았던-15">광고가 한 번도 나가지 않았던 1.5</a></li><li class="depth-1"><a href="#검증-하니스가-실제-순위표에-점수를-올리고-있었습니다" data-for="검증-하니스가-실제-순위표에-점수를-올리고-있었습니다">검증 하니스가 실제 순위표에 점수를 올리고 있었습니다</a></li><li class="depth-1"><a href="#그-밖에" data-for="그-밖에">그 밖에</a></li><li class="depth-0"><a href="#-platforms" data-for="-platforms">💻 Platforms</a></li><li class="depth-0"><a href="#-version-history" data-for="-version-history">📜 Version History</a></li><li class="depth-0"><a href="#-whats-next" data-for="-whats-next">🔜 What’s Next</a></li><li class="depth-0"><a href="#-try-it" data-for="-try-it">🚀 Try it</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>Backlinks</h3><ul id="list-2" class="overflow"><li><a href="../../projects/swing-golf" class="internal">Swing Golf</a></li><li class="overflow-end"></li></ul></div></div><footer class="site-footer "><div class="site-footer-inner"><p class="site-footer-built">Built with <a href="https://quartz.jzhao.xyz/" target="_blank" rel="noreferrer">Quartz v4.5.2</a></p><ul class="site-footer-links"><li><a href="https://github.com/4sizn" target="_blank" rel="noreferrer">GitHub</a></li><li><a href="https://www.linkedin.com/in/4sizn" target="_blank" rel="noreferrer">LinkedIn</a></li></ul><p class="site-footer-copyright">© 2026 4sizn blog</p></div></footer></div></div></body><script type="application/javascript" data-persist="true">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module" data-persist="true">function E(a,e){if(!a)return;function t(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function n(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}a?.addEventListener("click",t),window.addCleanup(()=>a?.removeEventListener("click",t)),document.addEventListener("keydown",n),window.addCleanup(()=>document.removeEventListener("keydown",n))}function f(a){for(;a.firstChild;)a.removeChild(a.firstChild)}var m=class{constructor(e,t){this.container=e;this.content=t;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),t=this.onMouseMove.bind(this),n=this.onMouseUp.bind(this),o=this.onTouchStart.bind(this),r=this.onTouchMove.bind(this),i=this.onTouchEnd.bind(this),s=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",t),document.addEventListener("mouseup",n),this.container.addEventListener("touchstart",o,{passive:!1}),document.addEventListener("touchmove",r,{passive:!1}),document.addEventListener("touchend",i),window.addEventListener("resize",s),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",t),()=>document.removeEventListener("mouseup",n),()=>this.container.removeEventListener("touchstart",o),()=>document.removeEventListener("touchmove",r),()=>document.removeEventListener("touchend",i),()=>window.removeEventListener("resize",s))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let t=this.createButton("+",()=>this.zoom(.1)),n=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(n),e.appendChild(o),e.appendChild(t),this.container.appendChild(e)}createButton(e,t){let n=document.createElement("button");return n.textContent=e,n.className="mermaid-control-button",n.addEventListener("click",t),window.addCleanup(()=>n.removeEventListener("click",t)),n}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}onTouchStart(e){if(e.touches.length!==1)return;this.isDragging=!0;let t=e.touches[0];this.startPan={x:t.clientX-this.currentPan.x,y:t.clientY-this.currentPan.y}}onTouchMove(e){if(!this.isDragging||e.touches.length!==1)return;e.preventDefault();let t=e.touches[0];this.currentPan={x:t.clientX-this.startPan.x,y:t.clientY-this.startPan.y},this.updateTransform()}onTouchEnd(){this.isDragging=!1}zoom(e){let t=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),n=this.content.getBoundingClientRect(),o=n.width/2,r=n.height/2,i=t-this.scale;this.currentPan.x-=o*i,this.currentPan.y-=r*i,this.scale=t,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){let t=this.content.querySelector("svg").getBoundingClientRect(),n=t.width/this.scale,o=t.height/this.scale;this.scale=1,this.currentPan={x:(this.container.clientWidth-n)/2,y:(this.container.clientHeight-o)/2},this.updateTransform()}},T=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],y;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;y||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let t=y.default,n=new WeakMap;for(let r of e)n.set(r,r.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let c=n.get(s);c&&(s.innerHTML=c)}let r=T.reduce((s,c)=>(s[c]=window.getComputedStyle(document.documentElement).getPropertyValue(c),s),{}),i=document.documentElement.getAttribute("saved-theme")==="dark";t.initialize({startOnLoad:!1,securityLevel:"loose",theme:i?"dark":"base",themeVariables:{fontFamily:r["--codeFont"],primaryColor:r["--light"],primaryTextColor:r["--darkgray"],primaryBorderColor:r["--tertiary"],lineColor:r["--darkgray"],secondaryColor:r["--secondary"],tertiaryColor:r["--tertiary"],clusterBkg:r["--light"],edgeLabelBackground:r["--highlight"]}}),await t.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let r=0;r<e.length;r++){let v=function(){let g=l.querySelector("#mermaid-space"),h=l.querySelector(".mermaid-content");if(!h)return;f(h);let w=i.querySelector("svg").cloneNode(!0);h.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new m(g,h)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},i=e[r],s=i.parentElement,c=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(c),L=c.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),E(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="../../postscript.js" type="module" data-persist="true"></script></html>

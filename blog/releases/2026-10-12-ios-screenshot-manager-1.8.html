@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr"><head><title>[2026-10-12] [Moa] v1.8 릴리즈</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space Grotesk:wght@400;700&amp;family=Inter:ital,wght@0,400;0,600;1,400;1,600&amp;family=JetBrains Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="4sizn blog"/><meta property="og:title" content="[2026-10-12] [Moa] v1.8 릴리즈"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="[2026-10-12] [Moa] v1.8 릴리즈"/><meta name="twitter:description" content="보름 동안 Moa v1.4부터 v1.8까지 이어 낸 기록입니다. 광고 게재 제한 해제와 광고 요청 축소, 끌어서 범위 선택, iCloud 전용 원본 처리, 사진 앱식 보기, 백그라운드 정리 중단과 장당 3.8초 문제를 다뤘습니다."/><meta property="og:description" content="보름 동안 Moa v1.4부터 v1.8까지 이어 낸 기록입니다. 광고 게재 제한 해제와 광고 요청 축소, 끌어서 범위 선택, iCloud 전용 원본 처리, 사진 앱식 보기, 백그라운드 정리 중단과 장당 3.8초 문제를 다뤘습니다."/><meta property="og:image:alt" content="보름 동안 Moa v1.4부터 v1.8까지 이어 낸 기록입니다. 광고 게재 제한 해제와 광고 요청 축소, 끌어서 범위 선택, iCloud 전용 원본 처리, 사진 앱식 보기, 백그라운드 정리 중단과 장당 3.8초 문제를 다뤘습니다."/><meta property="twitter:domain" content="4sizn.github.io"/><meta property="og:url" content="https://4sizn.github.io/blog/releases/2026-10-12-ios-screenshot-manager-1.8"/><meta property="twitter:url" content="https://4sizn.github.io/blog/releases/2026-10-12-ios-screenshot-manager-1.8"/><link rel="icon" href="../../static/icon.png"/><meta name="description" content="보름 동안 Moa v1.4부터 v1.8까지 이어 낸 기록입니다. 광고 게재 제한 해제와 광고 요청 축소, 끌어서 범위 선택, iCloud 전용 원본 처리, 사진 앱식 보기, 백그라운드 정리 중단과 장당 3.8초 문제를 다뤘습니다."/><meta name="generator" content="Quartz"/><link href="../../index.css" rel="stylesheet" type="text/css" data-persist="true"/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL2hvbWUvcnVubmVyL3dvcmsvYmxvZy9ibG9nL3F1YXJ0ei9jb21wb25lbnRzL3N0eWxlcyIsInNvdXJjZXMiOlsibWVybWFpZC5pbmxpbmUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTs7O0FBS0Y7RUFDRTtFQUNBOzs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBSUo7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFOztBQUdGO0VBQ0U7O0FBSUY7RUFDRTtFQUNBO0VBQ0EiLCJzb3VyY2VzQ29udGVudCI6WyIuZXhwYW5kLWJ1dHRvbiB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgZGlzcGxheTogZmxleDtcbiAgZmxvYXQ6IHJpZ2h0O1xuICBwYWRkaW5nOiAwLjRyZW07XG4gIG1hcmdpbjogMC4zcmVtO1xuICByaWdodDogMDsgLy8gTk9URTogcmlnaHQgd2lsbCBiZSBzZXQgaW4gbWVybWFpZC5pbmxpbmUudHNcbiAgY29sb3I6IHZhcigtLWdyYXkpO1xuICBib3JkZXItY29sb3I6IHZhcigtLWRhcmspO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gIGJvcmRlcjogMXB4IHNvbGlkO1xuICBib3JkZXItcmFkaXVzOiA1cHg7XG4gIG9wYWNpdHk6IDA7XG4gIHRyYW5zaXRpb246IDAuMnM7XG5cbiAgJiA+IHN2ZyB7XG4gICAgZmlsbDogdmFyKC0tbGlnaHQpO1xuICAgIGZpbHRlcjogY29udHJhc3QoMC4zKTtcbiAgfVxuXG4gICY6aG92ZXIge1xuICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICBib3JkZXItY29sb3I6IHZhcigtLXNlY29uZGFyeSk7XG4gIH1cblxuICAmOmZvY3VzIHtcbiAgICBvdXRsaW5lOiAwO1xuICB9XG59XG5cbnByZSB7XG4gICY6aG92ZXIgPiAuZXhwYW5kLWJ1dHRvbiB7XG4gICAgb3BhY2l0eTogMTtcbiAgICB0cmFuc2l0aW9uOiAwLjJzO1xuICB9XG59XG5cbiNtZXJtYWlkLWNvbnRhaW5lciB7XG4gIHBvc2l0aW9uOiBmaXhlZDtcbiAgY29udGFpbjogbGF5b3V0O1xuICB6LWluZGV4OiA5OTk7XG4gIGxlZnQ6IDA7XG4gIHRvcDogMDtcbiAgd2lkdGg6IDEwMHZ3O1xuICBoZWlnaHQ6IDEwMHZoO1xuICBvdmVyZmxvdzogaGlkZGVuO1xuICBkaXNwbGF5OiBub25lO1xuICBiYWNrZHJvcC1maWx0ZXI6IGJsdXIoNHB4KTtcbiAgYmFja2dyb3VuZDogcmdiYSgwLCAwLCAwLCAwLjUpO1xuXG4gICYuYWN0aXZlIHtcbiAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG4gIH1cblxuICAmID4gI21lcm1haWQtc3BhY2Uge1xuICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tbGlnaHQpO1xuICAgIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgICBwb3NpdGlvbjogZml4ZWQ7XG4gICAgdG9wOiA1MCU7XG4gICAgbGVmdDogNTAlO1xuICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlKC01MCUsIC01MCUpO1xuICAgIGhlaWdodDogODB2aDtcbiAgICB3aWR0aDogODB2dztcbiAgICBvdmVyZmxvdzogaGlkZGVuO1xuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRlbnQge1xuICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgdHJhbnNmb3JtLW9yaWdpbjogMCAwO1xuICAgICAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIDAuMXMgZWFzZTtcbiAgICAgIG92ZXJmbG93OiB2aXNpYmxlO1xuICAgICAgbWluLWhlaWdodDogMjAwcHg7XG4gICAgICBtaW4td2lkdGg6IDIwMHB4O1xuXG4gICAgICBwcmUge1xuICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgIGJvcmRlcjogbm9uZTtcbiAgICAgIH1cblxuICAgICAgc3ZnIHtcbiAgICAgICAgbWF4LXdpZHRoOiBub25lO1xuICAgICAgICBoZWlnaHQ6IGF1dG87XG4gICAgICB9XG4gICAgfVxuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRyb2xzIHtcbiAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgIGJvdHRvbTogMjBweDtcbiAgICAgIHJpZ2h0OiAyMHB4O1xuICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgIGdhcDogOHB4O1xuICAgICAgcGFkZGluZzogOHB4O1xuICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgICAgIGJveC1zaGFkb3c6IDAgMnB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMSk7XG4gICAgICB6LWluZGV4OiAyO1xuXG4gICAgICAubWVybWFpZC1jb250cm9sLWJ1dHRvbiB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgICAgICB3aWR0aDogMzJweDtcbiAgICAgICAgaGVpZ2h0OiAzMnB4O1xuICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICAgIGNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgICAgICAgYm9yZGVyLXJhZGl1czogNHB4O1xuICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICAgIGZvbnQtc2l6ZTogMTZweDtcbiAgICAgICAgZm9udC1mYW1pbHk6IHZhcigtLWJvZHlGb250KTtcbiAgICAgICAgdHJhbnNpdGlvbjogYWxsIDAuMnMgZWFzZTtcblxuICAgICAgICAmOmhvdmVyIHtcbiAgICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICB9XG5cbiAgICAgICAgJjphY3RpdmUge1xuICAgICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgxcHgpO1xuICAgICAgICB9XG5cbiAgICAgICAgLy8gU3R5bGUgdGhlIHJlc2V0IGJ1dHRvbiBkaWZmZXJlbnRseVxuICAgICAgICAmOm50aC1jaGlsZCgyKSB7XG4gICAgICAgICAgd2lkdGg6IGF1dG87XG4gICAgICAgICAgcGFkZGluZzogMCAxMnB4O1xuICAgICAgICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICAgICAgfVxuICAgICAgfVxuICAgIH1cbiAgfVxufVxuIl19 */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../../prescript.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://4sizn.github.io/index.xml"/><link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin="anonymous"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://4sizn.github.io/static/og-image.png"/><meta property="og:image:url" content="https://4sizn.github.io/static/og-image.png"/><meta name="twitter:image" content="https://4sizn.github.io/static/og-image.png"/><meta property="og:image:type" content="image/png"/></head><body data-slug="blog/releases/2026-10-12-ios-screenshot-manager-1.8"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="../..">4sizn blog</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>{let order={log:0,dev:1,releases:2,projects:3};if(a.isFolder&amp;&amp;!b.isFolder)return-1;if(!a.isFolder&amp;&amp;b.isFolder)return 1;if(a.isFolder&amp;&amp;b.isFolder){let oa=order[a.slugSegment]??99,ob=order[b.slugSegment]??99;return oa!==ob?oa-ob:a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;})}let da=a.data?.published??a.data?.created??a.data?.modified??a.data?.date,db=b.data?.published??b.data?.created??b.data?.modified??b.data?.date,daTime=da?new Date(da).getTime():0,dbTime=db?new Date(db).getTime():0;return daTime!==dbTime?dbTime-daTime:a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;})}&quot;,&quot;filterFn&quot;:&quot;node=>![\&quot;tags/index\&quot;,\&quot;about\&quot;,\&quot;projects/index\&quot;].includes(node.slug)&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-132"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-132" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><header><nav class="site-nav"><div class="site-nav-inner"><a class="site-nav-brand" href="../../">4sizn blog</a><ul class="site-nav-links"><li><a href="../../" class>Home</a></li><li><a href="../../about" class>About</a></li><li><a href="../../projects" class>Project</a></li><li><a href="../../blog" class="active" aria-current="page">Blog</a></li></ul><div class="site-nav-actions"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div></div></nav></header><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../blog/">Blog</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../blog/releases/">releases</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>[2026 10 12] [Moa] v1.8 릴리즈</a></div></nav><h1 class="article-title">[2026-10-12] [Moa] v1.8 릴리즈</h1><p show-comma="true" class="content-meta"><time datetime="2026-10-12T00:00:00.000Z">Oct 12, 2026</time><span>24 min read</span></p><ul class="tags"><li><a href="../../tags/release" class="internal tag-link">release</a></li><li><a href="../../tags/app" class="internal tag-link">app</a></li><li><a href="../../tags/moa" class="internal tag-link">moa</a></li><li><a href="../../tags/ios-screenshot-manager" class="internal tag-link">ios-screenshot-manager</a></li></ul></div></div><article class="popover-hint release changelog"><h2 id="-moa-v18-릴리즈">🎉 [Moa] v1.8 릴리즈<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-moa-v18-릴리즈" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote>
+<p>📅 1.8 (빌드 17) 심사 제출: 2026-10-12 · 이전 글: <a href="../../blog/releases/2026-09-28-ios-screenshot-manager-1.3" class="internal alias" data-slug="blog/releases/2026-09-28-ios-screenshot-manager-1.3">v1.3</a> (2026-09-28)</p>
+</blockquote>
+<p><img src="../../static/moa/store-03-viewer.jpg" alt="App Store 세 번째 스크린샷 — &quot;무엇이 담겼는지 기기가 읽어줘요&quot; 문구 아래, 검은 전체 화면에 스크린샷이 뜨고 그 위로 '모아둔 순간' 상세 시트가 반 높이로 올라온 화면"/></p>
+<p>Moa v1.8을 심사에 올렸습니다. 지난 글에서 “심사 중”이라고 적었던 v1.4가 다음 날 통과했고 그 뒤 보름 동안 v1.5, v1.5.1, v1.6, v1.6.1, v1.6.2가 차례로 App Store에 나갔습니다. v1.7은 심사 대기 중에 거둬들이고 그 내용을 v1.8에 합쳤습니다. 이번 글은 이 여덟 번의 제출을 한 번에 정리합니다.</p>
+<p>이 기간에 집중한 것은 <strong>실기기에서 실제 보관함으로 돌렸을 때만 드러나는 문제</strong>였습니다. 시뮬레이터 테스트는 매번 통과했는데, 1,400장이 넘는 진짜 보관함에서는 광고가 안 보이고, 끌어서 고르기가 안 되고, iCloud에만 있는 원본이 계속 건너뛰어지고, 긴 정리가 ‘작업 실패’로 끝났습니다. 각각 어디서 막혔고 무엇을 골랐는지를 적어 둡니다.</p>
+<h2 id="-whats-new">✨ What’s New<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-whats-new" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="광고가-실제로-나가기-시작했습니다-v151">광고가 실제로 나가기 시작했습니다 (v1.5.1)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#광고가-실제로-나가기-시작했습니다-v151" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>지난 글 끝에 “광고 칸이 실제로 채워진 화면은 아직 보지 못했다”고 적었습니다. 9월 29일에 운영 설정 Release 빌드로 60초 동안 광고 요청을 찍어 보니 64번 모두 <code>No ad to show</code>였습니다. 앱 ID·광고 단위·SDK 연결은 정상이었고 AdMob 콘솔에서 모아는 여전히 ‘검토 필요 · 광고 게재가 제한됨’이었습니다. 콘솔이 내놓은 사유는 app-ads.txt가 계정 정보와 맞지 않는다는 것이었는데, 실제 파일 내용은 인증 화면이 요구하는 줄과 같았고 개발자 웹사이트도 이미 인증된 다른 앱과 같은 주소였습니다. v1.3 이전 마케팅 URL이 비어 있던 때의 결과가 남은 것으로 보고 다시 크롤링을 요청했습니다.</p>
+<p>10월 1일에 다시 보니 ‘준비됨 · 광고 게재 사용 설정됨’으로 바뀌어 있었습니다. 그런데 이번엔 숫자가 이상했습니다. 최근 7일 요청 5,280건, 일치율 27.5%, 노출 25건. 일치한 요청이 1,450건쯤인데 노출이 25건이라는 건, 채워진 광고 대부분이 사용자가 스크롤해 내려가지 않은 칸에 들어가 보이지도 않고 버려졌다는 뜻이었습니다. 원인은 모아보기를 열 때 모든 광고 칸(스크린샷 수 ÷ 8)을 한꺼번에 요청하고 실패한 칸은 화면에 다시 들어올 때마다 또 요청하던 코드였습니다.</p>
+<p>v1.5.1에서는 광고 칸 앞의 8장 블록이 화면에 나타날 때 그 칸 하나만 요청하도록 바꿨습니다. 마지막 블록이 8장을 못 채우면 칸이 없으니 요청도 하지 않고 실패한 칸은 같은 화면에서 다시 요청하지 않습니다. 비개인화 광고만 요청한다는 원칙은 그대로입니다.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>AdMob 최근 7일</th><th>요청</th><th>노출</th><th>일치율</th></tr></thead><tbody><tr><td>10-01 확인 (변경 전)</td><td>5,280</td><td>25</td><td>27.5%</td></tr><tr><td>10-08 확인 (v1.5.1 출시 6일 뒤)</td><td>2,130</td><td>151</td><td>98.9%</td></tr><tr><td>10-11 확인</td><td>366</td><td>127</td><td>96.7%</td></tr></tbody></table></div>
+<p>요청은 줄고 노출은 늘었습니다. 다만 일치율이 오른 건 요청 축소와 10월 1일의 게재 제한 해제가 겹친 결과라 둘을 떼어 볼 수는 없고 1.5 이하 버전 사용자의 요청도 섞여 있습니다. 예상 수입은 주 단위로 몇 센트 수준이고 표본이 작아 eCPM 변화는 해석하지 않았습니다.</p>
+<p>그래서 지난 글의 질문에 답하자면 — 광고는 이제 채워지고 노출도 집계됩니다. 하지만 광고가 들어찬 실제 화면 캡처는 이번에도 남기지 못했습니다. 이 글에 광고 화면이 없는 이유입니다.</p>
+<h3 id="꾹-눌러-끌면-범위가-선택되고-가장자리에서-목록이-따라-내려갑니다-v16">꾹 눌러 끌면 범위가 선택되고, 가장자리에서 목록이 따라 내려갑니다 (v1.6)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#꾹-눌러-끌면-범위가-선택되고-가장자리에서-목록이-따라-내려갑니다-v16" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>v1.4의 여러 장 선택은 꾹 누르면 선택 모드에 들어가는 데서 끝났습니다. 같은 손가락으로 계속 끌어도 범위 선택으로 이어지지 않고 그냥 스크롤이 됐고 화면 가장자리까지 끌어도 목록이 내려가지 않아 한 화면에 보이는 만큼만 고를 수 있었습니다. 실기기에서 “꾹 눌러 아래로 끌며 묶어 고르기가 안 된다”는 지적이 들어왔습니다.</p>
+<p>꾹 누르기를 카드마다 붙은 SwiftUI 제스처에서 격자 전체의 <code>UILongPressGestureRecognizer</code> 하나로 옮겼습니다. 0.35초를 누르면 손가락 아래 카드가 범위의 시작점이 되고 그 뒤 같은 터치의 움직임은 방향과 상관없이 범위 선택입니다. 0.35초 전에 움직이면 평소처럼 스크롤됩니다. 손가락이 위·아래 가장자리 80pt 안에 들어오면 깊이에 비례해(최대 초당 1,200pt) 목록이 스크롤되고 그사이 손가락 아래를 지나간 카드도 범위에 들어갑니다. 선택 모드에서 옆으로 쓸어 고르는 기존 방식도 같은 자동 스크롤을 씁니다.</p>
+<p><img src="../../static/moa/range-select-autoscroll.jpg" alt="선택 모드의 모아보기 — 맨 위 카드 두 장은 화면 밖으로 밀려 올라가 있고, 아래 카드들에 체크가 켜져 있으며 하단 막대에 '6장 선택됨'과 '폴더로 이동'이 보이는 시뮬레이터 화면"/></p>
+<p>시뮬레이터에서는 첫 카드를 누른 채 아래 가장자리까지 끌고 3초 멈추면 목록이 끝까지 내려가며 여섯 장이 모두 선택되는 것을 테스트로 확인했습니다. 실기기 손맛은 Debug 빌드로 직접 써 보고 조정 요청 없이 넘어갔지만 자동 스크롤 속도와 0.35초 임계값을 수치로 검증하지는 않았습니다.</p>
+<h3 id="icloud에만-있는-원본-축소본으로-분석하려다-건너뛰기로-정정했습니다-v161--v162">iCloud에만 있는 원본: 축소본으로 분석하려다 건너뛰기로 정정했습니다 (v1.6.1 → v1.6.2)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#icloud에만-있는-원본-축소본으로-분석하려다-건너뛰기로-정정했습니다-v161--v162" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>실기기에서 정리를 돌리면 매번 “28장은 읽거나 분석하지 못했어요”가 떴습니다. ‘iPhone 저장 공간 최적화’를 켜 둔 기기라 원본이 iCloud에만 있는 스크린샷이었고 Moa는 네트워크를 끈 채 원본만 요청했기 때문에 매번 같은 28장을 건너뛰고 있었습니다.</p>
+<p>v1.6.1에서는 설정에 ‘iCloud 원본 다운로드’ 토글(기본 꺼짐)을 만들고 꺼져 있으면 기기에 남아 있을 축소본(긴 변 1,500pt)을 받아 분석하게 했습니다. 아무것도 내려받지 않으면서 분석은 되는, 가장 좋아 보이는 선택이었습니다.</p>
+<p><img src="../../static/moa/settings-icloud-download.jpg" alt="설정의 '사진 접근' 아래 'iCloud 원본 다운로드' 토글이 켜져 있고 &quot;기기에 없는 원본을 iCloud에서 내려받아 분석해요. 데이터와 저장 공간을 써요.&quot; 설명이 붙은 화면"/></p>
+<p>그런데 토글을 끈 채 정리하자 여전히 28장이 실패했습니다. 실기기에서 PhotoKit이 실제로 뭘 돌려주는지 재 보니, 고품질 축소본 요청은 28장 모두 <code>nil</code>(오류 3164), 빠른 요청은 56×120px짜리 손톱 썸네일만 돌려줬습니다. 저장 공간 최적화가 이 스크린샷들에 남긴 건 OCR도 분류도 못 하는 크기의 사본뿐이었습니다. 축소본 분석은 처음부터 성립하지 않는 길이었던 셈입니다.</p>
+<p>v1.6.2에서 축소본 경로를 지웠습니다. 대신 iCloud 전용 원본을 진짜 오류와 따로 세고 정리 결과와 진행 카드에 “N장은 원본이 iCloud에만 있어 건너뛰었어요. 설정의 ‘iCloud 원본 다운로드’를 켜면 정리해요.”라고 안내합니다. 토글 꺼짐 설명도 “건너뛰고 아무것도 내려받지 않아요”로 고쳤습니다. 실기기 테스트에서 토글을 끄면 1,474장 중 iCloud 전용 28장만 건너뛰고 다른 오류는 0건, 켜면 원본이 내려와 가로 500px을 넘는 실제 해상도로 분석되는 것을 확인했습니다. 다른 기기나 iOS 버전에서 최적화 모드가 더 큰 사본을 남기는지는 보지 못했습니다.</p>
+<h3 id="사진-앱처럼-보는-흐름-v17-v18에-포함">사진 앱처럼 보는 흐름 (v1.7, v1.8에 포함)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#사진-앱처럼-보는-흐름-v17-v18에-포함" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>전에는 카드를 탭하면 상세 시트가 먼저 열리고 그 안의 이미지를 한 번 더 눌러야 전체 화면이 떴습니다. 전체 화면에서는 한 장만 볼 수 있어 이전·다음으로 넘어갈 방법도 없었습니다. 사진 앱처럼 “탭하면 바로 크게, 쓸어서 다음 장, 필요할 때만 상세”가 맞다고 봤습니다.</p>
+<p>이제 카드를 탭하면 전체 화면이 바로 열리고 격자에 보이던 순서대로 좌우로 넘깁니다. 위로 쓸거나 ‘상세 보기’를 누르면 태그·폴더·분석 근거가 담긴 ‘모아둔 순간’ 시트가 반 높이로 올라오고 아래로 쓸면 격자로 돌아갑니다. 즐겨찾기 하트는 전체 화면 툴바로 옮겼습니다.</p>
+<p><img src="../../static/moa/viewer-swipe-detail.jpg" alt="왼쪽은 전체 화면에서 좌우로 넘겨 2/6 위치에 있는 화면과 '상세 보기' 버튼, 오른쪽은 같은 전체 화면 위로 '모아둔 순간' 상세 시트가 반 높이로 올라온 화면"/></p>
+<p>처음에는 SwiftUI의 <code>TabView(.page)</code>로 페이지를 넘겼습니다. 시뮬레이터 테스트는 통과했는데 실기기(스크린샷 1,474장)에서 빠르게 여러 번 쓸면 페이지가 경계 사이에 멈춰 두 장이 반씩 보였습니다. 확대하지 않았을 때 안쪽 스크롤을 끄는 식으로 손봐도 남아서 결국 사진 앱과 같은 <code>UIPageViewController</code>로 갈아탔습니다. 확대한 채 옆으로 쓸면 확대가 100%로 풀리던 문제는 UI 테스트가 잡았고 전체 화면이 뜰 때 뒤의 목록이 한 번 검게 번쩍이던 문제는 실기기에서 보고 고쳤습니다. 화면이 바뀌었으므로 App Store 세 번째 스크린샷도 세 언어 모두 새로 찍었습니다(맨 위 이미지).</p>
+<p>확대한 상태에서 이미지 가장자리에 닿으면 다음 장으로 넘어가는 사진 앱의 세부 동작은 지원하지 않습니다.</p>
+<h3 id="긴-백그라운드-정리가-작업-실패로-끝나지-않게-v18">긴 백그라운드 정리가 ‘작업 실패’로 끝나지 않게 (v1.8)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#긴-백그라운드-정리가-작업-실패로-끝나지-않게-v18" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>1,400장을 백그라운드로 정리하면 다이내믹 아일랜드에 ‘스크린샷 정리 · 작업 실패’가 남았습니다. 앱이 실패를 보고하는 경로는 이미 막아 둔 상태라 처음엔 원인을 몰랐습니다. iPhone 15 Pro에 연결해 시스템 로그(<code>dasd</code>)를 받아 보고서야 알았습니다. iOS는 <code>BGContinuedProcessingTask</code>의 진행 수치가 일정 시간 변하지 않으면 작업이 멈췄다고 판정해 끝내 버립니다. 이 기기에서는 36초 공백에서 끊겼습니다(Apple이 기준 시간을 공개하지는 않았습니다). Moa는 한 장이 끝날 때만 수치를 올렸는데, 이 기기에서 한 장은 백그라운드에서 6~12초가 걸려 공백이 길어질 수 있었습니다.</p>
+<p>진행 단위를 장당 100으로 쪼개 iCloud 다운로드·이미지 로드·분석이 끝날 때마다 올리고 작업이 살아 있는 동안 10초마다 1씩 더 올려 한 장이 오래 걸려도 수치가 멈추지 않게 했습니다. 수정 뒤 실행에서는 잠금 상태로 37분이 지나도 정지 판정이 없었고 진행 갱신 공백은 최대 11초였습니다.</p>
+<p>같은 실행에서 iOS가 디스크 쓰기 초과 리포트도 남겼습니다. 47분 동안 4.3GB를 썼다는 내용이었습니다. 보관함이 JSON 파일 하나인데 장마다 그 파일 전체를 다시 쓰고 있었습니다. 저장을 10장마다 한 번과 정리가 끝날 때 한 번으로 묶었습니다. 대신 앱이 강제 종료되면 마지막 저장 이후 최대 10장은 다음 정리에서 다시 분석됩니다. 수정 후 쓰기량은 아직 다시 재지 않았습니다.</p>
+<p>이미 남은 ‘작업 실패’ 카드는 같은 식별자로 새 작업을 요청해도 대체되지 않았고 사용자가 직접 밀어 닫는 수밖에 없었습니다. 앱을 앱 전환기에서 밀어 닫을 때 iOS가 남기는 실패 카드도 앱이 막을 수 없습니다.</p>
+<h3 id="정리-속도-장당-38초에서-13초로-v18">정리 속도: 장당 3.8초에서 1.3초로 (v1.8)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#정리-속도-장당-38초에서-13초로-v18" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>위 문제를 쫓다가 숫자 하나가 계속 걸렸습니다. 9월 측정 테스트에서는 한 장에 약 1초였는데, 실제 정리는 Release 빌드에서도 장당 3.8초였고 iOS가 ‘느린 작업’ 확인창까지 띄웠습니다. Apple Intelligence를 끄거나 포그라운드로 돌려도 거의 같았습니다.</p>
+<p>원인은 정리 작업을 <code>.utility</code> 우선순위로 만든 것이었습니다. 이 우선순위에서는 Vision·Core ML 작업이 효율 코어로 갑니다. 사용자가 직접 시작한 정리이니 <code>.userInitiated</code>로 올렸고 스크롤 중에는 분석을 멈추는 기존 동작은 그대로 뒀습니다.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>조건 (iPhone 15 Pro, Release, 1,452장 전체 재분석)</th><th>장당</th></tr></thead><tbody><tr><td><code>.utility</code>, 포그라운드 (Apple Intelligence 켬 / 끔)</td><td>3.65초 / 3.77초</td></tr><tr><td><code>.utility</code>, 백그라운드</td><td>3.9초</td></tr><tr><td><code>.userInitiated</code>, 포그라운드</td><td>1.38초</td></tr><tr><td><code>.userInitiated</code>, 백그라운드</td><td>1.28초</td></tr></tbody></table></div>
+<p>바꾼 빌드로 끝까지 돌린 실행은 약 50분 걸려 1,428장을 분석하고 iCloud 전용 24장을 건너뛰었습니다. 중간에 발열로 장당 8.4초까지 떨어진 구간이 있어 평균은 2.1초였습니다. 같은 발열 저하는 <code>.utility</code>로 돌린 낮 실행에서도 있었고 몇 분 뒤 돌아왔습니다. 느린 작업 확인창은 이 실행에서도 한 번 떴습니다. <code>.userInitiated</code>의 배터리 소모는 재지 않았습니다.</p>
+<h2 id="-improvements">🔧 Improvements<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-improvements" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>모아에서만 지우기와 원본 삭제 (v1.5)</strong> — 상세 화면과 선택 막대에서 한 장 또는 여러 장을 지웁니다. ‘모아에서만 지우기’는 다음 정리에서 건너뛰고 설정 ‘숨긴 스크린샷’에서 되돌릴 수 있으며 직접 고친 분류·태그·폴더도 함께 돌아옵니다. ‘원본도 삭제’는 iOS 확인을 한 번 더 거쳐야 지워집니다. 그래서 “원본을 변경하지 않는다”던 약속을 “원본은 직접 삭제를 고를 때만 지운다”로 바꾸고 개인정보처리방침도 고쳤습니다</li>
+<li><strong>취향이 쌓이는 폴더 (v1.5)</strong> — 미분류는 장수와 상관없이 맨 뒤에 섭니다. 옆의 ‘폴더 선택’은 ‘모두 보기’로 바꿔 폴더 탭으로 넘어갑니다</li>
+<li><strong>평가 요청 (v1.8)</strong> — v1.4에서는 세 번째 폴더 이동 직후 기기에서 딱 한 번만 물었습니다. 이제는 이동 직후가 아니라 다음에 모아보기 화면이 보일 때 묻고 앱 버전마다 한 번만 묻습니다. 폴더 선택 시트가 닫히는 위로 팝업이 겹치지 않게 하려는 것입니다. 실제로 띄울지는 iOS가 정합니다(1년에 최대 3번)</li>
+</ul>
+<h2 id="-bug-fixes">🐛 Bug Fixes<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-bug-fixes" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>다이내믹 아일랜드에 정리 표시가 쌓이던 문제 (v1.5)</strong> — 앱을 열 때마다 새 스크린샷이 한 장만 있어도 백그라운드 작업을 새로 요청해 표시가 쌓였습니다. 대기열이 20장 이상일 때만 요청하고 식별자를 하나로 고정했으며 iOS가 실행 시간을 거둬 갈 때는 실패 대신 ‘정리를 멈췄어요. 완료한 결과는 저장했어요.‘로 끝냅니다. 이 수정을 바로 내보내려고 심사 대기 중이던 1.5 빌드 10을 취소하고 빌드 11로 다시 냈습니다</li>
+</ul>
+<h2 id="-version-history">📜 Version History<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-version-history" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>버전 (빌드)</th><th>제출</th><th>출시</th><th>내용</th></tr></thead><tbody><tr><td>v1.4 (9)</td><td>2026-09-28</td><td>2026-09-29</td><td>여러 장 선택과 폴더 이동, 내가 만든 폴더 이름 변경·삭제, 한 장은 폴더 하나에, 평가 요청</td></tr><tr><td>v1.5 (11)</td><td>2026-09-29</td><td>10-01 이전</td><td>삭제와 숨긴 스크린샷, ‘모두 보기’, 다이내믹 아일랜드 표시 정리. 빌드 10 제출을 취소하고 11로 재제출</td></tr><tr><td>v1.5.1 (12)</td><td>2026-10-01</td><td>2026-10-02</td><td>광고 요청을 화면에 보이는 칸으로 제한</td></tr><tr><td>v1.6 (13)</td><td>2026-10-04</td><td>2026-10-05</td><td>꾹 눌러 끌기 범위 선택, 가장자리 자동 스크롤</td></tr><tr><td>v1.6.1 (14)</td><td>2026-10-05</td><td>2026-10-05</td><td>iCloud 전용 원본 축소본 분석, ‘iCloud 원본 다운로드’ 토글</td></tr><tr><td>v1.6.2 (15)</td><td>2026-10-06</td><td>2026-10-07</td><td>축소본 분석 철회, iCloud 전용 원본은 건너뛰고 따로 안내</td></tr><tr><td>v1.7 (16)</td><td>2026-10-11</td><td>출시 안 함</td><td>사진 앱식 보기 흐름. 심사 대기 중 취소하고 v1.8에 합침</td></tr><tr><td>v1.8 (17)</td><td>2026-10-12</td><td>심사 중</td><td>v1.7 내용 + 백그라운드 정리 중단 수정, 정리 우선순위, 저장 묶기, 버전별 평가 요청</td></tr></tbody></table></div>
+<p>날짜는 App Store Connect 제출 기록과 승인 확인 기록 기준입니다. v1.5의 정확한 승인일은 남기지 못했고 10월 1일에 이미 판매 중이었던 것만 확인했습니다.</p>
+<p>v1.7을 거둬들인 건 심사 대기 버전은 하나만 둘 수 있어서입니다. 백그라운드 정리 수정이 끝났을 때 v1.7이 심사를 기다리고 있었고 둘을 따로 내보내려면 v1.7 결과를 기다려야 했습니다. v1.7 제출을 취소하고 같은 버전 기록의 번호를 1.8로 바꿔 함께 올렸습니다.</p>
+<h2 id="-whats-next">🔜 What’s Next<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-whats-next" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>v1.8 (빌드 17)을 2026-10-12 심사에 제출했고 결과를 기다리는 중입니다.</p>
+<p>그 뒤는 미정입니다. 기록에 남은 확인할 것들만 적어 둡니다.</p>
+<ul>
+<li>저장을 10장마다로 묶은 뒤의 실기기 디스크 쓰기량, <code>.userInitiated</code>의 배터리 소모</li>
+<li>느린 작업 확인창이 뜨지 않으려면 진행이 얼마나 빨라야 하는지</li>
+<li>광고 지표는 11월 초에 한 번 더 봅니다. 그때도 광고가 채워진 화면을 직접 캡처할 수 있을지는 모르겠습니다</li>
+</ul>
+<h2 id="-try-it">🚀 Try it<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-try-it" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><a href="https://apps.apple.com/kr/app/id6812988615" class="external">App Store에서 받기<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="../../blog/releases/2026-09-28-ios-screenshot-manager-1.3" class="internal alias" data-slug="blog/releases/2026-09-28-ios-screenshot-manager-1.3">지난 릴리즈 노트 — v1.3</a></li>
+<li><a href="../../blog/projects/moa" class="internal alias" data-slug="blog/projects/moa">개발기 — Swift 한 줄 안 써본 프론트엔드 개발자가 심사에 올리기까지</a></li>
+<li><a href="../../projects/moa" class="internal alias" data-slug="projects/moa">프로젝트 카드</a></li>
+</ul></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-61" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-0"><a href="#-moa-v18-릴리즈" data-for="-moa-v18-릴리즈">🎉 [Moa] v1.8 릴리즈</a></li><li class="depth-0"><a href="#-whats-new" data-for="-whats-new">✨ What’s New</a></li><li class="depth-1"><a href="#광고가-실제로-나가기-시작했습니다-v151" data-for="광고가-실제로-나가기-시작했습니다-v151">광고가 실제로 나가기 시작했습니다 (v1.5.1)</a></li><li class="depth-1"><a href="#꾹-눌러-끌면-범위가-선택되고-가장자리에서-목록이-따라-내려갑니다-v16" data-for="꾹-눌러-끌면-범위가-선택되고-가장자리에서-목록이-따라-내려갑니다-v16">꾹 눌러 끌면 범위가 선택되고, 가장자리에서 목록이 따라 내려갑니다 (v1.6)</a></li><li class="depth-1"><a href="#icloud에만-있는-원본-축소본으로-분석하려다-건너뛰기로-정정했습니다-v161--v162" data-for="icloud에만-있는-원본-축소본으로-분석하려다-건너뛰기로-정정했습니다-v161--v162">iCloud에만 있는 원본: 축소본으로 분석하려다 건너뛰기로 정정했습니다 (v1.6.1 → v1.6.2)</a></li><li class="depth-1"><a href="#사진-앱처럼-보는-흐름-v17-v18에-포함" data-for="사진-앱처럼-보는-흐름-v17-v18에-포함">사진 앱처럼 보는 흐름 (v1.7, v1.8에 포함)</a></li><li class="depth-1"><a href="#긴-백그라운드-정리가-작업-실패로-끝나지-않게-v18" data-for="긴-백그라운드-정리가-작업-실패로-끝나지-않게-v18">긴 백그라운드 정리가 ‘작업 실패’로 끝나지 않게 (v1.8)</a></li><li class="depth-1"><a href="#정리-속도-장당-38초에서-13초로-v18" data-for="정리-속도-장당-38초에서-13초로-v18">정리 속도: 장당 3.8초에서 1.3초로 (v1.8)</a></li><li class="depth-0"><a href="#-improvements" data-for="-improvements">🔧 Improvements</a></li><li class="depth-0"><a href="#-bug-fixes" data-for="-bug-fixes">🐛 Bug Fixes</a></li><li class="depth-0"><a href="#-version-history" data-for="-version-history">📜 Version History</a></li><li class="depth-0"><a href="#-whats-next" data-for="-whats-next">🔜 What’s Next</a></li><li class="depth-0"><a href="#-try-it" data-for="-try-it">🚀 Try it</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>Backlinks</h3><ul id="list-2" class="overflow"><li><a href="../../projects/moa" class="internal">Moa</a></li><li class="overflow-end"></li></ul></div></div><footer class="site-footer "><div class="site-footer-inner"><p class="site-footer-built">Built with <a href="https://quartz.jzhao.xyz/" target="_blank" rel="noreferrer">Quartz v4.5.2</a></p><ul class="site-footer-links"><li><a href="https://github.com/4sizn" target="_blank" rel="noreferrer">GitHub</a></li><li><a href="https://www.linkedin.com/in/4sizn" target="_blank" rel="noreferrer">LinkedIn</a></li></ul><p class="site-footer-copyright">© 2026 4sizn blog</p></div></footer></div></div></body><script type="application/javascript" data-persist="true">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module" data-persist="true">function E(a,e){if(!a)return;function t(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function n(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}a?.addEventListener("click",t),window.addCleanup(()=>a?.removeEventListener("click",t)),document.addEventListener("keydown",n),window.addCleanup(()=>document.removeEventListener("keydown",n))}function f(a){for(;a.firstChild;)a.removeChild(a.firstChild)}var m=class{constructor(e,t){this.container=e;this.content=t;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),t=this.onMouseMove.bind(this),n=this.onMouseUp.bind(this),o=this.onTouchStart.bind(this),r=this.onTouchMove.bind(this),i=this.onTouchEnd.bind(this),s=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",t),document.addEventListener("mouseup",n),this.container.addEventListener("touchstart",o,{passive:!1}),document.addEventListener("touchmove",r,{passive:!1}),document.addEventListener("touchend",i),window.addEventListener("resize",s),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",t),()=>document.removeEventListener("mouseup",n),()=>this.container.removeEventListener("touchstart",o),()=>document.removeEventListener("touchmove",r),()=>document.removeEventListener("touchend",i),()=>window.removeEventListener("resize",s))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let t=this.createButton("+",()=>this.zoom(.1)),n=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(n),e.appendChild(o),e.appendChild(t),this.container.appendChild(e)}createButton(e,t){let n=document.createElement("button");return n.textContent=e,n.className="mermaid-control-button",n.addEventListener("click",t),window.addCleanup(()=>n.removeEventListener("click",t)),n}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}onTouchStart(e){if(e.touches.length!==1)return;this.isDragging=!0;let t=e.touches[0];this.startPan={x:t.clientX-this.currentPan.x,y:t.clientY-this.currentPan.y}}onTouchMove(e){if(!this.isDragging||e.touches.length!==1)return;e.preventDefault();let t=e.touches[0];this.currentPan={x:t.clientX-this.startPan.x,y:t.clientY-this.startPan.y},this.updateTransform()}onTouchEnd(){this.isDragging=!1}zoom(e){let t=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),n=this.content.getBoundingClientRect(),o=n.width/2,r=n.height/2,i=t-this.scale;this.currentPan.x-=o*i,this.currentPan.y-=r*i,this.scale=t,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){let t=this.content.querySelector("svg").getBoundingClientRect(),n=t.width/this.scale,o=t.height/this.scale;this.scale=1,this.currentPan={x:(this.container.clientWidth-n)/2,y:(this.container.clientHeight-o)/2},this.updateTransform()}},T=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],y;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;y||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let t=y.default,n=new WeakMap;for(let r of e)n.set(r,r.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let c=n.get(s);c&&(s.innerHTML=c)}let r=T.reduce((s,c)=>(s[c]=window.getComputedStyle(document.documentElement).getPropertyValue(c),s),{}),i=document.documentElement.getAttribute("saved-theme")==="dark";t.initialize({startOnLoad:!1,securityLevel:"loose",theme:i?"dark":"base",themeVariables:{fontFamily:r["--codeFont"],primaryColor:r["--light"],primaryTextColor:r["--darkgray"],primaryBorderColor:r["--tertiary"],lineColor:r["--darkgray"],secondaryColor:r["--secondary"],tertiaryColor:r["--tertiary"],clusterBkg:r["--light"],edgeLabelBackground:r["--highlight"]}}),await t.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let r=0;r<e.length;r++){let v=function(){let g=l.querySelector("#mermaid-space"),h=l.querySelector(".mermaid-content");if(!h)return;f(h);let w=i.querySelector("svg").cloneNode(!0);h.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new m(g,h)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},i=e[r],s=i.parentElement,c=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(c),L=c.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),E(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="../../postscript.js" type="module" data-persist="true"></script></html>
